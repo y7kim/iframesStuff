@@ -1190,6 +1190,16 @@ input[type="checkbox"]:checked:before {
 	display: none;
 }
 
+/* InitiateMoneyRequest */
+.InitiateMoneyRequest .showForm::before {
+	content: "Choose a recipient to request money from using Interac e-Transfer or go to Manage Recipients to add a new one"
+}
+.InitiateMoneyRequest .formActions::before {
+	content: "Note: Service charge will be applied to your account when the funds are deposited";
+	display: block;
+	margin-bottom: 50px;
+}
+
 @media only screen and (min-width: 768px) {
 	.deleteModalText{
 		height: 64px;

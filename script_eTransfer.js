@@ -185,14 +185,14 @@ window.onload = function(e) {
 		 }
 		 
 		 //Request Money via INTERAC e-Transfer® screen
-		 if(pageTitle == "Request Money via INTERAC e-Transfer®")
-		 {
-			var topDisclaimerNode = document.createElement('div');
-			topDisclaimerNode.setAttribute("class", "top-disclaimer");
-			topDisclaimerNode.innerHTML ='Choose a recipient to request money from using Interac e-Transfer or go to Manage Recipients to add a new one';
-			var bottomDisclaimerReferenceNode = document.querySelector('.showForm');
-			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
-		 }
+		 // if(pageTitle == "Request Money via INTERAC e-Transfer®")
+		 // {
+			// var topDisclaimerNode = document.createElement('div');
+			// topDisclaimerNode.setAttribute("class", "top-disclaimer");
+			// topDisclaimerNode.innerHTML ='Choose a recipient to request money from using Interac e-Transfer or go to Manage Recipients to add a new one';
+			// var bottomDisclaimerReferenceNode = document.querySelector('.showForm');
+			// bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
+		 // }
 		 
 		 //Request Money - Confirm screen
 		 if(pageTitle == "Request Money - Confirm")
