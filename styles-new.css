@@ -1185,6 +1185,11 @@ input[type="checkbox"]:checked:before {
   background: #0067C6;
 }
 
+.CCRAAdd .receipts .column.divHide,
+.CCRARemove .receipts .column.divHide {
+	display: none;
+}
+
 @media only screen and (min-width: 768px) {
 	.deleteModalText{
 		height: 64px;
