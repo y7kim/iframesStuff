@@ -1250,11 +1250,6 @@ input[type="checkbox"]:checked:before {
 		width: 100% !important;
 	}
 
-	.modal-content {
-		margin: 0 !important;
-		height: 70% !important;
-	}
-
 	select.inline-select {
 		margin-bottom: 25px;
 	}
@@ -1613,6 +1608,7 @@ input[type="checkbox"]:checked:before {
 	/* Autodepost */
 	body.Autodeposit div.modal-content {
 		margin-top: 10%;
+		padding-bottom: 200px;
 	}
 
 	body.Autodeposit table.registeredMembers {
