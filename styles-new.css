@@ -440,6 +440,14 @@ table.gst-table tbody tr td:nth-child(2) {
 	margin-left: 40px;
 }
 
+.receipts .receipt .footnote {
+	margin: 2em 0 0 0;
+}
+
+.receipts .receipt .footnote ul li {
+	margin: 0 0 1em 0;
+}
+
 .required,
 .requirederror {
 	margin-top: 50px;
