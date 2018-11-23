@@ -289,7 +289,7 @@ p#acknowledgement1,
 	background-image: url(../Images/action_edit_hover.png) !important;
 }
 
-.autodeposit-settings-table tbody tr td:last-child .deleteIcon {
+/* .autodeposit-settings-table tbody tr td:last-child .deleteIcon {
 	background-image: url(../Images/action_delete.png) !important;
 	background-repeat: no-repeat !important;
 	height: 30px !important;
@@ -299,7 +299,7 @@ p#acknowledgement1,
 
 .autodeposit-settings-table tbody tr td:last-child .deleteIcon:hover {
 	background-image: url(../Images/action_delete_hover.png) !important;
-}
+} */
 
 body.Autodeposit table.registeredMembers tr td .deleteIcon {
 	background-image: url(../Images/action_delete.png) !important;
@@ -448,10 +448,10 @@ table.gst-table tbody tr td:nth-child(2) {
 	margin: 0 0 1em 0;
 }
 
-.required,
+/* .required,
 .requirederror {
 	margin-top: 50px;
-}
+} */
 
 .contact-phone-input input[type=text] {
 	width: 99px !important;
@@ -1055,9 +1055,9 @@ table caption {
 	display: none;
 }
 
-.autodeposit-settings-table tbody tr {
+/* .autodeposit-settings-table tbody tr {
 	display: table-row;
-}
+} */
 
 table tbody tr th {
 	text-align: left;
@@ -1222,6 +1222,16 @@ input[type="checkbox"]:checked:before {
 	display: none;
 }
 
+body.widget ng-component #errorPanel::before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 60px;
+	background-image: url(/DynamicContent/Resources/Images/warning_error.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 /* InitiateMoneyRequest */
 .InitiateMoneyRequest .showForm::before {
 	content: "Choose a recipient to request money from using Interac e-Transfer or go to Manage Recipients to add a new one"
@@ -1248,7 +1258,7 @@ input[type="checkbox"]:checked:before {
 
 	.required,
 	.requirederror {
-		margin-top: 50px !important;
+		/* margin-top: 50px !important; */
 		padding-left: 0 !important;
 		padding-right: 0 !important;
 	}
@@ -1444,18 +1454,18 @@ input[type="checkbox"]:checked:before {
 		width: 350px !important;
 	}
 
-	table.autodeposit-settings-table thead tr th.emailSetting,
+	/* table.autodeposit-settings-table thead tr th.emailSetting,
 	table.autodeposit-settings-table thead tr th.editAccounts,
 	table.autodeposit-settings-table tbody tr td.emailSetting,
 	table.autodeposit-settings-table tbody tr td.editAccounts {
 		width: 100% !important;
 		white-space: nowrap !important;
-	}
+	} */
 
-	table.autodeposit-settings-table {
+	/* table.autodeposit-settings-table {
 		word-break: unset !important;
 		width: 100% !important;
-	}
+	} */
 
 	.errors ol {
 		-webkit-padding-start: 0;
@@ -1533,12 +1543,12 @@ input[type="checkbox"]:checked:before {
 
 	/*NEW STUFF*/
 
-	table.auto-deposit-settings--first-table,
+	/* table.auto-deposit-settings--first-table,
 	table.autodeposit-settings-table tbody tr td.rowCounter,
 	table.autodeposit-settings-table tbody tr td.hideCol,
 	table.autodeposit-settings-table tbody tr.hideField {
 		display: none !important;
-	}
+	} */
 
 	/* Force table to not be like tables anymore */
 	table.recipients-table,
@@ -1552,7 +1562,7 @@ input[type="checkbox"]:checked:before {
 	th,
 	td,
 	tr,
-	table.autodeposit-settings-table,
+	/* table.autodeposit-settings-table, */
 	thead,
 	tbody,
 	th,
@@ -1568,8 +1578,8 @@ input[type="checkbox"]:checked:before {
 	}
 
 	table.recipients-table tbody tr td,
-	.pending-transfers-table table tbody tr td,
-	table.autodeposit-settings-table tbody tr td {
+	.pending-transfers-table table tbody tr td {
+		/* table.autodeposit-settings-table tbody tr td { */
 		height: auto;
 		width: auto;
 		color: #000000;
@@ -1597,26 +1607,30 @@ input[type="checkbox"]:checked:before {
 	}
 
 	table.recipients-table tbody tr td,
-	.pending-transfers-table table tbody tr td,
-	table.autodeposit-settings-table tbody tr td {
+	.pending-transfers-table table tbody tr td {
+		/* table.autodeposit-settings-table tbody tr td  */
 		/* Behave  like a "row" */
 		border: none;
 		position: relative;
 	}
 
 	table.recipients-table tbody td:before,
-	.pending-transfers-table table tbody td:before,
-	table.autodeposit-settings-table tbody td:before {
+	.pending-transfers-table table tbody td:before {
+		/* table.autodeposit-settings-table tbody td:before  */
 		top: 0;
 		width: 100%;
 		padding-right: 10px;
 		white-space: nowrap;
 	}
 
-	/* Autodepost */
+	/* Autodeposit */
 	body.Autodeposit div.modal-content {
 		margin-top: 10%;
 		padding-bottom: 200px;
+	}
+
+	body.Autodeposit .errors ol {
+		-webkit-padding-start: 40px;
 	}
 
 	body.Autodeposit table.registeredMembers {
@@ -1758,7 +1772,7 @@ You could also use a data-* attribute and content for this. That way "bloats" th
 		font-weight: bold;
 	}
 
-	table.autodeposit-settings-table tbody tr td:nth-of-type(2):before {
+	/* table.autodeposit-settings-table tbody tr td:nth-of-type(2):before {
 		content: "Email";
 		font-weight: bold;
 	}
@@ -1771,7 +1785,7 @@ You could also use a data-* attribute and content for this. That way "bloats" th
 	table.autodeposit-settings-table tbody tr td:nth-of-type(5):before {
 		content: "Status";
 		font-weight: bold;
-	}
+	} */
 
 
 	/*NEW STUFF FIM */
