@@ -1233,6 +1233,16 @@ body.widget ng-component #errorPanel::before {
 }
 
 /* InitiateMoneyRequest */
+.InitiateMoneyRequest .input.floatRight.fixedWidth {
+	width: auto;
+	padding: 1em 0;
+}
+
+.InitiateMoneyRequest #acknowledgeCheckboxText {
+	display: block !important;
+	margin: -1.3em 0 0 2em;
+}
+
 .InitiateMoneyRequest .showForm::before {
 	content: "Choose a recipient to request money from using Interac e-Transfer or go to Manage Recipients to add a new one";
 	display: block;
@@ -1242,6 +1252,7 @@ body.widget ng-component #errorPanel::before {
 .InitiateMoneyRequest .formActions::before {
 	content: "Note: Service charge will be applied to your account when the funds are deposited";
 	display: block;
+	text-align: left;
 	margin-bottom: 50px;
 }
 
