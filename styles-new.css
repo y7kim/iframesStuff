@@ -1234,7 +1234,9 @@ body.widget ng-component #errorPanel::before {
 
 /* InitiateMoneyRequest */
 .InitiateMoneyRequest .showForm::before {
-	content: "Choose a recipient to request money from using Interac e-Transfer or go to Manage Recipients to add a new one"
+	content: "Choose a recipient to request money from using Interac e-Transfer or go to Manage Recipients to add a new one";
+	display: block;
+	margin-bottom: 50px;
 }
 
 .InitiateMoneyRequest .formActions::before {
