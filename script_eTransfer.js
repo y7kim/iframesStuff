@@ -385,13 +385,13 @@ window.onload = function(e) {
 			var bottomDisclaimerReferenceNode = document.querySelector('.instructions');
 			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
 			
-			var selects = document.querySelectorAll('input[type=text]');
+			/*var selects = document.querySelectorAll('input[type=text]');
 			
 			for (var i = 0; i < selects.length; i++)
 			{
 				selects[i].placeholder = "dd/mm/yyyy";
 				selects[i].type = "date";
-			}
+			}*/
 		}
 		
 		//Add class to control on Pending Interac e-Transfer®s screen
