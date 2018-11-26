@@ -1233,6 +1233,11 @@ body.widget ng-component #errorPanel::before {
 }
 
 /* InitiateMoneyRequest */
+.InitiateMoneyRequest .required,
+.InitiateMoneyRequest .requirederror {
+	margin-top: 50px;
+}
+
 .InitiateMoneyRequest .input.floatRight.fixedWidth {
 	width: auto;
 	padding: 1em 0;
@@ -1254,6 +1259,10 @@ body.widget ng-component #errorPanel::before {
 	display: block;
 	text-align: left;
 	margin-bottom: 50px;
+}
+
+.InitiateMoneyRequest .requestMoneyFormStep2 .formActions::before {
+	display: none;
 }
 
 @media only screen and (min-width: 768px) {
