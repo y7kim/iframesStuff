@@ -1571,23 +1571,23 @@ body.widget ng-component #errorPanel::before {
 	} */
 
 	/* Force table to not be like tables anymore */
-	table.recipients-table,
-	thead,
-	tbody,
-	th,
-	td,
-	tr,
-	.pending-transfers-table table thead,
-	tbody,
-	th,
-	td,
-	tr,
+	.summarygroup table.recipients-table,
+	.summarygroup thead,
+	.summarygroup tbody,
+	.summarygroup th,
+	.summarygroup td,
+	.summarygroup tr,
+	.summarygroup .pending-transfers-table table thead,
+	.summarygroup tbody,
+	.summarygroup th,
+	.summarygroup td,
+	.summarygroup tr,
 	/* table.autodeposit-settings-table, */
-	thead,
-	tbody,
-	th,
-	td,
-	tr {
+	.summarygroup thead,
+	.summarygroup tbody,
+	.summarygroup th,
+	.summarygroup td,
+	.summarygroup tr {
 		display: block !important;
 	}
 
