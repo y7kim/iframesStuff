@@ -516,7 +516,7 @@ select.inline-select {
 	margin-right: 15px;
 }
 
-select {
+.input select {
 	width: 458px !important;
 	height: 64px;
 	border-radius: 3px;
@@ -870,7 +870,7 @@ ul.show-topic li.link1 a: hover,
 }
 
 
-table {
+.summarygroup table {
 	border-collapse: collapse;
 	box-sizing: border-box;
 	color: rgb(1, 115, 167);
@@ -1374,13 +1374,13 @@ body.widget ng-component #errorPanel::before {
 		width: 100% !important;
 	}
 
-	table {
+	.summarygroup table {
 		display: block;
 		width: 100%;
 		overflow-x: auto;
 	}
 
-	table tbody tr.header {
+	.summarygroup table tbody tr.header {
 		width: 100% !important;
 		white-space: nowrap;
 	}
@@ -1885,13 +1885,6 @@ You could also use a data-* attribute and content for this. That way "bloats" th
 
 /* Main Style Sheet for jQuery UI date picker */
 #datepicker_div,
-#ui-datepicker-div {
-	font-family: Arial, sans-serif;
-	background: #ffffff;
-	border-color: #A5ACB2;
-}
-
-#datepicker_div,
 #ui-datepicker-div,
 .datepicker_inline {
 	font-size: 12px;
@@ -1960,6 +1953,12 @@ button.ui-datepicker-trigger {
 	padding: 0;
 	cursor: pointer;
 	position: absolute;
+	margin: 15px 0 0 -4em;
+}
+
+button.datepicker_trigger img,
+button.ui-datepicker-trigger img {
+	width: 30px;
 }
 
 .md .datepicker_wrap {
@@ -2202,4 +2201,19 @@ img.datepicker_trigger {
 	/*must have*/
 	height: 200px;
 	/*must have*/
+}
+
+/* Date picker branding */
+#datepicker_div,
+#ui-datepicker-div {
+	font-family: Arial, sans-serif;
+	background: #ffffff;
+	border-color: #A5ACB2;
+}
+
+.datepicker tbody td,
+.ui-datepicker-calendar tbody td {
+	background-color: #EDEEED;
+	border-color: #F1F1F1;
+	color: #222222;
 }
