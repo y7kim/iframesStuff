@@ -42,8 +42,7 @@ body {
 .instructions,
 .colOne,
 .receiptHeader,
-ul.show-topic li.link1,
-.ui-datepicker-trigger {
+ul.show-topic li.link1 {
 	display: none;
 }
 
@@ -448,10 +447,14 @@ table.gst-table tbody tr td:nth-child(2) {
 	margin: 0 0 1em 0;
 }
 
-/* .required,
+.required,
 .requirederror {
-	margin-top: 50px;
-} */
+	margin-top: 30px;
+}
+
+.heroContent.required {
+	margin-top: 0;
+}
 
 .contact-phone-input input[type=text] {
 	width: 99px !important;
@@ -1233,11 +1236,6 @@ body.widget ng-component #errorPanel::before {
 }
 
 /* InitiateMoneyRequest */
-.InitiateMoneyRequest .required,
-.InitiateMoneyRequest .requirederror {
-	margin-top: 50px;
-}
-
 .InitiateMoneyRequest .input.floatRight.fixedWidth {
 	width: auto;
 	padding: 1em 0;
@@ -1883,4 +1881,325 @@ You could also use a data-* attribute and content for this. That way "bloats" th
 	.show-topic {
 		display: none !important;
 	}
+}
+
+/* Main Style Sheet for jQuery UI date picker */
+#datepicker_div,
+#ui-datepicker-div {
+	font-family: Arial, sans-serif;
+	background: #ffffff;
+	border-color: #A5ACB2;
+}
+
+#datepicker_div,
+#ui-datepicker-div,
+.datepicker_inline {
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+	width: 185px;
+	cursor: default;
+}
+
+#datepicker_div,
+#ui-datepicker-div {
+	display: none;
+	border-width: 1px;
+	border-style: solid;
+	z-index: 9999;
+	/*must have*/
+}
+
+.datepicker_inline {
+	float: left;
+	display: block;
+	border: 0;
+}
+
+.datepicker_rtl {
+	direction: rtl;
+}
+
+.datepicker_dialog {
+	padding: 5px !important;
+	border-width: 4px !important;
+	border-style: ridge !important;
+}
+
+.ui-datepicker-prev {
+	float: left;
+}
+
+.ui-datepicker-next {
+	float: right;
+}
+
+.ui-datepicker-title {
+	clear: both;
+}
+
+.ui-datepicker-prev span,
+.ui-datepicker-next span {
+	padding: 2px 5px;
+}
+
+button.ui-datepicker-close {
+	float: right;
+	border: none;
+}
+
+button.ui-datepicker-current {
+	display: none;
+}
+
+button.datepicker_trigger,
+button.ui-datepicker-trigger {
+	background-color: transparent;
+	border-style: none;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	position: absolute;
+}
+
+.md .datepicker_wrap {
+	display: block;
+	padding-right: 20px;
+}
+
+.datepicker_centerButton .datepicker_wrap {
+	display: block;
+	position: relative;
+	;
+}
+
+.datepicker_centerButton button.datepicker_trigger {
+	bottom: 4px;
+}
+
+.optiongroup button.datepicker_trigger {
+	/*currently rtp specific*/
+	position: static;
+}
+
+.optiongroup .optionInline .range button.datepicker_trigger {
+	position: absolute;
+	right: 0;
+	top: 2px;
+}
+
+img.datepicker_trigger {
+	margin: 2px;
+	vertical-align: middle;
+}
+
+.datepicker_prompt {
+	float: left;
+	padding: 2px;
+}
+
+* html .datepicker_prompt {
+	width: 185px;
+}
+
+.datepicker_control,
+.datepicker_links,
+.datepicker_header,
+.datepicker,
+.ui-datepicker-title,
+.ui-datepicker-calendar,
+.ui-datepicker-buttonpane,
+.ui-datepicker-header {
+	clear: both;
+	float: left;
+	width: 100%;
+}
+
+.ui-datepicker-calendar {
+	border-spacing: 0;
+}
+
+.ui-datepicker-calendar thead th {
+	font-weight: normal;
+}
+
+.datepicker_control,
+.ui-datepicker-buttonpane {
+	padding: 2px 0px;
+}
+
+.datepicker_links {
+	padding: 2px 0px;
+}
+
+.datepicker_control,
+.datepicker_links,
+.ui-datepicker-buttonpane {
+	font-weight: bold;
+	font-size: 10px;
+	letter-spacing: 1px;
+}
+
+.datepicker_links label {
+	/* disabled links */
+	padding: 2px 5px;
+}
+
+.datepicker_clear {
+	display: none;
+}
+
+.datepicker_clear,
+.datepicker_prev {
+	float: left;
+	width: 34%;
+}
+
+.datepicker_rtl .datepicker_clear,
+.datepicker_rtl .datepicker_prev {
+	float: right;
+	text-align: right;
+}
+
+.datepicker_current {
+	display: none;
+	float: left;
+	width: 30%;
+	text-align: center;
+}
+
+.datepicker_close,
+.datepicker_next {
+	float: right;
+	width: 34%;
+	text-align: right;
+}
+
+.datepicker_rtl .datepicker_close,
+.datepicker_rtl .datepicker_next {
+	float: left;
+	text-align: left;
+}
+
+.datepicker_header,
+.ui-datepicker-title {
+	padding: 1px 0 3px;
+	text-align: center;
+	font-weight: bold;
+	height: 1.3em;
+}
+
+.datepicker_header select,
+.ui-datepicker-title select {
+	border: 0px;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.datepicker,
+.ui-datepicker-calendar {
+	text-align: center;
+	font-size: 100%;
+}
+
+.datepicker a,
+.ui-datepicker-calendar a {
+	display: block;
+	width: 100%;
+}
+
+.datepicker_daysCell,
+.ui-datepicker-calendar tbody td {
+	border-width: 1px;
+	border-style: solid;
+	padding: 0px;
+	cursor: pointer;
+}
+
+.datepicker_daysCell a,
+.ui-datepicker-calendar tbody td a {
+	display: block;
+}
+
+.datepicker_daysCellOver {
+	border-width: 1px;
+	border-style: solid;
+}
+
+.datepicker_status {
+	width: 100%;
+	font-size: 80%;
+	text-align: center;
+}
+
+/* ________ Datepicker Links _______
+
+** Reset link properties and then override them with !important */
+#datepicker_div a,
+.datepicker_inline a {
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+	background: none;
+}
+
+#ui-datepicker-div a {
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+}
+
+#ui-datepicker-div a {
+	text-decoration: none;
+}
+
+.datepicker_inline .datepicker_links a {
+	padding: 0 5px !important;
+}
+
+.datepicker_control a,
+.datepicker_links a,
+.ui-datepicker-buttonpane button {
+	padding: 2px 5px !important;
+}
+
+/* ___________ MULTIPLE MONTHS _________*/
+
+.datepicker_multi .datepicker {
+	border-width: 1px;
+	border-style: solid;
+}
+
+.datepicker_oneMonth {
+	float: left;
+	width: 185px;
+}
+
+.datepicker_newRow {
+	clear: left;
+}
+
+/* ___________ IE6 IFRAME FIX ________ */
+
+.datepicker_cover {
+	display: none;
+	/*sorry for IE5*/
+	display
+	/**/
+	: block;
+	/*sorry for IE5*/
+	position: absolute;
+	/*must have*/
+	z-index: -1;
+	/*must have*/
+	filter: mask();
+	/*must have*/
+	top: -4px;
+	/*must have*/
+	left: -4px;
+	/*must have*/
+	width: 200px;
+	/*must have*/
+	height: 200px;
+	/*must have*/
 }
