@@ -57,6 +57,20 @@ window.onload = function(e) {
 			alertImageReferenceNode.parentNode.insertBefore(alertImageNode, alertImageReferenceNode);
 		}
 		
+		//Show Alert Image on Fullfil Confirmation screen
+		function showAlertImageOnFullfilConfirmationScreen()
+		{
+			var confirmationDiv = document.querySelector('.rfmConfirm').classList.add('transfer-confirmation');
+			
+			var alertImageNode = document.createElement('div');
+			alertImageNode.setAttribute("class", "alert-image");
+			var imageNode = document.createElement('img');
+			alertImageNode.appendChild(imageNode);
+			imageNode.setAttribute("src", "/DynamicContent/Resources/Images/warning_alert.png");
+			var alertImageReferenceNode = document.querySelector('.rfmConfirm');
+			alertImageReferenceNode.parentNode.insertBefore(alertImageNode, alertImageReferenceNode);
+		}
+		
 		//Show Error Image on Conclusion screen
 		function showErrorImageOnConclusionScreen()
 		{
@@ -143,6 +157,80 @@ window.onload = function(e) {
 				}
 			}
 		}
+		
+		//Fulfill Request screen
+		if(pageTitle == "Fulfill Request")
+		 {
+			var inputValues = document.querySelectorAll(".input");
+			inputValues[0].classList.add("input-in-line");
+			var requiredAttr = document.querySelectorAll(".required");
+			requiredAttr[3].classList.add("add-padd-top");
+			document.querySelector(".requiredTCs").classList.add("consent-in-line");
+		 }
+		 
+		 //Fulfill Request - Confirm screen
+		 if(pageTitle == "Fulfill Request - Confirm")
+		 {
+			showAlertImageOnFullfilConfirmationScreen();
+				
+			var inputSuccessImageNode = document.createElement('div');
+			inputSuccessImageNode.setAttribute("class", "success-text");
+			var inputErrorImageReferenceNode = document.querySelector('.rfmConfirm');
+			inputErrorImageReferenceNode.parentNode.insertBefore(inputSuccessImageNode, inputErrorImageReferenceNode);
+				
+			document.querySelector('.success-text').textContent = "Please confirm the fullfil request details";
+		 }
+		 
+		 //Fulfill Request - Receipt screen
+		 if(pageTitle == "Fulfill Request - Receipt")
+		 {
+			showSucessImageAndTextReceipN();
+				
+			document.querySelector('.success-text').textContent = "Fullfil request completed";
+				
+			showPrintButton();
+				
+			var dls = document.querySelectorAll("dl");
+			dls[1].classList.add("no-pad-bottom");
+				
+			document.querySelector(".linkN").classList.add("request-button");
+		 }
+		 
+		 //Receive Interac e-Transfer® screen
+		 if(pageTitle == "Receive Interac e-Transfer®")
+		 {
+			var requiredAttr = document.querySelectorAll(".required");
+			requiredAttr[0].classList.add("remove-padd-top");
+			requiredAttr[0].textContent = "You have answered the security question correctly, please indicate whether you would like to accept or decline this transfer";
+		 }
+		 
+		 //Receive Interac e-Transfer® - Confirm screen
+		 if(pageTitle == "Receive Interac e-Transfer® - Confirm")
+		 {
+			showAlertImageWithConfirmationDiv();
+				
+			var inputSuccessImageNode = document.createElement('div');
+			inputSuccessImageNode.setAttribute("class", "success-text");
+			var inputErrorImageReferenceNode = document.querySelector('.confirmation');
+			inputErrorImageReferenceNode.parentNode.insertBefore(inputSuccessImageNode, inputErrorImageReferenceNode);
+				
+			document.querySelector('.success-text').textContent = "Please confirm this operation";
+		 }
+		 
+		 //Decline Interac e-Transfer® - Receipt screen
+		 if(pageTitle == "Decline Interac e-Transfer® - Receipt")
+		 {
+			showSucessImageAndTextReceipN();
+				
+			document.querySelector('.success-text').textContent = "Transfer successfully declined";
+				
+			showPrintButton();
+				
+			var dls = document.querySelectorAll("dl");
+			dls[1].classList.add("no-pad-bottom");
+				
+			document.querySelector(".linkN").classList.add("request-button");
+		 }
 		 
 		 //Add Recipient screen
 		 if(pageTitle == "Add Recipient")
