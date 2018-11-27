@@ -516,6 +516,7 @@ select.inline-select {
 	margin-right: 15px;
 }
 
+.required>select,
 .input select {
 	width: 458px !important;
 	height: 64px;
