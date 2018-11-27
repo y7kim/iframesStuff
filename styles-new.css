@@ -587,6 +587,10 @@ textarea:disabled {
 	max-width: 458px !important;
 }
 
+input.hasDatepicker {
+	background: url(../Images/input_calendar.png) no-repeat right 15px top 17px;
+}
+
 input[type=date] {
 	height: 64px;
 	width: 458px !important;
@@ -662,7 +666,6 @@ label:before,
 
 .formActions {
 	margin-top: 50px;
-	text-align: center;
 }
 
 .formActions ul {
@@ -1236,31 +1239,36 @@ body.widget ng-component #errorPanel::before {
 	background-position: center;
 }
 
+/* Autodeposit */
+body.Autodeposit div.modal-content .formActions {
+	text-align: center;
+}
+
 /* InitiateMoneyRequest */
-.InitiateMoneyRequest .input.floatRight.fixedWidth {
+body.InitiateMoneyRequest .input.floatRight.fixedWidth {
 	width: auto;
 	padding: 1em 0;
 }
 
-.InitiateMoneyRequest #acknowledgeCheckboxText {
+body.InitiateMoneyRequest #acknowledgeCheckboxText {
 	display: block !important;
 	margin: -1.3em 0 0 2em;
 }
 
-.InitiateMoneyRequest .showForm::before {
+body.InitiateMoneyRequest .showForm::before {
 	content: "Choose a recipient to request money from using Interac e-Transfer or go to Manage Recipients to add a new one";
 	display: block;
 	margin-bottom: 50px;
 }
 
-.InitiateMoneyRequest .formActions::before {
+body.InitiateMoneyRequest .formActions::before {
 	content: "Note: Service charge will be applied to your account when the funds are deposited";
 	display: block;
 	text-align: left;
 	margin-bottom: 50px;
 }
 
-.InitiateMoneyRequest .requestMoneyFormStep2 .formActions::before {
+body.InitiateMoneyRequest .requestMoneyFormStep2 .formActions::before {
 	display: none;
 }
 
@@ -1645,6 +1653,11 @@ body.widget ng-component #errorPanel::before {
 	}
 
 	/* Autodeposit */
+	body.Autodeposit tr,
+	body.Autodeposit td {
+		display: block !important;
+	}
+
 	body.Autodeposit div.modal-content {
 		margin-top: 10%;
 		padding-bottom: 200px;
@@ -1960,6 +1973,7 @@ button.ui-datepicker-trigger {
 button.datepicker_trigger img,
 button.ui-datepicker-trigger img {
 	width: 30px;
+	visibility: hidden;
 }
 
 .md .datepicker_wrap {
