@@ -185,14 +185,14 @@ window.onload = function(e) {
 		 }
 		 
 		 //Request Money via INTERAC e-Transfer® screen
-		 if(pageTitle == "Request Money via INTERAC e-Transfer®")
+		 /*if(pageTitle == "Request Money via INTERAC e-Transfer®")
 		 {
 			var topDisclaimerNode = document.createElement('div');
 			topDisclaimerNode.setAttribute("class", "top-disclaimer");
 			topDisclaimerNode.innerHTML ='Choose a recipient to request money from using Interac e-Transfer or go to Manage Recipients to add a new one';
 			var bottomDisclaimerReferenceNode = document.querySelector('.showForm');
 			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
-		 }
+		 }*/
 		 
 		 //Request Money - Confirm screen
 		 if(pageTitle == "Request Money - Confirm")
@@ -385,7 +385,7 @@ window.onload = function(e) {
 			var bottomDisclaimerReferenceNode = document.querySelector('.instructions');
 			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
 			
-			var selects = document.querySelectorAll('input[type=text]');
+			var selects = document.querySelectorAll('.hasDatepicker');
 			
 			for (var i = 0; i < selects.length; i++)
 			{
@@ -462,7 +462,7 @@ window.onload = function(e) {
 		}
 		
 		//Add class to Autodeposit settings screen tables
-		if(pageTitle == "Autodeposit Settings")
+		/*if(pageTitle == "Autodeposit Settings")
 		{
 			var tables = document.querySelectorAll('.registeredMembers');
 			tables[0].classList.add("auto-deposit-settings--first-table");
@@ -477,7 +477,7 @@ window.onload = function(e) {
 			imageNode.setAttribute("src", "/DynamicContent/Resources/Images/warning_alert.png");
 			var successImageReferenceNode = document.querySelector('.deleteModalText');
 			successImageReferenceNode.parentNode.insertBefore(successImageNode, successImageReferenceNode);
-		}
+		}*/
 		
 		//Add class to eTransfer History screen table
 		if(pageTitle == "Interac e-Transfer® History")

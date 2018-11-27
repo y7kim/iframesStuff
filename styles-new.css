@@ -1,17 +1,17 @@
 @font-face {
-    font-family: 'coastuserfriendly4regular';
-    src: url('../Fonts/coastuserfriendly4-webfont.eot');
-    src: url('../Fonts/coastuserfriendly4-webfont.eot?#iefix') format('embedded-opentype'),url('../Fonts/coastuserfriendly4-webfont.woff2') format('woff2'), url('../Fonts/coastuserfriendly4-webfont.woff') format('woff'),url('../Fonts/coastuserfriendly4-webfont.ttf') format('truetype'),url('../Fonts/coastuserfriendly4-webfont.svg#coastuserfriendly4regular') format('svg');
+	font-family: 'coastuserfriendly4regular';
+	src: url('../Fonts/coastuserfriendly4-webfont.eot');
+	src: url('../Fonts/coastuserfriendly4-webfont.eot?#iefix') format('embedded-opentype'), url('../Fonts/coastuserfriendly4-webfont.woff2') format('woff2'), url('../Fonts/coastuserfriendly4-webfont.woff') format('woff'), url('../Fonts/coastuserfriendly4-webfont.ttf') format('truetype'), url('../Fonts/coastuserfriendly4-webfont.svg#coastuserfriendly4regular') format('svg');
 	font-weight: normal;
-    font-style: normal;
+	font-style: normal;
 }
 
-body{
+body {
 	font-family: Roboto-Regular, Arial, sans-serif;
 	margin: 0;
 }
 
-#PageTitle{
+#PageTitle {
 	font-family: "coastuserfriendly4regular", "Arial", sans-serif;
 	font-size: 48px;
 	color: #0067C6;
@@ -19,14 +19,14 @@ body{
 	margin-block-start: 0;
 }
 
-.recipient-topic{
+.recipient-topic {
 	display: inline-block !important;
 	-webkit-margin-before: 0;
-    -webkit-padding-start: 0;
+	-webkit-padding-start: 0;
 	width: 100% !important;
 }
 
-.recipient-topic ul li{
+.recipient-topic ul li {
 	display: inline-block;
 	width: 100% !important;
 }
@@ -42,49 +42,48 @@ body{
 .instructions,
 .colOne,
 .receiptHeader,
-ul.show-topic li.link1,
-.ui-datepicker-trigger{
+ul.show-topic li.link1 {
 	display: none;
 }
 
-.show-ReceiptHeader{
+.show-ReceiptHeader {
 	display: block !important;
 	padding-top: 25px;
 }
 
-.show-link1{
+.show-link1 {
 	display: block !important;
 }
 
-.hide-dl{
+.hide-dl {
 	display: none !important;
 }
 
-.hide-cancel-button{
+.hide-cancel-button {
 	display: none !important;
 }
 
-.hiden-recipients{
+.hiden-recipients {
 	display: none !important;
 }
 
-.rfmLogo{
+.rfmLogo {
 	display: none !important;
 }
 
-.hide-div{
+.hide-div {
 	display: none !important;
 }
 
-.show-instructions{
+.show-instructions {
 	display: block !important;
 }
 
-.back-to-pending-transfers{
+.back-to-pending-transfers {
 	display: inline-block !important;
 }
 
-.show-instructions h3{
+.show-instructions h3 {
 	padding-top: 15px;
 	color: #0067C6;
 	font-family: Roboto-Regular, Arial, sans-serif;
@@ -93,35 +92,35 @@ ul.show-topic li.link1,
 	line-height: 23px;
 }
 
-.show-instructions p{
+.show-instructions p {
 	color: #000000;
 	font-family: Roboto-Regular, Arial, sans-serif;
 	font-size: 19.2px;
 	line-height: 32px;
 }
 
-#id7{
+#id7 {
 	display: block !important;
 	width: 100%;
 	float: left;
 	padding-top: 10px;
 }
 
-.recipient-last-field{
+.recipient-last-field {
 	float: none !important;
 }
 
-.show-topic{
+.show-topic {
 	display: block;
 	padding-top: 20px;
-    height: 128px;
+	height: 128px;
 }
 
-a{
+a {
 	text-decoration: none !important;
 }
 
-.display-hint{
+.display-hint {
 	display: block !important;
 	width: 100%;
 	float: left;
@@ -130,16 +129,16 @@ a{
 	font-size: 19.2px;
 }
 
-.cancel-hint-padding{
+.cancel-hint-padding {
 	padding-top: 25px;
 	padding-bottom: 50px;
 }
 
-.money-request-topic{
+.money-request-topic {
 	display: block !important;
 }
 
-.hide-clear-button{
+.hide-clear-button {
 	display: none !important;
 }
 
@@ -153,41 +152,41 @@ th:focus,
 tr:focus,
 thead:focus,
 .required:focus,
-.requirederror:focus{
+.requirederror:focus {
 	outline: 0;
 }
 
-.editContainer[_ngcontent-ffr-6]{
+.editContainer[_ngcontent-ffr-6] {
 	background: none !important;
 }
 
 .modal-content {
-    width: 85% !important;
+	width: 85% !important;
 }
 
-.modal-content #modalDeleteContent h3{
+.modal-content #modalDeleteContent h3 {
 	display: none;
 }
 
 .deleteModalText {
-    color: #000000;
-    font-family: Roboto-Regular, Arial, sans-serif;
-    font-size: 19.2px;
-    line-height: 32px;
-    text-align: center;
+	color: #000000;
+	font-family: Roboto-Regular, Arial, sans-serif;
+	font-size: 19.2px;
+	line-height: 32px;
+	text-align: center;
 }
 
-.date-input select{
+.date-input select {
 	width: 196px !important;
 	margin-right: 15px;
 }
 
-.bottom-disclaimer{
+.bottom-disclaimer {
 	margin-top: 50px;
 	font-family: Roboto-Regular, Arial, sans-serif;
 }
 
-.top-disclaimer--errors{
+.top-disclaimer--errors {
 	width: 937px;
 	color: #000000;
 	font-family: Roboto-Regular, Arial, sans-serif;
@@ -195,7 +194,7 @@ thead:focus,
 	margin-top: 50px;
 }
 
-.top-disclaimer{
+.top-disclaimer {
 	width: 937px;
 	color: #000000;
 	font-family: Roboto-Regular, Arial, sans-serif;
@@ -203,7 +202,7 @@ thead:focus,
 	margin-bottom: 30px;
 }
 
-.cancel-transfer-disclaimer{
+.cancel-transfer-disclaimer {
 	width: 937px;
 	color: #000000;
 	font-family: Roboto-Regular, Arial, sans-serif;
@@ -211,7 +210,7 @@ thead:focus,
 	margin-top: 30px;
 }
 
-.top-disclaimer--remit-confirmation-screen{
+.top-disclaimer--remit-confirmation-screen {
 	width: 937px;
 	color: #000000;
 	font-family: Roboto-Regular, Arial, sans-serif;
@@ -220,128 +219,140 @@ thead:focus,
 	margin-bottom: 15px;
 }
 
-.top-disclaimer--search-transfers{
+.top-disclaimer--search-transfers {
 	width: 937px;
 	color: #000000;
 	font-family: Roboto-Regular, Arial, sans-serif;
 	font-size: 19.2px;
 }
 
-.bottom-disclaimer .title{
+.bottom-disclaimer .title {
 	font-weight: 700;
 	font-family: Roboto-Regular, Arial, sans-serif;
 	font-size: 19.33px;
 }
 
-.bottom-disclaimer ul{
+.bottom-disclaimer ul {
 	margin-bottom: 0;
 	font-family: Roboto-Regular, Arial, sans-serif;
 	font-size: 16px;
 }
 
-.bottom-disclaimer ul:last-child{
+.bottom-disclaimer ul:last-child {
 	margin-bottom: 20px;
 }
 
-.bottom-disclaimer .left-space{
+.bottom-disclaimer .left-space {
 	margin-left: 40px;
 }
 
-.cancel-transfer-conclusion p{
+.cancel-transfer-conclusion p {
 	display: none;
 }
 
-.remove-cra-details{
-		margin-bottom: 30px;
-	}
+.remove-cra-details {
+	margin-bottom: 30px;
+}
 
 p#acknowledgement1,
 #acknowledgement2,
 #settingsAcknowledgement1TextId,
-#editSettingsAcknowledgement2Text{
+#editSettingsAcknowledgement2Text {
 	padding-left: 35px !important;
-    padding-top: 5px;
+	padding-top: 5px;
 	color: #000000;
 	font-family: Roboto-Regular, Arial, sans-serif;
 	font-size: 19.2px;
 	font-weight: bold;
 }
 
-.registerUser{
+.registerUser {
 	background: white !important;
 }
 
-#addEmailHeader{
-		color: #0067C6;
-		font: 19.2px Roboto-Regular, Arial, sans-serif;
-		font-weight: bold;
+#addEmailHeader {
+	color: #0067C6;
+	font: 19.2px Roboto-Regular, Arial, sans-serif;
+	font-weight: bold;
 }
 
-.editIcon{
+.editIcon {
 	background-image: url(../Images/action_edit.png) !important;
 	background-repeat: no-repeat !important;
-    height: 30px !important;
-    width: 30px !important;
-    cursor: pointer;
+	height: 30px !important;
+	width: 30px !important;
+	cursor: pointer;
 }
 
-.editIcon:hover{
+.editIcon:hover {
 	background-image: url(../Images/action_edit_hover.png) !important;
 }
 
-.autodeposit-settings-table tbody tr td:last-child .deleteIcon{
+/* .autodeposit-settings-table tbody tr td:last-child .deleteIcon {
 	background-image: url(../Images/action_delete.png) !important;
 	background-repeat: no-repeat !important;
-    height: 30px !important;
-    width: 30px !important;
-    cursor: pointer;
+	height: 30px !important;
+	width: 30px !important;
+	cursor: pointer;
 }
 
-.autodeposit-settings-table tbody tr td:last-child .deleteIcon:hover{
+.autodeposit-settings-table tbody tr td:last-child .deleteIcon:hover {
+	background-image: url(../Images/action_delete_hover.png) !important;
+} */
+
+body.Autodeposit table.registeredMembers tr td .deleteIcon {
+	background-image: url(../Images/action_delete.png) !important;
+	background-repeat: no-repeat !important;
+	height: 30px !important;
+	width: 30px !important;
+	cursor: pointer;
+}
+
+body.Autodeposit table.registeredMembers tr td .deleteIcon:hover {
 	background-image: url(../Images/action_delete_hover.png) !important;
 }
 
-.errors{
+.errors {
 	font-family: Roboto-Regular, Arial, sans-serif;
 	font-size: 19.2px;
 	text-align: center;
-    border-bottom: 1px solid #D8D8D8;
+	border-bottom: 1px solid #D8D8D8;
 }
 
-.errors p:first-child{
+.errors p:first-child {
 	font-weight: 700 !important;
 }
 
-.errors ol li{
+.errors ol li {
 	text-align: left !important;
 }
 
 .success-image,
-.alert-image{
+.alert-image {
 	text-align: center;
 }
 
-.success-text{
+.success-text {
 	font-size: 17px;
 	text-align: center;
 	padding-top: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #D8D8D8;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #D8D8D8;
 }
 
-.delete-recipient-error{
-	text-align: center;	
-}
-
-.delete-recipient-error p:first-child{
-	font-weight: 700;	
-}
-
-.errors-image{
+.delete-recipient-error {
 	text-align: center;
 }
 
-.transfer-confirmation{
+.delete-recipient-error p:first-child {
+	font-weight: 700;
+}
+
+.errors-image {
+	text-align: center;
+}
+
+.transfer-confirmation {
 	padding-top: 25px;
 }
 
@@ -349,7 +360,7 @@ p#acknowledgement1,
 .details .string label,
 .confirmation .string label,
 .show-ReceiptHeader .twoColRow .column label,
-.transfer-confirmation .requestMoneyFormStep2 label{
+.transfer-confirmation .requestMoneyFormStep2 label {
 	width: 273px !important;
 	display: inline-block !important;
 	color: #000000;
@@ -357,7 +368,7 @@ p#acknowledgement1,
 	font-weight: bold;
 }
 
-table.gst-table tbody tr td:first-child{
+table.gst-table tbody tr td:first-child {
 	height: 34px;
 	width: 123px !important;
 	color: #000000;
@@ -366,14 +377,14 @@ table.gst-table tbody tr td:first-child{
 	line-height: 34px;
 }
 
-table.gst-table tbody tr td:nth-child(2){
+table.gst-table tbody tr td:nth-child(2) {
 	height: 34px;
-    color: #000000;
-    font: 19.2px Roboto-Regular, Arial, sans-serif;
-    line-height: 34px;
+	color: #000000;
+	font: 19.2px Roboto-Regular, Arial, sans-serif;
+	line-height: 34px;
 }
 
-.confirmation .oneColRow .column label.remit-labels{
+.confirmation .oneColRow .column label.remit-labels {
 	width: 300px !important;
 }
 
@@ -381,31 +392,31 @@ table.gst-table tbody tr td:nth-child(2){
 .details .string span.value,
 .confirmation .string span.value,
 .show-ReceiptHeader .twoColRow .column span.value,
-.transfer-confirmation .requestMoneyFormStep2 .input{
+.transfer-confirmation .requestMoneyFormStep2 .input {
 	height: 34px;
 	color: #000000;
 	font: 19.2px Roboto-Regular, Arial, sans-serif;
 	line-height: 34px;
 }
 
-.last-required{
+.last-required {
 	margin-bottom: 75px;
 }
 
-.last-required .input{
+.last-required .input {
 	display: block !important;
 }
 
-.transfer-confirmation .requestMoneyFormStep2 .input{
+.transfer-confirmation .requestMoneyFormStep2 .input {
 	display: inline-block;
 }
 
 .receipts .receipt dl dt,
-.receipts .receipt dl dd{
+.receipts .receipt dl dd {
 	display: inline-block;
 }
 
-.receipts .receipt dl dt{
+.receipts .receipt dl dt {
 	height: 34px;
 	width: 273px !important;
 	display: inline-block !important;
@@ -416,7 +427,7 @@ table.gst-table tbody tr td:nth-child(2){
 }
 
 .receipts .receipt dl dd,
-.receipts .receipt dl currencyinput input{
+.receipts .receipt dl currencyinput input {
 	width: 500px;
 	display: inline-block !important;
 	color: #000000;
@@ -424,261 +435,286 @@ table.gst-table tbody tr td:nth-child(2){
 	line-height: 34px;
 }
 
-.receipts .receipt dl currencyinput input{
+.receipts .receipt dl currencyinput input {
 	margin-left: 40px;
 }
 
-.required,
-.requirederror{
-	margin-top: 50px;
+.receipts .receipt .footnote {
+	margin: 2em 0 0 0;
 }
 
-.contact-phone-input input[type=text]{
+.receipts .receipt .footnote ul li {
+	margin: 0 0 1em 0;
+}
+
+.required,
+.requirederror {
+	margin-top: 30px;
+}
+
+.heroContent.required {
+	margin-top: 0;
+}
+
+.contact-phone-input input[type=text] {
 	width: 99px !important;
 	margin-right: 15px;
 }
 
-.contact-phone-input input[type=text]:last-child{
+.contact-phone-input input[type=text]:last-child {
 	width: 160px !important;
 }
 
 .requirederror select,
 .requirederror input[type=text],
 .requirederror input[type=date],
-.requirederror input[type=email]{
+.requirederror input[type=email] {
 	border: 1px solid #D0021B !important;
 }
 
-.error-image{
+.error-image {
 	background: url(../Images/input_error.png) no-repeat right center;
-    height: 25px;
-    width: 458px !important;
-    margin-top: 10px;
-    margin-left: 40px;
+	height: 25px;
+	width: 458px !important;
+	margin-top: 10px;
+	margin-left: 40px;
 	top: 128px;
-    position: relative;
-    margin-top: -20px;
+	position: relative;
+	margin-top: -20px;
 }
 
-.error-image-history{
+.error-image-history {
 	background: url(../Images/input_error.png) no-repeat right center;
-    height: 25px;
-    width: 25px !important;
-    right: -439px;
-    margin-left: 40px;
-    top: 128px;
-    position: relative;
-    margin-top: -20px;
+	height: 25px;
+	width: 25px !important;
+	right: -439px;
+	margin-left: 40px;
+	top: 128px;
+	position: relative;
+	margin-top: -20px;
 }
 
-.required textarea, .requirederror textarea {
-    height: 83px;
-    vertical-align: middle;
-    width: 458px;
-    border: 1px solid #767676;
-    border-radius: 3px;
-    font: normal normal 400 normal 19.2px / 32px Roboto-Regular, Arial, sans-serif;
-    padding: 24px;
+.required textarea,
+.requirederror textarea {
+	height: 83px;
+	vertical-align: middle;
+	width: 458px;
+	border: 1px solid #767676;
+	border-radius: 3px;
+	font: normal normal 400 normal 19.2px / 32px Roboto-Regular, Arial, sans-serif;
+	padding: 24px;
 	box-sizing: border-box;
 }
 
-.required .floatRight, .requirederror .floatRight{
+.required .floatRight,
+.requirederror .floatRight {
 	float: none !important;
 }
 
-select.inline-select{
+select.inline-select {
 	width: 228px !important;
 	margin-right: 15px;
 }
 
-select{
-    width: 458px !important;
-    height: 64px;
-    border-radius: 3px;
-    border: 1px solid #767676;
-    font-family: "Roboto-Regular","Arial",sans-serif;
-    font-weight: normal;
-    font-size: 19.2px;
-    line-height: 32px;
-    padding: 16px 40px 16px 24px;
+.required>select,
+.input select {
+	width: 458px !important;
+	height: 64px;
+	border-radius: 3px;
+	border: 1px solid #767676;
+	font-family: "Roboto-Regular", "Arial", sans-serif;
+	font-weight: normal;
+	font-size: 19.2px;
+	line-height: 32px;
+	padding: 16px 40px 16px 24px;
 	background: url(../Images/input_dropdown.svg) no-repeat right 15px center;
 	-webkit-appearance: none;
-    -moz-appearance: none;
+	-moz-appearance: none;
 }
 
 /* For IE10 */
 select::-ms-expand,
 select::-ms-expand {
-  display: none;
+	display: none;
 }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+
 	.requirederror select,
 	.requirederror select,
 	.requirederror input[type=text],
 	.requirederror input[type=email],
-	.requirederror input[type=date]{
+	.requirederror input[type=date] {
 		margin-top: 0;
 	}
 }
 
-.required select option, .requirederror select option {
-    padding: 10px 8px;
+.required select option,
+.requirederror select option {
+	padding: 10px 8px;
 }
 
-.required select option:hover, .requirederror select option:hover,
-.required select option:checked, .requirederror select option:checked,
-.required select option:focus, .requirederror select option:focus {
+.required select option:hover,
+.requirederror select option:hover,
+.required select option:checked,
+.requirederror select option:checked,
+.required select option:focus,
+.requirederror select option:focus {
 	box-shadow: 0 0 10px 100px #F2F3F6 inset;
 }
 
 input[type=text] {
-    height: 64px;
+	height: 64px;
 	width: 458px !important;
-    padding-left: 24px;
-    vertical-align: middle;
-    border: 1px solid #767676;
-    border-radius: 3px;
-    font: normal normal 400 normal 19.2px / 32px Roboto-Regular, Arial, sans-serif;
+	padding-left: 24px;
+	vertical-align: middle;
+	border: 1px solid #767676;
+	border-radius: 3px;
+	font: normal normal 400 normal 19.2px / 32px Roboto-Regular, Arial, sans-serif;
 	box-sizing: border-box;
 }
 
-input:disabled, textarea:disabled {
-    color: black !important;
+input:disabled,
+textarea:disabled {
+	color: black !important;
 	-webkit-text-fill-color: black !important;
 	opacity: 1 !important;
 }
 
-.required .mdi-full-width, .requirederror .mdi-full-width {
+.required .mdi-full-width,
+.requirederror .mdi-full-width {
 	max-width: 458px !important;
 }
 
 input[type=date] {
-    height: 64px;
+	height: 64px;
 	width: 458px !important;
-    padding-left: 24px;
-    vertical-align: middle;
-    border: 1px solid #767676;
-    border-radius: 3px;
-    font: normal normal 400 normal 19.2px / 32px Roboto-Regular, Arial, sans-serif;
+	padding-left: 24px;
+	vertical-align: middle;
+	border: 1px solid #767676;
+	border-radius: 3px;
+	font: normal normal 400 normal 19.2px / 32px Roboto-Regular, Arial, sans-serif;
 	box-sizing: border-box;
 	background: url(../Images/input_calendar.png) no-repeat right 15px center;
 	-webkit-appearance: none;
-    -moz-appearance: none;
+	-moz-appearance: none;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-    color: rgba(0, 0, 0, 0);
+	color: rgba(0, 0, 0, 0);
 	opacity: 1;
 	margin-right: 15px;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator:hover {
-    background-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0);
 	opacity: 1;
 }
 
 input[type=email] {
-    height: 64px;
+	height: 64px;
 	width: 458px !important;
-    padding-left: 24px;
-    vertical-align: middle;
-    border: 1px solid #767676;
-    border-radius: 3px;
-    font: normal normal 400 normal 19.2px / 32px Roboto-Regular, Arial, sans-serif;
+	padding-left: 24px;
+	vertical-align: middle;
+	border: 1px solid #767676;
+	border-radius: 3px;
+	font: normal normal 400 normal 19.2px / 32px Roboto-Regular, Arial, sans-serif;
 	box-sizing: border-box;
 }
 
 input[type=text]:after {
-    font: normal normal 400 normal 19.2px / 32px Roboto-Regular, Arial, sans-serif;
+	font: normal normal 400 normal 19.2px / 32px Roboto-Regular, Arial, sans-serif;
 }
 
 input[type=date]:before {
-    font: normal normal 400 normal 19.2px / 32px Roboto-Regular, Arial, sans-serif;
+	font: normal normal 400 normal 19.2px / 32px Roboto-Regular, Arial, sans-serif;
 }
 
 input[type=email]:before {
-    font: normal normal 400 normal 19.2px / 32px Roboto-Regular, Arial, sans-serif;
+	font: normal normal 400 normal 19.2px / 32px Roboto-Regular, Arial, sans-serif;
 }
 
-.required label, .requirederror label {
-    display: block;
-    font: normal normal 700 normal 19.2px / 28.8px Roboto-Bold, Arial, sans-serif;
-    padding: 0 5px 8px 0px;
+.required label,
+.requirederror label {
+	display: block;
+	font: normal normal 700 normal 19.2px / 28.8px Roboto-Bold, Arial, sans-serif;
+	padding: 0 5px 8px 0px;
 }
 
-.normalText{
+.normalText {
 	font-size: inherit !important;
 }
 
-currencyinput .readOnlyField{
+currencyinput .readOnlyField {
 	font-size: 16px;
 }
 
 label:after,
 .normalText:after {
-    font: normal normal 700 normal 19.2px / 28.8px Roboto-Bold, Arial, sans-serif;
+	font: normal normal 700 normal 19.2px / 28.8px Roboto-Bold, Arial, sans-serif;
 }
 
 label:before,
 .normalText:before {
-    font: normal normal 700 normal 19.2px / 28.8px Roboto-Bold, Arial, sans-serif;
+	font: normal normal 700 normal 19.2px / 28.8px Roboto-Bold, Arial, sans-serif;
 }
 
 .formActions {
-    margin-top: 50px;
+	margin-top: 50px;
+	text-align: center;
 }
 
 .formActions ul {
-    display: inline;
-    padding: 0;
+	display: inline;
+	padding: 0;
 }
 
 .formActions li {
-    display: inline-block;
-    width: auto;
-    list-style: outside none none;
+	display: inline-block;
+	width: auto;
+	list-style: outside none none;
 }
 
-.send-button a{
+.send-button a {
 	float: none !important;
 	height: auto !important;
 	margin-top: 25px;
 }
 
-.send-button{
+.send-button {
 	margin-top: 25px;
 }
 
-ul.show-topic li{
+ul.show-topic li {
 	list-style: none !important;
 }
 
 .formActions a,
 #addNewEmail,
 .show-topic .link0 a,
-.recipient-topic .link0 a{
-    border-collapse: collapse;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px 0px;
-    box-sizing: border-box;
-    color: #0067c6;
-    display: block;
-    float: left;
-    height: 62px;
-    min-width: 361px;
-    text-align: center;
-    text-decoration: none solid rgb(255, 255, 255);
-    text-transform: capitalize;
-    touch-action: manipulation;
-    vertical-align: middle;
-    width: 361px;
-    user-select: none;
-    border-radius: 3px 3px 3px 3px;
-    font: normal normal 400 normal 19.2px / 34px Roboto-Regular, Arial, sans-serif;
-    margin: 0px 20px 0px 0px;
-    padding: 14px 24px;
-    background-color: #fff;
-    border: 2px solid #0067c6;
+.recipient-topic .link0 a {
+	border-collapse: collapse;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px 0px;
+	box-sizing: border-box;
+	color: #0067c6;
+	display: block;
+	float: left;
+	height: 62px;
+	min-width: 361px;
+	text-align: center;
+	text-decoration: none solid rgb(255, 255, 255);
+	text-transform: capitalize;
+	touch-action: manipulation;
+	vertical-align: middle;
+	width: 361px;
+	user-select: none;
+	border-radius: 3px 3px 3px 3px;
+	font: normal normal 400 normal 19.2px / 34px Roboto-Regular, Arial, sans-serif;
+	margin: 0px 20px 0px 0px;
+	padding: 14px 24px;
+	background-color: #fff;
+	border: 2px solid #0067c6;
 	margin-bottom: 30px;
 }
 
@@ -686,89 +722,89 @@ ul.show-topic li{
 #addNewEmail:hover,
 .show-topic .link0 a:hover,
 .recipient-topic .link0 a:hover {
-    background-color: #cde0f1;
-    color: #0067c6;
-    border: 2px solid #0067c6;
-    -webkit-box-shadow: 0 0 8px rgba(0,0,0,.15);
-    -moz-box-shadow: 0 0 8px rgba(0,0,0,.15);
-    box-shadow: 0 0 8px rgba(0,0,0,.15);
+	background-color: #cde0f1;
+	color: #0067c6;
+	border: 2px solid #0067c6;
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .15);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .15);
+	box-shadow: 0 0 8px rgba(0, 0, 0, .15);
 }
 
 .formActions a:after,
 #addNewEmail:after,
 .show-topic .link0 a:after,
 .recipient-topic .link0 a:after {
-    border-collapse: collapse;
-    box-sizing: border-box;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    text-decoration: none;
-    text-transform: capitalize;
-    white-space: nowrap;
-    user-select: none;
-    caret-color: rgb(255, 255, 255);
-    border: 0px none rgb(255, 255, 255);
-    font: normal normal 400 normal 19.2px / 34px Roboto-Regular, Arial, sans-serif;
+	border-collapse: collapse;
+	box-sizing: border-box;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	text-decoration: none;
+	text-transform: capitalize;
+	white-space: nowrap;
+	user-select: none;
+	caret-color: rgb(255, 255, 255);
+	border: 0px none rgb(255, 255, 255);
+	font: normal normal 400 normal 19.2px / 34px Roboto-Regular, Arial, sans-serif;
 }
 
 .formActions a :before,
 #addNewEmail:before,
 .show-topic .link0 a:before,
 .recipient-topic .link0 a:before {
-    border-collapse: collapse;
-    box-sizing: border-box;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    text-decoration: none;
-    text-transform: capitalize;
-    white-space: nowrap;
-    column-rule-color: rgb(255, 255, 255);
-    user-select: none;
-    border: 0px none rgb(255, 255, 255);
-    font: normal normal 400 normal 19.2px / 34px Roboto-Regular, Arial, sans-serif;
+	border-collapse: collapse;
+	box-sizing: border-box;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	text-decoration: none;
+	text-transform: capitalize;
+	white-space: nowrap;
+	column-rule-color: rgb(255, 255, 255);
+	user-select: none;
+	border: 0px none rgb(255, 255, 255);
+	font: normal normal 400 normal 19.2px / 34px Roboto-Regular, Arial, sans-serif;
 }
 
 .formActions input,
 .send-button a,
 .back-to-pending-transfers a,
 ul.show-topic li.link1 a,
-.request-button a{
+.request-button a {
 	border-collapse: collapse;
 	box-sizing: border-box;
-    color: rgb(255, 255, 255);
-    display: block;
-    float: left;
-    height: 62px;
-    min-width: 361px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: capitalize;
-    touch-action: manipulation;
-    vertical-align: middle;
-    width: 361px;
+	color: rgb(255, 255, 255);
+	display: block;
+	float: left;
+	height: 62px;
+	min-width: 361px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: capitalize;
+	touch-action: manipulation;
+	vertical-align: middle;
+	width: 361px;
 	user-select: none;
-    border-radius: 3px 3px 3px 3px;
-    font: normal normal 400 normal 19.2px / 34px Roboto-Regular, Arial, sans-serif;
-    margin: 0px 20px 0px 0px;
-    padding: 14px 24px;
-    background-color: #459914;
-    border: 2px solid #218913;
-    cursor: pointer;
+	border-radius: 3px 3px 3px 3px;
+	font: normal normal 400 normal 19.2px / 34px Roboto-Regular, Arial, sans-serif;
+	margin: 0px 20px 0px 0px;
+	padding: 14px 24px;
+	background-color: #459914;
+	border: 2px solid #218913;
+	cursor: pointer;
 	margin-bottom: 30px;
-	 -webkit-appearance: none; 
+	-webkit-appearance: none;
 }
 
 .formActions input:hover,
 .send-button a:hover,
 .back-to-pending-transfers a:hover,
 ul.show-topic li.link1 a: hover,
-.request-button a:hover{
+.request-button a:hover {
 	background-color: #459914;
-    color: rgb(255, 255, 255);
-    box-shadow: 0 0 8px rgba(0,0,0,.15);
-    -webkit-box-shadow: 0 0 8px rgba(0,0,0,.15);
-    -moz-box-shadow: 0 0 8px rgba(0,0,0,.15);
-    border: 2px solid #218913;
+	color: rgb(255, 255, 255);
+	box-shadow: 0 0 8px rgba(0, 0, 0, .15);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .15);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .15);
+	border: 2px solid #218913;
 }
 
 .requestMoneyForm div:nth-child(3) {
@@ -792,80 +828,80 @@ ul.show-topic li.link1 a: hover,
 }
 
 .control a:first-child {
-    color: white;
+	color: white;
 }
 
-.pending-transfers-table table tbody tr th:last-child label{
-  color: #F2F3F6;
- }
- 
- .pending-transfers-table table tbody tr td.control a:first-child{
-	 background-image: url(../Images/tr_resend.png);
-	 width: 30px;
-     height: 30px;
-     background-repeat: no-repeat;
-     margin-left: 5px;
-     display: inline-block;
- }
- 
- .pending-transfers-table table tbody tr td.control a:last-of-type{
-	 background-image: url(../Images/action_delete.png);
-	 width: 30px;
-     height: 30px;
-     background-repeat: no-repeat;
-	 padding-right: 45px;
-     display: inline-block;
- }
- 
-   .pending-transfers-table table tbody tr td.control a{
-		background-image: url(../Images/action_edit.png);
-		width: 30px;
-		height: 30px;
-		background-repeat: no-repeat;
-		padding-right: 45px;
-		display: inline-block;
-    }
- 
- .pending-transfers-table table tbody tr td:last-child{
-	 display: inline-flex;
- }
- 
- .pending-transfers-table table tbody tr td.prose{
-	 display: table-cell !important;
- }
-
-
-table {
-    border-collapse: collapse;
-    box-sizing: border-box;
-    color: rgb(1, 115, 167);
-    height: auto;
-    text-decoration: none;
-    width: 934px;
-    border-spacing: 0px 0px;
-    font: normal normal 400 normal 12px / 20px Roboto-Regular, Arial, sans-serif;
-    overflow: hidden;
+.pending-transfers-table table tbody tr th:last-child label {
+	color: #F2F3F6;
 }
 
-table.remove-cra-table tbody tr td{
+.pending-transfers-table table tbody tr td.control a:first-child {
+	background-image: url(../Images/tr_resend.png);
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	display: inline-block;
+}
+
+.pending-transfers-table table tbody tr td.control a:last-of-type {
+	background-image: url(../Images/action_delete.png);
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	padding-right: 45px;
+	display: inline-block;
+}
+
+.pending-transfers-table table tbody tr td.control a {
+	background-image: url(../Images/action_edit.png);
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	padding-right: 45px;
+	display: inline-block;
+}
+
+.pending-transfers-table table tbody tr td:last-child {
+	display: inline-flex;
+}
+
+.pending-transfers-table table tbody tr td.prose {
+	display: table-cell !important;
+}
+
+
+.summarygroup table {
+	border-collapse: collapse;
+	box-sizing: border-box;
+	color: rgb(1, 115, 167);
+	height: auto;
+	text-decoration: none;
+	width: 934px;
+	border-spacing: 0px 0px;
+	font: normal normal 400 normal 12px / 20px Roboto-Regular, Arial, sans-serif;
+	overflow: hidden;
+}
+
+table.remove-cra-table tbody tr td {
 	width: auto !important;
 	display: inline-block !important;
 	padding-top: 0;
 }
 
 table.remove-cra-table tbody tr td.required,
-table.remove-cra-table tbody tr td.string{
+table.remove-cra-table tbody tr td.string {
 	margin-top: 20px;
 }
 
-table.remove-cra-table tbody tr td.string{
+table.remove-cra-table tbody tr td.string {
 	color: #000000;
 	font-family: Roboto-Regular, Arial, sans-serif;
 	font-size: 19.2px;
 	line-height: 32px;
 }
 
-table tbody tr.remove-cra-header th{
+table tbody tr.remove-cra-header th {
 	color: #000000;
 	font-family: Roboto-Regular, Arial, sans-serif;
 	font-size: 16px;
@@ -873,95 +909,95 @@ table tbody tr.remove-cra-header th{
 	line-height: 26px;
 }
 
-table.cra-table{
+table.cra-table {
 	height: 0 !important;
 }
 
-table.cra-table tbody tr td{
+table.cra-table tbody tr td {
 	width: 150px !important;
 }
 
-table.cra-table tbody tr.body-rows td{
+table.cra-table tbody tr.body-rows td {
 	width: 0 !important;
 }
 
-table.cra-table tbody tr td label{
+table.cra-table tbody tr td label {
 	height: 26px;
-    width: 424px;
-    color: #000000;
-    font-family: Roboto-Regular, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 26px;
+	width: 424px;
+	color: #000000;
+	font-family: Roboto-Regular, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 26px;
 	padding-left: 25px;
 }
 
-table.cra-table tbody tr.header td a{
-		height: 32px;
-		width: 180px;
-		border-radius: 3px;
-		background-color: #0067C6;
-		color: #FFFFFF !important;
-		font-family: Roboto-Regular, Arial, sans-serif;
-		font-size: 16px;
-		font-weight: bold;
-		line-height: 34px;
-		text-align: center;
-		padding: 5px 10px;
+table.cra-table tbody tr.header td a {
+	height: 32px;
+	width: 180px;
+	border-radius: 3px;
+	background-color: #0067C6;
+	color: #FFFFFF !important;
+	font-family: Roboto-Regular, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 34px;
+	text-align: center;
+	padding: 5px 10px;
 }
 
-.gross-payroll-input{
+.gross-payroll-input {
 	color: white;
 }
 
-table.cra-table tbody tr.body-rows td:nth-child(2) a{
+table.cra-table tbody tr.body-rows td:nth-child(2) a {
 	background-image: url(../Images/tr_file.png);
-    width: 31px;
-    height: 31px;
-    background-repeat: no-repeat;
-    margin-left: 5px;
-    display: inline-block;
+	width: 31px;
+	height: 31px;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	display: inline-block;
 	text-indent: -9999px;
 	float: right;
 }
 
-table.cra-table tbody tr.body-rows td:nth-child(3) a{
+table.cra-table tbody tr.body-rows td:nth-child(3) a {
 	background-image: url(../Images/tr_history.png);
-    width: 31px;
-    height: 31px;
-    background-repeat: no-repeat;
-    margin-left: 5px;
-    display: inline-block;
+	width: 31px;
+	height: 31px;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	display: inline-block;
 	color: white;
 	text-indent: -9999px;
 	float: right;
 }
 
-table.cra-table tbody tr.body-rows td:nth-child(4) a{
+table.cra-table tbody tr.body-rows td:nth-child(4) a {
 	background-image: url(../Images/action_delete.png);
-    width: 100%;
-    height: 31px;
-    background-repeat: no-repeat;
-    margin-left: 5px;
-    display: inline-block;
+	width: 100%;
+	height: 31px;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	display: inline-block;
 	color: white;
 	text-indent: -9999px;
 	background-position: center;
 }
 
-table.cra-table--add-accs{
+table.cra-table--add-accs {
 	height: 0;
 	margin-top: 50px;
 }
 
-table.cra-table--add-accs thead tr{
+table.cra-table--add-accs thead tr {
 	height: 64px;
 	width: 966px;
 	border: 1px solid #F2F3F6;
 	background-color: #F2F3F6;
 }
 
-table.cra-table--add-accs thead tr th{
+table.cra-table--add-accs thead tr th {
 	width: 100%;
 	text-align: left;
 	color: #000000;
@@ -972,85 +1008,85 @@ table.cra-table--add-accs thead tr th{
 	padding-left: 25px;
 }
 
-table.cra-table--add-accs tbody tr td{
+table.cra-table--add-accs tbody tr td {
 	display: inline-table;
 	width: 40px;
 }
 
-table.cra-table--add-accs tbody tr td.string{
+table.cra-table--add-accs tbody tr td.string {
 	margin-top: 50px;
 	width: 200px;
 }
 
-table.recipients-table tbody tr td div.control a{
+table.recipients-table tbody tr td div.control a {
 	background-image: url(../Images/action_edit.png);
-    width: 30px;
-    height: 30px;
-    background-repeat: no-repeat;
-    margin-left: 5px;
-    display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	display: inline-block;
 	text-indent: -9999px;
 }
 
 table.recipients-table tbody tr,
 .pending-transfers-table table tbody tr,
-table.cra-table tbody tr{
+table.cra-table tbody tr {
 	display: table-row !important;
 }
 
-table.recipients-table tbody tr td div.control a:hover{
+table.recipients-table tbody tr td div.control a:hover {
 	background-image: url(../Images/action_edit_hover.png);
 }
 
-table.recipients-table tbody tr td div.control a:first-child{
+table.recipients-table tbody tr td div.control a:first-child {
 	background-image: url(../Images/action_delete.png);
-    width: 30px;
-    height: 30px;
-    background-repeat: no-repeat;
-    padding-right: 5px;
-    display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	padding-right: 5px;
+	display: inline-block;
 }
 
-table.recipients-table tbody tr td div.control a:first-child:hover{
+table.recipients-table tbody tr td div.control a:first-child:hover {
 	background-image: url(../Images/action_delete_hover.png);
 }
 
-table.etransfer-history-table{
+table.etransfer-history-table {
 	margin-bottom: 25px;
 }
 
-table caption{
+table caption {
 	display: none;
 }
 
-.autodeposit-settings-table tbody tr{
+/* .autodeposit-settings-table tbody tr {
 	display: table-row;
-}
+} */
 
-table tbody tr th{
+table tbody tr th {
 	text-align: left;
 }
 
 table tbody tr.header,
-table.registeredMembers thead tr{
+table.registeredMembers thead tr {
 	background-color: #F2F3F6;
-    border: 1px solid #F2F3F6;
-    width: 966px;
-    height: 60px !important;
+	border: 1px solid #F2F3F6;
+	width: 966px;
+	height: 60px !important;
 }
 
-table.registeredMembers tbody tr td#CA1DDa4BHneuntn2{
+table.registeredMembers tbody tr td#CA1DDa4BHneuntn2 {
 	display: none !important;
 }
 
 table.registeredMembers thead tr th.emailSetting,
 table.registeredMembers thead tr th.editAccounts,
 table.registeredMembers tbody tr td.emailSetting,
-table.registeredMembers tbody tr td.editAccounts{
+table.registeredMembers tbody tr td.editAccounts {
 	width: 250px !important;
 }
 
-table tbody tr th label{
+table tbody tr th label {
 	height: 26px;
 	width: 100px;
 	color: #000000;
@@ -1059,37 +1095,37 @@ table tbody tr th label{
 	line-height: 26px;
 }
 
-table tbody tr th.information label{
+table tbody tr th.information label {
 	padding-left: 50px;
 }
 
-table tbody tr td{
+table tbody tr td {
 	height: 26px;
-    width: 100px;
-    color: #000000;
-    font-size: 16px;
-    line-height: 26px;
+	width: 100px;
+	color: #000000;
+	font-size: 16px;
+	line-height: 26px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
-table tbody tr td.information{
+table tbody tr td.information {
 	padding-left: 50px;
 }
 
 table tbody tr td a,
-table tbody tr td a:first-child{
+table tbody tr td a:first-child {
 	color: #000000 !important;
 }
 
 table tbody tr th.contact label,
 table tbody tr th.date label,
 table tbody tr td.contact,
-table tbody tr td.date{
+table tbody tr td.date {
 	padding-left: 20px;
 }
 
-table thead th.tableTopPadding{
+table thead th.tableTopPadding {
 	height: 26px;
 	width: 236px;
 	color: #000000;
@@ -1099,542 +1135,1086 @@ table thead th.tableTopPadding{
 	line-height: 26px;
 }
 
-.tableLeftPadding{
+.tableLeftPadding {
 	color: white;
 }
 
 .header {
-    display: none;
+	display: none;
 }
 
 a {
-    outline: 0 !important;
-    text-decoration: none;
-    color: #337ab7;
+	outline: 0 !important;
+	text-decoration: none;
+	color: #337ab7;
 }
 
 /* Custom Checkbox */
 
 .floatRight {
-  position: relative;
-  font-size: 100%;
+	position: relative;
+	font-size: 100%;
 }
 
 label.floatRight {
-  display: block;
+	display: block;
 }
 
 input[type="checkbox"] {
-  position: relative;
-  display: inline-block;
-  width: 1.8em;
-  height: 1.8em;
-  vertical-align: middle;
-  cursor: pointer;
+	position: relative;
+	display: inline-block;
+	width: 1.8em;
+	height: 1.8em;
+	vertical-align: middle;
+	cursor: pointer;
 }
 
 input[type="checkbox"]:hover:before {
-  border-color: #0067C6;
+	border-color: #0067C6;
 }
 
 input[type="checkbox"]:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  content: '';
-  border: 1.5px solid #767676;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	content: '';
+	border: 1.5px solid #767676;
 }
 
 input[type="checkbox"]:after {
-  position: absolute;
-  display: none;
-  content: '';
+	position: absolute;
+	display: none;
+	content: '';
 }
 
 input[type="checkbox"]:checked:before {
-  animation-name: none;
+	animation-name: none;
 }
 
 input[type="checkbox"]:checked:after {
-  display: block;
+	display: block;
 }
 
 input[type="checkbox"]:before {
-  border-radius: 4px;
+	border-radius: 4px;
 }
 
 input[type="checkbox"]:after {
-  top: 0.5em;
-  left: 0.75em;
-  box-sizing: border-box;
-  width: 0.3em;
-  height: 0.6em;
-  transform: rotate(45deg);
-  border-right: 1.5px solid #fff;
-  border-bottom: 1.5px solid #fff;
+	top: 0.5em;
+	left: 0.75em;
+	box-sizing: border-box;
+	width: 0.3em;
+	height: 0.6em;
+	transform: rotate(45deg);
+	border-right: 1.5px solid #fff;
+	border-bottom: 1.5px solid #fff;
 }
 
 input[type="checkbox"]:checked:before {
 
-  /*border: #0067C6;*/
-  border-color: #0067C6;
-  box-shadow: inset 0px 0px 0px 1px #fff;
-  background: #0067C6;
+	/*border: #0067C6;*/
+	border-color: #0067C6;
+	box-shadow: inset 0px 0px 0px 1px #fff;
+	background: #0067C6;
+}
+
+.CCRAAdd .receipts .column.divHide,
+.CCRARemove .receipts .column.divHide {
+	display: none;
+}
+
+body.widget ng-component #errorPanel::before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 60px;
+	background-image: url(/DynamicContent/Resources/Images/warning_error.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* InitiateMoneyRequest */
+.InitiateMoneyRequest .input.floatRight.fixedWidth {
+	width: auto;
+	padding: 1em 0;
+}
+
+.InitiateMoneyRequest #acknowledgeCheckboxText {
+	display: block !important;
+	margin: -1.3em 0 0 2em;
+}
+
+.InitiateMoneyRequest .showForm::before {
+	content: "Choose a recipient to request money from using Interac e-Transfer or go to Manage Recipients to add a new one";
+	display: block;
+	margin-bottom: 50px;
+}
+
+.InitiateMoneyRequest .formActions::before {
+	content: "Note: Service charge will be applied to your account when the funds are deposited";
+	display: block;
+	text-align: left;
+	margin-bottom: 50px;
+}
+
+.InitiateMoneyRequest .requestMoneyFormStep2 .formActions::before {
+	display: none;
 }
 
 @media only screen and (min-width: 768px) {
-	.deleteModalText{
+	.deleteModalText {
 		height: 64px;
 		border-bottom: 1px solid #E7E7E7 !important;
 	}
 }
 
 @media only screen and (max-width: 767px) {
-	
-	body{
+
+	body {
 		margin: 15px;
 	}
-	
-	.required, .requirederror{
-		margin-top: 50px !important;
+
+	.required,
+	.requirederror {
+		/* margin-top: 50px !important; */
 		padding-left: 0 !important;
 		padding-right: 0 !important;
 	}
-    .required select, .requirederror select {
+
+	.required select,
+	.requirederror select {
 		width: 100% !important;
 	}
-	
-	.modal-content {
-		margin: 0 !important;
-		height: 70% !important;
-	}
-	
-	select.inline-select{
+
+	select.inline-select {
 		margin-bottom: 25px;
 	}
-	
-	.required input[type=text], .requirederror input[type=text] {
+
+	.required input[type=text],
+	.requirederror input[type=text] {
 		padding-left: 24px !important;
 		padding-right: 40px !important;
 		width: 100% !important;
 	}
-	
-	.required input[type=date], .requirederror input[type=date] {
+
+	.required input[type=date],
+	.requirederror input[type=date] {
 		padding-left: 24px !important;
 		padding-right: 40px !important;
 		width: 100% !important;
 	}
-	
-	.contact-phone-input input[type=text]:last-child{
+
+	.contact-phone-input input[type=text]:last-child {
 		padding-left: 24px !important;
 		padding-right: 40px !important;
 		width: 100% !important;
 		margin-bottom: 30px;
 	}
-	
-	.contact-phone-input input[type=text]{
+
+	.contact-phone-input input[type=text] {
 		margin-bottom: 30px;
 	}
-	
-	.date-input select{
+
+	.date-input select {
 		margin-bottom: 30px;
 	}
-	
-	.required input[type=email], .requirederror input[type=email] {
+
+	.required input[type=email],
+	.requirederror input[type=email] {
 		padding: 0 !important;
 		width: 100% !important;
 	}
-	
-	.required .floatRight, .requirederror .floatRight {
+
+	.required .floatRight,
+	.requirederror .floatRight {
 		width: 100% !important;
 	}
-	
+
 	.formActions input,
 	.send-button a,
 	.back-to-pending-transfers a,
 	ul.show-topic li.link1 a,
-	.request-button a{
+	.request-button a {
 		min-width: 0 !important;
 		width: 100% !important;
 	}
-	
+
 	.send-button a {
 		padding: 14px 0;
 	}
-	
+
 	.formActions li {
 		display: block !important;
 		width: 100%;
 	}
-	
-	.hide-cancel-button{
+
+	.hide-cancel-button {
 		display: none !important;
 	}
-	
-	.hide-cancel-button a{
+
+	.hide-cancel-button a {
 		display: none !important;
 	}
-	
-	.required textarea{
+
+	.required textarea {
 		height: 56px !important;
 		width: 100% !important;
 		padding: 0 !important;
 		padding-left: 24px !important;
 		padding-top: 15px !important;
 	}
-	
+
 	.formActions a,
 	#addNewEmail,
 	.show-topic .link0 a,
-	.recipient-topic .link0 a{
+	.recipient-topic .link0 a {
 		min-width: 0 !important;
 		width: 100% !important;
 	}
-	
-	table{
-		display: block !important;
-		width: 100% !important;
-		overflow-x: auto !important;
+
+	.summarygroup table {
+		display: block;
+		width: 100%;
+		overflow-x: auto;
 	}
-	
-	table tbody tr.header{
+
+	.summarygroup table tbody tr.header {
 		width: 100% !important;
 		white-space: nowrap;
 	}
-	
-	.confirmation .oneColRow .column{
+
+	.confirmation .oneColRow .column {
 		padding-bottom: 25px;
 	}
-	
-	.oneColRow.last-value-break .column .value{
+
+	.oneColRow.last-value-break .column .value {
 		word-break: break-word;
 	}
-	
-	.last-dl-break .value{
+
+	.last-dl-break .value {
 		word-break: break-word;
 	}
-	
-	.confirmation .oneColRow .column label{
+
+	.confirmation .oneColRow .column label {
 		width: 100% !important;
 		display: block;
 	}
-	
-	.confirmation .oneColRow .column label.remit-labels{
+
+	.confirmation .oneColRow .column label.remit-labels {
 		width: 100% !important;
 		display: block;
 	}
-	
+
 	.receipts .receipt dl dd,
-	.receipts .receipt dl dt{
+	.receipts .receipt dl dt {
 		height: auto;
 		width: 100% !important;
 		display: block !important;
 		-webkit-margin-start: 0;
 	}
-	
+
 	.receipts .receipt dl:nth-child(2) {
 		padding-bottom: 40px;
 	}
-	
+
 	.edit-send-profile-receipt .receipt dl:nth-child(2) {
 		padding-bottom: 0 !important;
 	}
-	
+
 	.error-image,
-	.error-image-history{
+	.error-image-history {
 		display: none;
 	}
-	
+
 	.errors,
 	.errors-image,
 	.success-image,
 	.alert-image,
-	.success-text{
+	.success-text {
 		width: 100% !important;
 	}
-	
+
 	.requirederror select,
 	.requirederror input[type=text],
 	.requirederror input[type=email],
-	.requirederror input[type=date]{
+	.requirederror input[type=date] {
 		margin-top: 0;
 	}
-	
+
 	table.cra-table--add-accs,
-	table.cra-table{
+	table.cra-table {
 		height: auto !important;
 	}
-	
-	table.cra-table--add-accs thead{
+
+	table.cra-table--add-accs thead {
 		display: flex;
 	}
-	
-	table.cra-table--add-accs thead tr th{
+
+	table.cra-table--add-accs thead tr th {
 		padding-top: 20px;
 	}
-	
-	table.recipients-table tbody tr td.control{
+
+	table.recipients-table tbody tr td.control {
 		display: inline-block !important;
 	}
-	
+
 	table.last-table tbody,
 	table.last-table tbody tr,
-	table.last-table tbody tr td{
+	table.last-table tbody tr td {
 		width: 100% !important;
 		display: block !important;
 	}
-	
+
 	table.registeredMembers thead tr th.emailSetting,
 	table.registeredMembers thead tr th.editAccounts,
 	table.registeredMembers tbody tr td.emailSetting,
-	table.registeredMembers tbody tr td.editAccounts{
+	table.registeredMembers tbody tr td.editAccounts {
 		width: 350px !important;
 	}
-	
-	table.autodeposit-settings-table thead tr th.emailSetting,
+
+	/* table.autodeposit-settings-table thead tr th.emailSetting,
 	table.autodeposit-settings-table thead tr th.editAccounts,
 	table.autodeposit-settings-table tbody tr td.emailSetting,
-	table.autodeposit-settings-table tbody tr td.editAccounts{
+	table.autodeposit-settings-table tbody tr td.editAccounts {
 		width: 100% !important;
 		white-space: nowrap !important;
-	}
-	
-	table.autodeposit-settings-table{
+	} */
+
+	/* table.autodeposit-settings-table {
 		word-break: unset !important;
 		width: 100% !important;
-	}
-	
-	.errors ol{
+	} */
+
+	.errors ol {
 		-webkit-padding-start: 0;
 	}
-	
-	.receipts .receipt dl currencyinput input{
+
+	.receipts .receipt dl currencyinput input {
 		width: 100% !important;
 		margin-left: 0 !important;
 	}
-	
-	.top-disclaimer{
+
+	.top-disclaimer {
 		height: auto;
 		width: 100%;
 	}
-	
-	.cancel-transfer-disclaimer{
+
+	.cancel-transfer-disclaimer {
 		height: auto;
 		width: 100%;
 	}
-	
-	.top-disclaimer--remit-confirmation-screen{
+
+	.top-disclaimer--remit-confirmation-screen {
 		height: auto;
 		width: 100%;
 	}
-	
-	.top-disclaimer--search-transfers{
+
+	.top-disclaimer--search-transfers {
 		height: auto;
 		width: 100%;
 	}
-	
-	.modal-content[_ngcontent-mkj-6]{
+
+	.modal-content[_ngcontent-mkj-6] {
 		margin: 0 !important;
 		padding: 30px 35px 200px 35px !important;
 	}
-	
-	.deleteModalText[_ngcontent-mkj-6]{
+
+	.deleteModalText[_ngcontent-mkj-6] {
 		height: auto !important;
 	}
-	
-	.cancel-transfer-textarea{
+
+	.cancel-transfer-textarea {
 		height: 56px !important;
 	}
-	
-	#PageTitle{
-	   font-size: 32px;
-    }
-	
-	table.remove-cra-table tbody tr{
+
+	#PageTitle {
+		font-size: 32px;
+	}
+
+	table.remove-cra-table tbody tr {
 		margin-top: 20px;
 	}
-	
-	table.remove-cra-table tbody tr td{
+
+	table.remove-cra-table tbody tr td {
 		display: table-cell !important;
 	}
-	
-	table.remove-cra-table tbody tr td.string{
+
+	table.remove-cra-table tbody tr td.string {
 		line-height: 26px;
 	}
-	
-	.top-disclaimer{
+
+	.top-disclaimer {
 		font-size: 16.8px;
 	}
-	
-	.remove-cra-details .string label{
+
+	.remove-cra-details .string label {
 		width: 100% !important;
 	}
-	
-	.show-topic{
+
+	.show-topic {
 		display: none;
 	}
-	
-	.no-pad-bottom{
+
+	.no-pad-bottom {
 		padding-bottom: 0 !important;
 	}
-	
+
 	/*NEW STUFF*/
-	
-	table.auto-deposit-settings--first-table,
+
+	/* table.auto-deposit-settings--first-table,
 	table.autodeposit-settings-table tbody tr td.rowCounter,
 	table.autodeposit-settings-table tbody tr td.hideCol,
-	table.autodeposit-settings-table tbody tr.hideField{
+	table.autodeposit-settings-table tbody tr.hideField {
 		display: none !important;
+	} */
+
+	/* Force table to not be like tables anymore */
+	.summarygroup table.recipients-table,
+	.summarygroup thead,
+	.summarygroup tbody,
+	.summarygroup th,
+	.summarygroup td,
+	.summarygroup tr,
+	.summarygroup .pending-transfers-table table thead,
+	.summarygroup tbody,
+	.summarygroup th,
+	.summarygroup td,
+	.summarygroup tr,
+	/* table.autodeposit-settings-table, */
+	.summarygroup thead,
+	.summarygroup tbody,
+	.summarygroup th,
+	.summarygroup td,
+	.summarygroup tr {
+		display: block !important;
 	}
-	
-    /* Force table to not be like tables anymore */
-    table.recipients-table, thead, tbody, th, td, tr,
-	.pending-transfers-table table thead, tbody, th, td, tr,
-	table.autodeposit-settings-table, thead, tbody, th, td, tr{
-        display: block !important;
-    }
 
-    table.recipients-table tbody tr.header,
-	.pending-transfers-table table tbody tr.header{
-        display: none !important;;
-    }
+	table.recipients-table tbody tr.header,
+	.pending-transfers-table table tbody tr.header {
+		display: none !important;
+		;
+	}
 
-    table.recipients-table tbody tr td,
-	.pending-transfers-table table tbody tr td,
-	table.autodeposit-settings-table tbody tr td{
-        height: auto;
-        width: auto;
-        color: #000000;
-        font-size: 16px;
-        line-height: 26px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+	table.recipients-table tbody tr td,
+	.pending-transfers-table table tbody tr td {
+		/* table.autodeposit-settings-table tbody tr td { */
+		height: auto;
+		width: auto;
+		color: #000000;
+		font-size: 16px;
+		line-height: 26px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 		padding-left: 0 !important;
-    }
-	
-	.pending-transfers-table table tbody tr td:last-child{
+	}
+
+	.pending-transfers-table table tbody tr td:last-child {
 		display: inline-flex !important;
 	}
-	
-	.pending-transfers-table table tbody tr td.prose:last-child{
+
+	.pending-transfers-table table tbody tr td.prose:last-child {
 		display: table-cell !important;
 	}
 
-    table.recipients-table tbody tr th.contact label,
-    table.recipients-table tbody tr th.date label,
-    table.recipients-table tbody tr td.contact,
-    table.recipients-table tbody tr td.date,
-    table.recipients-table tbody tr td.information{
-        padding-left: 0px;
-    }    
+	table.recipients-table tbody tr th.contact label,
+	table.recipients-table tbody tr th.date label,
+	table.recipients-table tbody tr td.contact,
+	table.recipients-table tbody tr td.date,
+	table.recipients-table tbody tr td.information {
+		padding-left: 0px;
+	}
 
-    table.recipients-table tbody tr td,
-	.pending-transfers-table table tbody tr td,
-	table.autodeposit-settings-table tbody tr td{
-        /* Behave  like a "row" */
-        border: none;
-        position: relative;
-    }
+	table.recipients-table tbody tr td,
+	.pending-transfers-table table tbody tr td {
+		/* table.autodeposit-settings-table tbody tr td  */
+		/* Behave  like a "row" */
+		border: none;
+		position: relative;
+	}
 
-    table.recipients-table tbody td:before,
-	.pending-transfers-table table tbody td:before,
-	table.autodeposit-settings-table tbody td:before{
-        top: 0;
-        width: 100%;
-        padding-right: 10px;
-        white-space: nowrap;
-    }
+	table.recipients-table tbody td:before,
+	.pending-transfers-table table tbody td:before {
+		/* table.autodeposit-settings-table tbody td:before  */
+		top: 0;
+		width: 100%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
 
-/*
+	/* Autodeposit */
+	body.Autodeposit div.modal-content {
+		margin-top: 10%;
+		padding-bottom: 200px;
+	}
+
+	body.Autodeposit .errors ol {
+		-webkit-padding-start: 40px;
+	}
+
+	body.Autodeposit table.registeredMembers {
+		display: table;
+		table-layout: unset !important;
+		margin-bottom: 70px !important;
+	}
+
+
+	body.Autodeposit table.registeredMembers:first-of-type {
+		display: none !important;
+	}
+
+	body.Autodeposit table.registeredMembers thead tr {
+		width: unset;
+	}
+
+	body.Autodeposit table.registeredMembers th {
+		padding: 0;
+	}
+
+	body.Autodeposit table.registeredMembers tr {
+		height: auto !important;
+		display: flex;
+		flex-direction: row;
+		flex-flow: wrap;
+	}
+
+	body.Autodeposit table.registeredMembers th,
+	body.Autodeposit table.registeredMembers td {
+		height: auto;
+		width: auto;
+		padding: 0.5em;
+		text-align: left;
+		flex: 1 800px;
+	}
+
+	body.Autodeposit table.registeredMembers tr td:nth-child(6),
+	body.Autodeposit table.registeredMembers tr td:nth-child(7) {
+		border: none;
+		position: absolute;
+		padding: 0;
+		left: 15px;
+		margin: 20px 0 20px 0;
+	}
+
+	body.Autodeposit table.registeredMembers tr td:nth-child(7)::before {
+		content: "|";
+		float: left;
+		margin-right: 10px;
+	}
+
+	body.Autodeposit table.registeredMembers tr td:nth-child(7) {
+		left: 55px;
+	}
+
+	body.Autodeposit table.registeredMembers tr td .deleteIcon {
+		display: inline-block;
+	}
+
+	body.Autodeposit table.registeredMembers td.emailSetting::before {
+		display: block;
+		content: "Email";
+		font-weight: bold;
+	}
+
+	body.Autodeposit table.registeredMembers td.editAccounts::before {
+		display: block;
+		content: "Account";
+		font-weight: bold;
+	}
+
+	body.Autodeposit table.registeredMembers td:nth-last-of-type(3)::before {
+		content: "Status";
+		font-weight: bold;
+	}
+
+	body.Autodeposit table.registeredMembers #addNewEmail {
+		margin: 0;
+	}
+
+	body.Autodeposit table.registeredMembers select {
+		max-width: unset;
+		width: 100% !important;
+	}
+
+	body.Autodeposit table.registeredMembers form .required,
+	body.Autodeposit table.registeredMembers form .requirederror {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+
+	body.Autodeposit table.registeredMembers span.tableLeftPadding.tableBottomPadding,
+	body.Autodeposit table.registeredMembers td.hideCol,
+	body.Autodeposit table.registeredMembers th.rowCounter,
+	body.Autodeposit table.registeredMembers td.rowCounter,
+	body.Autodeposit table.registeredMembers tr.hideField,
+	body.Autodeposit table.registeredMembers thead tr th:nth-child(5),
+	body.Autodeposit table.registeredMembers thead tr th:nth-child(6) {
+		display: none !important;
+	}
+
+	/*
 Label the data
 You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
 */
-table.recipients-table tbody tr td:nth-of-type(1):before { content: "Recipient"; font-weight: bold;}
-table.recipients-table tbody tr td:nth-of-type(2):before { content: "Security Question"; font-weight: bold;}
-.pending-transfers-table table tbody tr td:nth-of-type(1):before { content: "Date"; font-weight: bold;}
-.pending-transfers-table table tbody tr td.prose:nth-of-type(1):before { content: ""; font-weight: bold;}
-.pending-transfers-table table tbody tr td:nth-of-type(2):before { content: "From / To"; font-weight: bold;}
-.pending-transfers-table table tbody tr td:nth-of-type(3):before { content: "Amount"; font-weight: bold;}
-.pending-transfers-table table tbody tr td:nth-of-type(4):before { content: "Status"; font-weight: bold;}
-table.autodeposit-settings-table tbody tr td:nth-of-type(2):before { content: "Email"; font-weight: bold;}
-table.autodeposit-settings-table tbody tr td:nth-of-type(3):before { content: "Account"; font-weight: bold;}
-table.autodeposit-settings-table tbody tr td:nth-of-type(5):before { content: "Status"; font-weight: bold;}
+	table.recipients-table tbody tr td:nth-of-type(1):before {
+		content: "Recipient";
+		font-weight: bold;
+	}
+
+	table.recipients-table tbody tr td:nth-of-type(2):before {
+		content: "Security Question";
+		font-weight: bold;
+	}
+
+	.pending-transfers-table table tbody tr td:nth-of-type(1):before {
+		content: "Date";
+		font-weight: bold;
+	}
+
+	.pending-transfers-table table tbody tr td.prose:nth-of-type(1):before {
+		content: "";
+		font-weight: bold;
+	}
+
+	.pending-transfers-table table tbody tr td:nth-of-type(2):before {
+		content: "From / To";
+		font-weight: bold;
+	}
+
+	.pending-transfers-table table tbody tr td:nth-of-type(3):before {
+		content: "Amount";
+		font-weight: bold;
+	}
+
+	.pending-transfers-table table tbody tr td:nth-of-type(4):before {
+		content: "Status";
+		font-weight: bold;
+	}
+
+	/* table.autodeposit-settings-table tbody tr td:nth-of-type(2):before {
+		content: "Email";
+		font-weight: bold;
+	}
+
+	table.autodeposit-settings-table tbody tr td:nth-of-type(3):before {
+		content: "Account";
+		font-weight: bold;
+	}
+
+	table.autodeposit-settings-table tbody tr td:nth-of-type(5):before {
+		content: "Status";
+		font-weight: bold;
+	} */
 
 
-/*NEW STUFF FIM */
+	/*NEW STUFF FIM */
 
-table.cra-table tbody tr.header{
-	display: block !important;
-	height: auto !important;
-	text-align: center !important;
-}
+	table.cra-table tbody tr.header {
+		display: block !important;
+		height: auto !important;
+		text-align: center !important;
+	}
 
-table.cra-table tbody tr.header td{
-	width: 100% !important;
-}
+	table.cra-table tbody tr.header td {
+		width: 100% !important;
+	}
 
-table.cra-table tbody tr.header td label{
-	padding-left: 0 !important;
-}
+	table.cra-table tbody tr.header td label {
+		padding-left: 0 !important;
+	}
 
-table.cra-table tbody tr.body-rows{
-	display: block !important;
-}
+	table.cra-table tbody tr.body-rows {
+		display: block !important;
+	}
 
-table.cra-table tbody tr.body-rows td{
-	width: auto !important;
-	display: inline-block !important;
-}
+	table.cra-table tbody tr.body-rows td {
+		width: auto !important;
+		display: inline-block !important;
+	}
 
-table.cra-table tbody tr.body-rows td a{
-	float: left !important;
-	display: inline-block !important;
-}
+	table.cra-table tbody tr.body-rows td a {
+		float: left !important;
+		display: inline-block !important;
+	}
 
-table.cra-table tbody tr.body-rows td:last-child a{
-	background-position: left !important;
-	width: 31px !important;
-}
+	table.cra-table tbody tr.body-rows td:last-child a {
+		background-position: left !important;
+		width: 31px !important;
+	}
 }
 
 @media print {
-   #PageTitle{
-	   font: 19.2px Roboto-Regular, Arial, sans-serif;
-	   font-weight: 300;
-	   padding-bottom: 20px;
-	   border-bottom: 1px solid #F2F3F6;
-   }
-   
-   .formActions{
-	   display: none !important;
-   }
-   
-   body{
-	   padding:  15px 0;
-   }
-   
-   .confirmation .oneColRow .column label{
-	   width: 150px !important;
-	   font-size: 17px;
-   }
+	#PageTitle {
+		font: 19.2px Roboto-Regular, Arial, sans-serif;
+		font-weight: 300;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #F2F3F6;
+	}
 
-   ..confirmation .oneColRow .column span.value{
-	   font-size: 17px;
-   }
-   
-   .success-image,
-   .alert-image{
-	   display: none !important;
-   }
-   
-   .success-text{
-	   display: none !important;
-   }
-   
-   .show-topic{
-	   display: none !important;
-   }
+	.formActions {
+		display: none !important;
+	}
+
+	body {
+		padding: 15px 0;
+	}
+
+	.confirmation .oneColRow .column label {
+		width: 150px !important;
+		font-size: 17px;
+	}
+
+	.confirmation .oneColRow .column span.value {
+		font-size: 17px;
+	}
+
+	.success-image,
+	.alert-image {
+		display: none !important;
+	}
+
+	.success-text {
+		display: none !important;
+	}
+
+	.show-topic {
+		display: none !important;
+	}
+}
+
+/* Main Style Sheet for jQuery UI date picker */
+#datepicker_div,
+#ui-datepicker-div,
+.datepicker_inline {
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+	width: 185px;
+	cursor: default;
+}
+
+#datepicker_div,
+#ui-datepicker-div {
+	display: none;
+	border-width: 1px;
+	border-style: solid;
+	z-index: 9999;
+	/*must have*/
+}
+
+.datepicker_inline {
+	float: left;
+	display: block;
+	border: 0;
+}
+
+.datepicker_rtl {
+	direction: rtl;
+}
+
+.datepicker_dialog {
+	padding: 5px !important;
+	border-width: 4px !important;
+	border-style: ridge !important;
+}
+
+.ui-datepicker-prev {
+	float: left;
+}
+
+.ui-datepicker-next {
+	float: right;
+}
+
+.ui-datepicker-title {
+	clear: both;
+}
+
+.ui-datepicker-prev span,
+.ui-datepicker-next span {
+	padding: 2px 5px;
+}
+
+button.ui-datepicker-close {
+	float: right;
+	border: none;
+}
+
+button.ui-datepicker-current {
+	display: none;
+}
+
+button.datepicker_trigger,
+button.ui-datepicker-trigger {
+	background-color: transparent;
+	border-style: none;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	position: absolute;
+	margin: 15px 0 0 -4em;
+}
+
+button.datepicker_trigger img,
+button.ui-datepicker-trigger img {
+	width: 30px;
+}
+
+.md .datepicker_wrap {
+	display: block;
+	padding-right: 20px;
+}
+
+.datepicker_centerButton .datepicker_wrap {
+	display: block;
+	position: relative;
+	;
+}
+
+.datepicker_centerButton button.datepicker_trigger {
+	bottom: 4px;
+}
+
+.optiongroup button.datepicker_trigger {
+	/*currently rtp specific*/
+	position: static;
+}
+
+.optiongroup .optionInline .range button.datepicker_trigger {
+	position: absolute;
+	right: 0;
+	top: 2px;
+}
+
+img.datepicker_trigger {
+	margin: 2px;
+	vertical-align: middle;
+}
+
+.datepicker_prompt {
+	float: left;
+	padding: 2px;
+}
+
+* html .datepicker_prompt {
+	width: 185px;
+}
+
+.datepicker_control,
+.datepicker_links,
+.datepicker_header,
+.datepicker,
+.ui-datepicker-title,
+.ui-datepicker-calendar,
+.ui-datepicker-buttonpane,
+.ui-datepicker-header {
+	clear: both;
+	float: left;
+	width: 100%;
+}
+
+.ui-datepicker-calendar {
+	border-spacing: 0;
+}
+
+.ui-datepicker-calendar thead th {
+	font-weight: normal;
+}
+
+.datepicker_control,
+.ui-datepicker-buttonpane {
+	padding: 2px 0px;
+}
+
+.datepicker_links {
+	padding: 2px 0px;
+}
+
+.datepicker_control,
+.datepicker_links,
+.ui-datepicker-buttonpane {
+	font-weight: bold;
+	font-size: 10px;
+	letter-spacing: 1px;
+}
+
+.datepicker_links label {
+	/* disabled links */
+	padding: 2px 5px;
+}
+
+.datepicker_clear {
+	display: none;
+}
+
+.datepicker_clear,
+.datepicker_prev {
+	float: left;
+	width: 34%;
+}
+
+.datepicker_rtl .datepicker_clear,
+.datepicker_rtl .datepicker_prev {
+	float: right;
+	text-align: right;
+}
+
+.datepicker_current {
+	display: none;
+	float: left;
+	width: 30%;
+	text-align: center;
+}
+
+.datepicker_close,
+.datepicker_next {
+	float: right;
+	width: 34%;
+	text-align: right;
+}
+
+.datepicker_rtl .datepicker_close,
+.datepicker_rtl .datepicker_next {
+	float: left;
+	text-align: left;
+}
+
+.datepicker_header,
+.ui-datepicker-title {
+	padding: 1px 0 3px;
+	text-align: center;
+	font-weight: bold;
+	height: 1.3em;
+}
+
+.datepicker_header select,
+.ui-datepicker-title select {
+	border: 0px;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.datepicker,
+.ui-datepicker-calendar {
+	text-align: center;
+	font-size: 100%;
+}
+
+.datepicker a,
+.ui-datepicker-calendar a {
+	display: block;
+	width: 100%;
+}
+
+.datepicker_daysCell,
+.ui-datepicker-calendar tbody td {
+	border-width: 1px;
+	border-style: solid;
+	padding: 0px;
+	cursor: pointer;
+}
+
+.datepicker_daysCell a,
+.ui-datepicker-calendar tbody td a {
+	display: block;
+}
+
+.datepicker_daysCellOver {
+	border-width: 1px;
+	border-style: solid;
+}
+
+.datepicker_status {
+	width: 100%;
+	font-size: 80%;
+	text-align: center;
+}
+
+/* ________ Datepicker Links _______
+
+** Reset link properties and then override them with !important */
+#datepicker_div a,
+.datepicker_inline a {
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+	background: none;
+}
+
+#ui-datepicker-div a {
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+}
+
+#ui-datepicker-div a {
+	text-decoration: none;
+}
+
+.datepicker_inline .datepicker_links a {
+	padding: 0 5px !important;
+}
+
+.datepicker_control a,
+.datepicker_links a,
+.ui-datepicker-buttonpane button {
+	padding: 2px 5px !important;
+}
+
+/* ___________ MULTIPLE MONTHS _________*/
+
+.datepicker_multi .datepicker {
+	border-width: 1px;
+	border-style: solid;
+}
+
+.datepicker_oneMonth {
+	float: left;
+	width: 185px;
+}
+
+.datepicker_newRow {
+	clear: left;
+}
+
+/* ___________ IE6 IFRAME FIX ________ */
+
+.datepicker_cover {
+	display: none;
+	/*sorry for IE5*/
+	display
+	/**/
+	: block;
+	/*sorry for IE5*/
+	position: absolute;
+	/*must have*/
+	z-index: -1;
+	/*must have*/
+	filter: mask();
+	/*must have*/
+	top: -4px;
+	/*must have*/
+	left: -4px;
+	/*must have*/
+	width: 200px;
+	/*must have*/
+	height: 200px;
+	/*must have*/
+}
+
+/* Date picker branding */
+#datepicker_div,
+#ui-datepicker-div {
+	font-family: Arial, sans-serif;
+	background: #ffffff;
+	border-color: #A5ACB2;
+}
+
+.datepicker tbody td,
+.ui-datepicker-calendar tbody td {
+	background-color: #EDEEED;
+	border-color: #F1F1F1;
+	color: #222222;
 }
