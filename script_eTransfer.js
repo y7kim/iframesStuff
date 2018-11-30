@@ -43,6 +43,20 @@ window.onload = function(e) {
 			alertImageReferenceNode.parentNode.insertBefore(alertImageNode, alertImageReferenceNode);
 		}
 		
+		//Show Alert Image on Confirmation screen w/ Confirmation DIV
+		function showAlertImageWithConfirmationDivOnReceiveAndDeclineScreens()
+		{
+			var confirmationDiv = document.querySelector('.instructions').classList.add('transfer-confirmation');
+			
+			var alertImageNode = document.createElement('div');
+			alertImageNode.setAttribute("class", "alert-image");
+			var imageNode = document.createElement('img');
+			alertImageNode.appendChild(imageNode);
+			imageNode.setAttribute("src", "/DynamicContent/Resources/Images/warning_alert.png");
+			var alertImageReferenceNode = document.querySelector('.instructions');
+			alertImageReferenceNode.parentNode.insertBefore(alertImageNode, alertImageReferenceNode);
+		}
+		
 		//Show Alert Image on Confirmation screen w/ Show Form DIV
 		function showAlertImageWithShowFormDiv()
 		{
@@ -207,14 +221,10 @@ window.onload = function(e) {
 		 //Receive Interac e-Transfer® - Confirm screen
 		 if(pageTitle == "Receive Interac e-Transfer® - Confirm")
 		 {
-			showAlertImageWithConfirmationDiv();
+			showAlertImageWithConfirmationDivOnReceiveAndDeclineScreens();
 				
-			var inputSuccessImageNode = document.createElement('div');
-			inputSuccessImageNode.setAttribute("class", "success-text");
-			var inputErrorImageReferenceNode = document.querySelector('.confirmation');
-			inputErrorImageReferenceNode.parentNode.insertBefore(inputSuccessImageNode, inputErrorImageReferenceNode);
-				
-			document.querySelector('.success-text').textContent = "Please confirm this operation";
+			document.querySelector('.instructions').classList.add("success-text");
+			document.querySelector('.instructions').classList.add("show-div");
 		 }
 		 
 		 //Decline Interac e-Transfer® - Receipt screen
@@ -478,6 +488,7 @@ window.onload = function(e) {
 			for (var i = 0; i < selects.length; i++)
 			{
 				selects[i].placeholder = "dd/mm/yyyy";
+				selects[i].type = "date";
 			}
 		}
 		
@@ -569,7 +580,17 @@ window.onload = function(e) {
 		//Add class to eTransfer History screen table
 		if(pageTitle == "Interac e-Transfer® History")
 		{
-			var tables = document.querySelector('.summarydata').classList.add('etransfer-history-table');
+			
+			
+			if(document.querySelectorAll("span")[0].textContent == "You do not have any Interac e-Transfer® within this date range.")
+			{
+				document.querySelector('.summarydata').classList.add('etransfer-history-table-withoutResults');
+				document.querySelector(".prose").classList.add("prose-w-100");
+			}
+			
+			else{
+				document.querySelector('.summarydata').classList.add('etransfer-history-table');
+			}
 		}
 		
 		//Add class to Delete Recipient error page
