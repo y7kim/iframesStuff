@@ -156,7 +156,21 @@ thead:focus,
 	outline: 0;
 }
 
-.editContainer[_ngcontent-ffr-6] {
+.show-div{
+	display: block !important;
+	margin-bottom: 25px;
+}
+
+.add-padd-top{
+	margin-top: 85px !important;
+}
+
+.remove-padd-top{
+	margin-top: 0 !important;
+	padding-bottom: 25px;
+}
+
+.editContainer[_ngcontent-ffr-6]{
 	background: none !important;
 }
 
@@ -266,7 +280,15 @@ p#acknowledgement1,
 	font-weight: bold;
 }
 
-.registerUser {
+#acceptedTermsAndConditionsText{
+	padding-left: 35px !important;
+    padding-top: 5px;
+	color: #000000;
+	font-family: Roboto-Regular, Arial, sans-serif;
+	font-size: 19.2px;
+}
+
+.registerUser{
 	background: white !important;
 }
 
@@ -295,7 +317,6 @@ p#acknowledgement1,
 	width: 30px !important;
 	cursor: pointer;
 }
-
 .autodeposit-settings-table tbody tr td:last-child .deleteIcon:hover {
 	background-image: url(../Images/action_delete_hover.png) !important;
 } */
@@ -360,7 +381,8 @@ body.Autodeposit table.registeredMembers tr td .deleteIcon:hover {
 .details .string label,
 .confirmation .string label,
 .show-ReceiptHeader .twoColRow .column label,
-.transfer-confirmation .requestMoneyFormStep2 label {
+.transfer-confirmation .requestMoneyFormStep2 label,
+.eufSendForm .required label{
 	width: 273px !important;
 	display: inline-block !important;
 	color: #000000;
@@ -392,14 +414,23 @@ table.gst-table tbody tr td:nth-child(2) {
 .details .string span.value,
 .confirmation .string span.value,
 .show-ReceiptHeader .twoColRow .column span.value,
-.transfer-confirmation .requestMoneyFormStep2 .input {
+.transfer-confirmation .requestMoneyFormStep2 .input,
+.eufSendForm .required div.input{
 	height: 34px;
 	color: #000000;
 	font: 19.2px Roboto-Regular, Arial, sans-serif;
 	line-height: 34px;
 }
 
-.last-required {
+.input-in-line{
+	display: inline-block !important;
+}
+
+.consent-in-line{
+	padding-top: 50px;
+}
+
+.last-required{
 	margin-bottom: 75px;
 }
 
@@ -1054,7 +1085,8 @@ table.recipients-table tbody tr td div.control a:first-child:hover {
 	background-image: url(../Images/action_delete_hover.png);
 }
 
-table.etransfer-history-table {
+table.etransfer-history-table,
+table.etransfer-history-table-withoutResults{
 	margin-bottom: 25px;
 }
 
@@ -1224,6 +1256,63 @@ input[type="checkbox"]:checked:before {
 	background: #0067C6;
 }
 
+/* Custom Radio */
+
+input[type="radio"] {
+    position: relative;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: bottom;
+    cursor: pointer;
+	margin-right: 10px;
+}
+
+input[type="radio"]:hover:before {
+  border-color: #0067C6;
+}
+
+input[type="radio"]:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    content: '';
+    border: 1.5px solid #767676;
+	border-radius: 50%;
+	background-color: white;
+	border-radius: 50%;
+}
+
+input[type="radio"]:after {
+  position: absolute;
+  display: none;
+  content: '';
+}
+
+input[type="radio"]:checked:after {
+  display: block;
+}
+
+input[type="radio"]:checked:after {
+    top: 0.35em;
+    left: 0.35em;
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 50%;
+    background: #0067C6;
+}
+
+input[type="radio"]:checked:before {
+
+  /*border: #0067C6;*/
+  border-color: #0067C6;
+  box-shadow: inset 0px 0px 0px 1px #fff;
+  background: #0067C6;
+}
+
 .CCRAAdd .receipts .column.divHide,
 .CCRARemove .receipts .column.divHide {
 	display: none;
@@ -1285,8 +1374,20 @@ body.InitiateMoneyRequest .requestMoneyFormStep2 .formActions::before {
 		margin: 15px;
 	}
 
+	#acceptedTermsAndConditionsText{
+		font-size: 16px;
+	}
+	
+	table.etransfer-history-table-withoutResults tbody tr.header{
+		display: none !important;
+	}
+	
+	table.etransfer-history-table-withoutResults tbody tr td.prose-w-100{
+		width: 100% !important;
+	}
+	
 	.required,
-	.requirederror {
+ 	.requirederror{
 		/* margin-top: 50px !important; */
 		padding-left: 0 !important;
 		padding-right: 0 !important;
@@ -1810,12 +1911,10 @@ You could also use a data-* attribute and content for this. That way "bloats" th
 		content: "Email";
 		font-weight: bold;
 	}
-
 	table.autodeposit-settings-table tbody tr td:nth-of-type(3):before {
 		content: "Account";
 		font-weight: bold;
 	}
-
 	table.autodeposit-settings-table tbody tr td:nth-of-type(5):before {
 		content: "Status";
 		font-weight: bold;
@@ -2147,7 +2246,6 @@ img.datepicker_trigger {
 }
 
 /* ________ Datepicker Links _______
-
 ** Reset link properties and then override them with !important */
 #datepicker_div a,
 .datepicker_inline a {
