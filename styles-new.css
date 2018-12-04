@@ -50,6 +50,10 @@ ul.show-topic li.link1 {
 	display: none !important;
 }
 
+.disclaimer-hine-height{
+	line-height: 1.5em;
+}
+
 .show-ReceiptHeader {
 	display: block !important;
 	padding-top: 25px;
