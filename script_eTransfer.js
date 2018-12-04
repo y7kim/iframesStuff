@@ -279,7 +279,7 @@ window.onload = function(e) {
 			dls[0].classList.add("hide-dl");
 			dls[1].classList.add("no-pad-bottom");
 				
-			document.querySelector(".linkN").classList.add("request-button")
+			document.querySelector(".linkN").classList.add("d-none");
 		 }
 		 
 		 //Request Money via INTERAC e-Transfer® screen
@@ -495,18 +495,6 @@ window.onload = function(e) {
 		//Add class to control on Pending Interac e-Transfer®s screen
 		if(pageTitle == "Pending Interac e-Transfer®s")
 		{
-			var controls = document.querySelectorAll('.control');
-			
-			for (var i = 0; i < controls.length; i++) 
-			{
-				controls[i];
-				
-				if(controls[controls.length - 1] == controls[i])
-				{
-					controls[i].classList.add('send-button');
-				}
-			}
-			
 			var hrefs = document.querySelectorAll('a');
 			
 			for (var i = 0; i < hrefs.length; i++)
