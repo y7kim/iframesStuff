@@ -119,7 +119,7 @@ window.onload = function(e) {
 				bottomDisclaimerNode.setAttribute("class", "bottom-disclaimer");
 				var textInsideDiv = document.createElement('div');
 				textInsideDiv.setAttribute("class", "disclaimer-text");
-				textInsideDiv.innerHTML ="<div class='title'>Things to know about INTERAC® e-Transfers:</div><ul><li>INTERAC® e-Transfers can only be sent and received via Canadian financial institutions</li><li>INTERAC® e-Transfers sent via mobile phone can only be sent to Canadian phone numbers.</li><li>The amount and a $1.50 Service Charge will be withdrawn from your account.</br>You may cancel the transfer before the recipient accepts it; however, the service charge will not be refunded.</br>The fee will apply even if you're over the daily eTransfer limit.</li><li>INTERAC® e-Transfers can only be sent from chequing or savings accounts. In order to send an INTERAC® e-Transfer from a different product type, transfer the funds to a chequing or savings account first.</li></ul>";
+				textInsideDiv.innerHTML ="<div class='title'>Things to know about INTERAC® e-Transfers:</div><ul class='disclaimer-hine-height'><li>INTERAC® e-Transfers can only be sent and received via Canadian financial institutions</li><li>INTERAC® e-Transfers sent via mobile phone can only be sent to Canadian phone numbers.</li><li>The amount and a $1.50 Service Charge will be withdrawn from your account.</br>You may cancel the transfer before the recipient accepts it; however, the service charge will not be refunded.</br>The fee will apply even if you're over the daily eTransfer limit.</li><li>INTERAC® e-Transfers can only be sent from chequing or savings accounts. In order to send an INTERAC® e-Transfer from a different product type, transfer the funds to a chequing or savings account first.</li></ul>";
 				bottomDisclaimerNode.appendChild(textInsideDiv);
 				var bottomDisclaimerReferenceNode = document.querySelector('.conclusion');
 				bottomDisclaimerReferenceNode.parentNode.insertBefore(bottomDisclaimerNode, bottomDisclaimerReferenceNode);
@@ -279,7 +279,7 @@ window.onload = function(e) {
 			dls[0].classList.add("hide-dl");
 			dls[1].classList.add("no-pad-bottom");
 				
-			document.querySelector(".linkN").classList.add("request-button")
+			document.querySelector(".linkN").classList.add("d-none");
 		 }
 		 
 		 //Request Money via INTERAC e-Transfer® screen
@@ -495,18 +495,6 @@ window.onload = function(e) {
 		//Add class to control on Pending Interac e-Transfer®s screen
 		if(pageTitle == "Pending Interac e-Transfer®s")
 		{
-			var controls = document.querySelectorAll('.control');
-			
-			for (var i = 0; i < controls.length; i++) 
-			{
-				controls[i];
-				
-				if(controls[controls.length - 1] == controls[i])
-				{
-					controls[i].classList.add('send-button');
-				}
-			}
-			
 			var hrefs = document.querySelectorAll('a');
 			
 			for (var i = 0; i < hrefs.length; i++)
