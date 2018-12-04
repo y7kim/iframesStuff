@@ -46,6 +46,10 @@ ul.show-topic li.link1 {
 	display: none;
 }
 
+.d-none{
+	display: none !important;
+}
+
 .show-ReceiptHeader {
 	display: block !important;
 	padding-top: 25px;
@@ -127,6 +131,7 @@ a {
 	padding-top: 10px;
 	font-family: Roboto-Regular, Arial, sans-serif;
 	font-size: 19.2px;
+	padding-bottom: 30px;
 }
 
 .cancel-hint-padding {
@@ -710,16 +715,6 @@ label:before,
 	list-style: outside none none;
 }
 
-.send-button a {
-	float: none !important;
-	height: auto !important;
-	margin-top: 25px;
-}
-
-.send-button {
-	margin-top: 25px;
-}
-
 ul.show-topic li {
 	list-style: none !important;
 }
@@ -799,7 +794,6 @@ ul.show-topic li {
 }
 
 .formActions input,
-.send-button a,
 .back-to-pending-transfers a,
 ul.show-topic li.link1 a,
 .request-button a {
@@ -829,7 +823,6 @@ ul.show-topic li.link1 a,
 }
 
 .formActions input:hover,
-.send-button a:hover,
 .back-to-pending-transfers a:hover,
 ul.show-topic li.link1 a: hover,
 .request-button a:hover {
@@ -867,6 +860,10 @@ ul.show-topic li.link1 a: hover,
 
 .pending-transfers-table table tbody tr th:last-child label {
 	color: #F2F3F6;
+}
+
+.pending-transfers-table table tbody tr td.recipient div.recipient{
+	max-width: 325px;
 }
 
 .pending-transfers-table table tbody tr td.control a:first-child {
@@ -1443,16 +1440,11 @@ input[type="radio"]:checked:before {
 	}
 
 	.formActions input,
-	.send-button a,
 	.back-to-pending-transfers a,
 	ul.show-topic li.link1 a,
 	.request-button a {
 		min-width: 0 !important;
 		width: 100% !important;
-	}
-
-	.send-button a {
-		padding: 14px 0;
 	}
 
 	.formActions li {
