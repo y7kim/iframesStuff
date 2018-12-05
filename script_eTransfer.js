@@ -477,18 +477,17 @@ window.onload = function(e) {
 		//Add placeholder to date input
 		if(pageTitle == "Search Interac e-Transfer® History")
 		{
-			var topDisclaimerNode = document.createElement('div');
+			/*var topDisclaimerNode = document.createElement('div');
 			topDisclaimerNode.setAttribute("class", "top-disclaimer--search-transfers");
 			topDisclaimerNode.innerHTML ='Enter a date range to display you transfer history';
 			var bottomDisclaimerReferenceNode = document.querySelector('.instructions');
-			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
+			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);*/
 			
 			var selects = document.querySelectorAll('.hasDatepicker');
 			
 			for (var i = 0; i < selects.length; i++)
 			{
 				selects[i].placeholder = "dd/mm/yyyy";
-				selects[i].type = "date";
 			}
 		}
 		
