@@ -38,8 +38,6 @@ body {
 .copyright,
 .hint,
 .cntxthelp,
-.topic,
-.instructions,
 .colOne,
 .receiptHeader,
 ul.show-topic li.link1 {
@@ -1314,8 +1312,8 @@ input[type="radio"]:checked:before {
   background: #0067C6;
 }
 
-.CCRAAdd .receipts .column.divHide,
-.CCRARemove .receipts .column.divHide {
+.receipts .column.divHide,
+.receipts .column.divHide {
 	display: none;
 }
 
@@ -1327,6 +1325,24 @@ input[type="radio"]:checked:before {
 	background-image: url(/DynamicContent/Resources/Images/warning_error.png);
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+ul.nav.topic li {
+    list-style-type: none;
+    display: none;
+}
+
+ul.nav.topic li.link0 {
+    display: block;
+}
+
+ul.nav.topic li a {
+    display: none;
+}
+
+ul.nav.topic li a[title="Print Receipt"],
+ul.nav.topic li a[title="Print receipt"] {
+    display: block;
 }
 
 /* Autodeposit */
