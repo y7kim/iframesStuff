@@ -1394,6 +1394,10 @@ ul.nav.topic li a[title="Print receipt"] {
 	display: none;
 }
 
+receipt-page-form footertrademark::before {
+	content: "Note: Service charge will be applied to your account when the funds are deposited"
+}
+
 /* ModifyMoneyRequest */
 modify-request-form .formActions .formCancel a[title="Clear"] {
 	display: none;
