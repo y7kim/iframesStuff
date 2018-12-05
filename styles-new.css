@@ -44,11 +44,11 @@ ul.show-topic li.link1 {
 	display: none;
 }
 
-.d-none{
+.d-none {
 	display: none !important;
 }
 
-.disclaimer-hine-height{
+.disclaimer-hine-height {
 	line-height: 1.5em;
 }
 
@@ -163,21 +163,21 @@ thead:focus,
 	outline: 0;
 }
 
-.show-div{
+.show-div {
 	display: block !important;
 	margin-bottom: 25px;
 }
 
-.add-padd-top{
+.add-padd-top {
 	margin-top: 85px !important;
 }
 
-.remove-padd-top{
+.remove-padd-top {
 	margin-top: 0 !important;
 	padding-bottom: 25px;
 }
 
-.editContainer[_ngcontent-ffr-6]{
+.editContainer[_ngcontent-ffr-6] {
 	background: none !important;
 }
 
@@ -287,15 +287,15 @@ p#acknowledgement1,
 	font-weight: bold;
 }
 
-#acceptedTermsAndConditionsText{
+#acceptedTermsAndConditionsText {
 	padding-left: 35px !important;
-    padding-top: 5px;
+	padding-top: 5px;
 	color: #000000;
 	font-family: Roboto-Regular, Arial, sans-serif;
 	font-size: 19.2px;
 }
 
-.registerUser{
+.registerUser {
 	background: white !important;
 }
 
@@ -389,7 +389,7 @@ p#acknowledgement1,
 .confirmation .string label,
 .show-ReceiptHeader .twoColRow .column label,
 .transfer-confirmation .requestMoneyFormStep2 label,
-.eufSendForm .required label{
+.eufSendForm .required label {
 	width: 273px !important;
 	display: inline-block !important;
 	color: #000000;
@@ -422,22 +422,22 @@ table.gst-table tbody tr td:nth-child(2) {
 .confirmation .string span.value,
 .show-ReceiptHeader .twoColRow .column span.value,
 .transfer-confirmation .requestMoneyFormStep2 .input,
-.eufSendForm .required div.input{
+.eufSendForm .required div.input {
 	height: 34px;
 	color: #000000;
 	font: 19.2px Roboto-Regular, Arial, sans-serif;
 	line-height: 34px;
 }
 
-.input-in-line{
+.input-in-line {
 	display: inline-block !important;
 }
 
-.consent-in-line{
+.consent-in-line {
 	padding-top: 50px;
 }
 
-.last-required{
+.last-required {
 	margin-bottom: 75px;
 }
 
@@ -864,7 +864,7 @@ ul.show-topic li.link1 a: hover,
 	color: #F2F3F6;
 }
 
-.pending-transfers-table table tbody tr td.recipient div.recipient{
+.pending-transfers-table table tbody tr td.recipient div.recipient {
 	max-width: 325px;
 }
 
@@ -1085,7 +1085,7 @@ table.recipients-table tbody tr td div.control a:first-child:hover {
 }
 
 table.etransfer-history-table,
-table.etransfer-history-table-withoutResults{
+table.etransfer-history-table-withoutResults {
 	margin-bottom: 25px;
 }
 
@@ -1258,58 +1258,58 @@ input[type="checkbox"]:checked:before {
 /* Custom Radio */
 
 input[type="radio"] {
-    position: relative;
-    display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
-    vertical-align: bottom;
-    cursor: pointer;
+	position: relative;
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	vertical-align: bottom;
+	cursor: pointer;
 	margin-right: 10px;
 }
 
 input[type="radio"]:hover:before {
-  border-color: #0067C6;
+	border-color: #0067C6;
 }
 
 input[type="radio"]:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
-    content: '';
-    border: 1.5px solid #767676;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	content: '';
+	border: 1.5px solid #767676;
 	border-radius: 50%;
 	background-color: white;
 	border-radius: 50%;
 }
 
 input[type="radio"]:after {
-  position: absolute;
-  display: none;
-  content: '';
+	position: absolute;
+	display: none;
+	content: '';
 }
 
 input[type="radio"]:checked:after {
-  display: block;
+	display: block;
 }
 
 input[type="radio"]:checked:after {
-    top: 0.35em;
-    left: 0.35em;
-    width: 0.8em;
-    height: 0.8em;
-    border-radius: 50%;
-    background: #0067C6;
+	top: 0.35em;
+	left: 0.35em;
+	width: 0.8em;
+	height: 0.8em;
+	border-radius: 50%;
+	background: #0067C6;
 }
 
 input[type="radio"]:checked:before {
 
-  /*border: #0067C6;*/
-  border-color: #0067C6;
-  box-shadow: inset 0px 0px 0px 1px #fff;
-  background: #0067C6;
+	/*border: #0067C6;*/
+	border-color: #0067C6;
+	box-shadow: inset 0px 0px 0px 1px #fff;
+	background: #0067C6;
 }
 
 .receipts .column.divHide,
@@ -1328,21 +1328,21 @@ input[type="radio"]:checked:before {
 }
 
 ul.nav.topic li {
-    list-style-type: none;
-    display: none;
+	list-style-type: none;
+	display: none;
 }
 
 ul.nav.topic li.link0 {
-    display: block;
+	display: block;
 }
 
 ul.nav.topic li a {
-    display: none;
+	display: none;
 }
 
 ul.nav.topic li a[title="Print Receipt"],
 ul.nav.topic li a[title="Print receipt"] {
-    display: block;
+	display: block;
 }
 
 /* Autodeposit */
@@ -1396,20 +1396,20 @@ modify-request-form .formActions .formCancel a[title="Clear"] {
 		margin: 15px;
 	}
 
-	#acceptedTermsAndConditionsText{
+	#acceptedTermsAndConditionsText {
 		font-size: 16px;
 	}
-	
-	table.etransfer-history-table-withoutResults tbody tr.header{
+
+	table.etransfer-history-table-withoutResults tbody tr.header {
 		display: none !important;
 	}
-	
-	table.etransfer-history-table-withoutResults tbody tr td.prose-w-100{
+
+	table.etransfer-history-table-withoutResults tbody tr td.prose-w-100 {
 		width: 100% !important;
 	}
-	
+
 	.required,
- 	.requirederror{
+	.requirederror {
 		/* margin-top: 50px !important; */
 		padding-left: 0 !important;
 		padding-right: 0 !important;
