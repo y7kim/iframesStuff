@@ -1378,6 +1378,11 @@ ul.nav.topic li a[title="Print receipt"] {
 	display: none;
 }
 
+/* ModifyMoneyRequest */
+modify-request-form .formActions .formCancel a[title="Clear"] {
+	display: none;
+}
+
 @media only screen and (min-width: 768px) {
 	.deleteModalText {
 		height: 64px;
