@@ -312,7 +312,7 @@ window.onload = function(e) {
 				
 			document.querySelector('.success-text').textContent = "Request Status Completed";
 				
-			showPrintButton();
+			//showPrintButton();
 				
 			var link1 = document.querySelector(".link1").classList.add("show-link1");
 		 }
@@ -337,7 +337,7 @@ window.onload = function(e) {
 				
 			document.querySelector('.success-text').textContent = "Request resent successfully";
 				
-			showPrintButton();
+			//showPrintButton();
 		 }
 		 
 		 //Resend Interac e-Transfer® Notice - Confirm screen
@@ -360,7 +360,7 @@ window.onload = function(e) {
 				
 			document.querySelector('.success-text').textContent = "Notice resent successfully";
 				
-			showPrintButton();
+			//showPrintButton();
 		 }
 		 
 		 //Cancel Money Request screen
@@ -390,7 +390,7 @@ window.onload = function(e) {
 				
 			document.querySelector('.success-text').textContent = "Transfer Status Deleted";
 				
-			showPrintButton();
+			//showPrintButton();
 		 }
 		 
 		 //Edit Money Request - Receipt screen
@@ -522,11 +522,11 @@ window.onload = function(e) {
 		}
 		
 		//add class to formCancel on Edit Money Request screen
-		if(pageTitle == "Edit Money Request")
+		/*if(pageTitle == "Edit Money Request")
 		{
 			var formCancel = document.querySelectorAll('.formCancel');
 			formCancel[1].classList.add('hide-clear-button');
-		}
+		}*/
 
 		//Remove Delete and Edit text on Recipients screen
 		if(pageTitle == "Recipients")
