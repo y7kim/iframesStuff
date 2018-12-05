@@ -1972,6 +1972,11 @@ You could also use a data-* attribute and content for this. That way "bloats" th
 		background-position: left !important;
 		width: 31px !important;
 	}
+
+	ul.nav.topic li a[title="Print Receipt"],
+	ul.nav.topic li a[title="Print receipt"] {
+		display: none;
+	}
 }
 
 @media print {
