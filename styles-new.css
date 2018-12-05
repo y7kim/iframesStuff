@@ -724,7 +724,9 @@ ul.show-topic li {
 .formActions a,
 #addNewEmail,
 .show-topic .link0 a,
-.recipient-topic .link0 a {
+.recipient-topic .link0 a,
+ul.nav.topic li a[title="Print Receipt"],
+ul.nav.topic li a[title="Print receipt"] {
 	border-collapse: collapse;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px 0px;
 	box-sizing: border-box;
@@ -752,7 +754,9 @@ ul.show-topic li {
 .formActions a:hover,
 #addNewEmail:hover,
 .show-topic .link0 a:hover,
-.recipient-topic .link0 a:hover {
+.recipient-topic .link0 a:hover,
+ul.nav.topic li a[title="Print Receipt"]:hover,
+ul.nav.topic li a[title="Print receipt"]:hover {
 	background-color: #cde0f1;
 	color: #0067c6;
 	border: 2px solid #0067c6;
@@ -764,7 +768,9 @@ ul.show-topic li {
 .formActions a:after,
 #addNewEmail:after,
 .show-topic .link0 a:after,
-.recipient-topic .link0 a:after {
+.recipient-topic .link0 a:after,
+ul.nav.topic li a[title="Print Receipt"]:after,
+ul.nav.topic li a[title="Print receipt"]:after {
 	border-collapse: collapse;
 	box-sizing: border-box;
 	color: rgb(255, 255, 255);
@@ -1342,7 +1348,7 @@ ul.nav.topic li a {
 
 ul.nav.topic li a[title="Print Receipt"],
 ul.nav.topic li a[title="Print receipt"] {
-	display: block;
+	float: none;
 }
 
 /* Autodeposit */
