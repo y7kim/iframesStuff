@@ -38,6 +38,8 @@ body {
 .copyright,
 .hint,
 .cntxthelp,
+.topic,
+.instructions,
 .colOne,
 .receiptHeader,
 ul.show-topic li.link1 {
@@ -55,6 +57,28 @@ ul.show-topic li.link1 {
 .show-ReceiptHeader {
 	display: block !important;
 	padding-top: 25px;
+}
+
+.d-block{
+	display: block !important;
+}
+
+.d-block li.link1{
+	list-style: none;
+}
+
+.d-block li.link0,
+.d-block li.link2{
+	display: none !important;
+}
+
+.conclusion-pad-top{
+	padding-top: 100px;
+	padding-left: 40px;
+}
+
+.conclusion-pad-top-details{
+	padding-top: 100px;
 }
 
 .show-link1 {
@@ -810,7 +834,9 @@ ul.nav.topic li a[title="Add recipient"]:before {
 .formActions input,
 .back-to-pending-transfers a,
 ul.show-topic li.link1 a,
-.request-button a {
+.request-button a,
+.d-block .link1 a,
+.history-details-button a {
 	border-collapse: collapse;
 	box-sizing: border-box;
 	color: rgb(255, 255, 255);
@@ -839,7 +865,9 @@ ul.show-topic li.link1 a,
 .formActions input:hover,
 .back-to-pending-transfers a:hover,
 ul.show-topic li.link1 a: hover,
-.request-button a:hover {
+.request-button a:hover,
+.d-block .link1 a:hover,
+.history-details-button a:hover {
 	background-color: #459914;
 	color: rgb(255, 255, 255);
 	box-shadow: 0 0 8px rgba(0, 0, 0, .15);
@@ -1097,8 +1125,14 @@ table.recipients-table tbody tr td div.control a:first-child:hover {
 }
 
 table.etransfer-history-table,
-table.etransfer-history-table-withoutResults {
+table.etransfer-history-table-withoutResults,
+table.etransfer-history-table-details{
 	margin-bottom: 25px;
+}
+
+table.etransfer-history-table tbody tr.header,
+table.etransfer-history-table-details tbody tr.header{
+	display: table-row !important;
 }
 
 table caption {
@@ -1411,6 +1445,13 @@ modify-request-form .formActions .formCancel a[title="Clear"] {
 }
 
 @media only screen and (max-width: 767px) {
+	
+	table.etransfer-history-table tbody tr,
+	table.etransfer-history-table tbody tr td,
+	table.etransfer-history-table-details tbody tr,
+	table.etransfer-history-table-details tbody tr td{
+		width: 100% !important;
+	}
 
 	body {
 		margin: 15px;
@@ -1487,7 +1528,9 @@ modify-request-form .formActions .formCancel a[title="Clear"] {
 	.formActions input,
 	.back-to-pending-transfers a,
 	ul.show-topic li.link1 a,
-	.request-button a {
+	.request-button a,
+	.d-block .link1 a,
+	.history-details-button a	{
 		min-width: 0 !important;
 		width: 100% !important;
 	}
@@ -1707,6 +1750,15 @@ modify-request-form .formActions .formCancel a[title="Clear"] {
 	.no-pad-bottom {
 		padding-bottom: 0 !important;
 	}
+	
+	.d-block ul.d-block{
+		padding-left: 0;
+	}
+	
+	.conclusion-pad-top{
+		padding-top: 0;
+		padding-left: 0;
+	}
 
 	/*NEW STUFF*/
 
@@ -1739,9 +1791,23 @@ modify-request-form .formActions .formCancel a[title="Clear"] {
 	}
 
 	table.recipients-table tbody tr.header,
-	.pending-transfers-table table tbody tr.header {
+	.pending-transfers-table table tbody tr.header,
+	table.etransfer-history-table tbody tr.header,
+	table.etransfer-history-table-details tbody tr.header	{
 		display: none !important;
-		;
+	}
+	
+	table.etransfer-history-table tbody tr td.date	{
+		display: none !important;
+	}
+	
+	table.etransfer-history-table tbody tr td.currency {
+		margin-top: 75px;
+	}
+	
+	table.etransfer-history-table tbody tr td.recipient div.recipient {
+		word-break: break-word;
+		margin-bottom: 10px;
 	}
 
 	table.recipients-table tbody tr td,
@@ -1771,6 +1837,10 @@ modify-request-form .formActions .formCancel a[title="Clear"] {
 	table.recipients-table tbody tr td.date,
 	table.recipients-table tbody tr td.information {
 		padding-left: 0px;
+	}
+	
+	table.etransfer-history-table-details tbody tr td.date {
+		padding-left: 0;
 	}
 
 	table.recipients-table tbody tr td,
@@ -1909,6 +1979,37 @@ modify-request-form .formActions .formCancel a[title="Clear"] {
 Label the data
 You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
 */
+
+	table.etransfer-history-table-details tbody tr td.date:before {
+		content: "Date";
+		font-weight: bold;
+	}
+	
+	table.etransfer-history-table-details tbody tr td.status:before {
+		content: "Status";
+		font-weight: bold;
+	}
+	
+	table.etransfer-history-table-details tbody tr td.memo:before {
+		content: "Message";
+		font-weight: bold;
+	}
+	
+	table.etransfer-history-table tbody tr td.recipient:before {
+		content: "Transfer From/To";
+		font-weight: bold;
+	}
+	
+	table.etransfer-history-table tbody tr td.currency:before {
+		content: "Amount";
+		font-weight: bold;
+	}
+	
+	table.etransfer-history-table tbody tr td.status:before {
+		content: "Status";
+		font-weight: bold;
+	}
+     
 	table.recipients-table tbody tr td:nth-of-type(1):before {
 		content: "Recipient";
 		font-weight: bold;
