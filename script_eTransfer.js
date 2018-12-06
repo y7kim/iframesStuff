@@ -513,11 +513,11 @@ window.onload = function(e) {
 			var table = document.querySelector('.summarygroup');
 			table.classList.add('pending-transfers-table');
 			
-			var topDisclaimerNode = document.createElement('div');
+			/*var topDisclaimerNode = document.createElement('div');
 			topDisclaimerNode.setAttribute("class", "top-disclaimer");
 			topDisclaimerNode.innerHTML ='To remind a recipient to accept the funds or request, click on <b>Resend Notice</b> beside the transfer. To edit a request, click on <b>Edit</b>. To cancel a transfer or request, click on <b>Cancel</b>.';
 			var bottomDisclaimerReferenceNode = document.querySelector('.summarygroup');
-			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
+			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);*/
 		}
 		
 		//add class to formCancel on Edit Money Request screen
