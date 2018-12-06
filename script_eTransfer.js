@@ -211,12 +211,12 @@ window.onload = function(e) {
 		 }
 		 
 		 //Receive Interac e-Transfer® screen
-		 if(pageTitle == "Receive Interac e-Transfer®")
+		 /*if(pageTitle == "Receive Interac e-Transfer®")
 		 {
 			var requiredAttr = document.querySelectorAll(".required");
 			requiredAttr[0].classList.add("remove-padd-top");
 			requiredAttr[0].textContent = "You have answered the security question correctly, please indicate whether you would like to accept or decline this transfer";
-		 }
+		 }*/
 		 
 		 //Receive Interac e-Transfer® - Confirm screen
 		 if(pageTitle == "Receive Interac e-Transfer® - Confirm")
