@@ -211,12 +211,12 @@ window.onload = function(e) {
 		 }
 		 
 		 //Receive Interac e-Transfer® screen
-		 if(pageTitle == "Receive Interac e-Transfer®")
+		 /*if(pageTitle == "Receive Interac e-Transfer®")
 		 {
 			var requiredAttr = document.querySelectorAll(".required");
 			requiredAttr[0].classList.add("remove-padd-top");
 			requiredAttr[0].textContent = "You have answered the security question correctly, please indicate whether you would like to accept or decline this transfer";
-		 }
+		 }*/
 		 
 		 //Receive Interac e-Transfer® - Confirm screen
 		 if(pageTitle == "Receive Interac e-Transfer® - Confirm")
@@ -312,7 +312,7 @@ window.onload = function(e) {
 				
 			document.querySelector('.success-text').textContent = "Request Status Completed";
 				
-			showPrintButton();
+			//showPrintButton();
 				
 			var link1 = document.querySelector(".link1").classList.add("show-link1");
 		 }
@@ -337,7 +337,7 @@ window.onload = function(e) {
 				
 			document.querySelector('.success-text').textContent = "Request resent successfully";
 				
-			showPrintButton();
+			//showPrintButton();
 		 }
 		 
 		 //Resend Interac e-Transfer® Notice - Confirm screen
@@ -360,7 +360,7 @@ window.onload = function(e) {
 				
 			document.querySelector('.success-text').textContent = "Notice resent successfully";
 				
-			showPrintButton();
+			//showPrintButton();
 		 }
 		 
 		 //Cancel Money Request screen
@@ -390,7 +390,7 @@ window.onload = function(e) {
 				
 			document.querySelector('.success-text').textContent = "Transfer Status Deleted";
 				
-			showPrintButton();
+			//showPrintButton();
 		 }
 		 
 		 //Edit Money Request - Receipt screen
@@ -477,18 +477,17 @@ window.onload = function(e) {
 		//Add placeholder to date input
 		if(pageTitle == "Search Interac e-Transfer® History")
 		{
-			var topDisclaimerNode = document.createElement('div');
+			/*var topDisclaimerNode = document.createElement('div');
 			topDisclaimerNode.setAttribute("class", "top-disclaimer--search-transfers");
 			topDisclaimerNode.innerHTML ='Enter a date range to display you transfer history';
 			var bottomDisclaimerReferenceNode = document.querySelector('.instructions');
-			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
+			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);*/
 			
 			var selects = document.querySelectorAll('.hasDatepicker');
 			
 			for (var i = 0; i < selects.length; i++)
 			{
 				selects[i].placeholder = "dd/mm/yyyy";
-				selects[i].type = "date";
 			}
 		}
 		
@@ -522,11 +521,11 @@ window.onload = function(e) {
 		}
 		
 		//add class to formCancel on Edit Money Request screen
-		if(pageTitle == "Edit Money Request")
+		/*if(pageTitle == "Edit Money Request")
 		{
 			var formCancel = document.querySelectorAll('.formCancel');
 			formCancel[1].classList.add('hide-clear-button');
-		}
+		}*/
 
 		//Remove Delete and Edit text on Recipients screen
 		if(pageTitle == "Recipients")
