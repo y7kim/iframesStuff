@@ -488,6 +488,7 @@ window.onload = function(e) {
 			for (var i = 0; i < selects.length; i++)
 			{
 				selects[i].placeholder = "dd/mm/yyyy";
+				selects[i].type = "date";
 			}
 		}
 		
@@ -564,20 +565,39 @@ window.onload = function(e) {
 			successImageReferenceNode.parentNode.insertBefore(successImageNode, successImageReferenceNode);
 		}*/
 		
+		
 		//Add class to eTransfer History screen table
 		if(pageTitle == "Interac e-Transfer® History")
 		{
-			
-			
-			if(document.querySelectorAll("span")[0].textContent == "You do not have any Interac e-Transfer® within this date range.")
+			if(document.querySelector("span") != null)
 			{
-				document.querySelector('.summarydata').classList.add('etransfer-history-table-withoutResults');
-				document.querySelector(".prose").classList.add("prose-w-100");
+				if(document.querySelectorAll("span")[0].textContent == "You do not have any Interac e-Transfer® within this date range.")
+				{
+					document.querySelector('.summarydata').classList.add('etransfer-history-table-withoutResults');
+					document.querySelector(".prose").classList.add("prose-w-100");
+				}
+				
+				else{
+					document.querySelector('.summarydata').classList.add('etransfer-history-table');
+				}
 			}
 			
 			else{
 				document.querySelector('.summarydata').classList.add('etransfer-history-table');
+				var showButton = document.querySelectorAll('.topic');
+				showButton[2].classList.add("d-block");
+				showButton[3].classList.add("d-block");
+				document.querySelector(".conclusion").classList.add("conclusion-pad-top");
 			}
+		}
+		
+		//Add class to eTransfer History screen table
+		if(pageTitle == "Interac e-Transfer® History - Details")
+		{
+			document.querySelector('.summarydata').classList.add('etransfer-history-table-details');
+			var showButton = document.querySelectorAll('.control');
+			showButton[0].classList.add("history-details-button");
+			document.querySelector(".conclusion").classList.add("conclusion-pad-top-details");
 		}
 		
 		//Add class to Delete Recipient error page
