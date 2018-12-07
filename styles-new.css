@@ -1425,6 +1425,14 @@ modify-request-form .formActions .formCancel a[title="Clear"] {
 	display: none;
 }
 
+/* CancelMoneyRequest */
+cancel-request-form .formActions::before {
+	content: "This message will appear in the cancellation notice sent to the recipient.";
+	display: block;
+	text-align: left;
+	margin-bottom: 50px;
+}
+
 @media only screen and (min-width: 768px) {
 	.deleteModalText {
 		height: 64px;
