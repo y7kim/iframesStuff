@@ -515,7 +515,7 @@ window.onload = function(e) {
 			
 			var topDisclaimerNode = document.createElement('div');
 			topDisclaimerNode.setAttribute("class", "top-disclaimer");
-			topDisclaimerNode.innerHTML ='To remind a recipient to accept the funds or request, click on <b>Resend Notice</b> beside the transfer. To edit a request, click on <b>Edit</b>. To cancel a transfer or request, click on <b>Cancel</b>.';
+			topDisclaimerNode.innerHTML ='To remind an Interac e-Transfer&reg; Recipient to accept the funds, click on <b>Resend Notice</b> beside the transfer. To edit a request, click on <b>Edit</b>. To cancel an Interac e-Transfer&reg;, or receive a refund for a declined e-Transfer click on <b>Cancel</b>.';
 			var bottomDisclaimerReferenceNode = document.querySelector('.summarygroup');
 			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
 		}

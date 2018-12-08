@@ -430,6 +430,10 @@ table.gst-table tbody tr td:nth-child(2) {
 	line-height: 34px;
 }
 
+.eufSendForm .required div.input {
+	height: auto;
+}
+
 .input-in-line {
 	display: inline-block !important;
 }
@@ -1432,6 +1436,16 @@ cancel-request-form .formActions::before {
 	display: block;
 	text-align: left;
 	margin-bottom: 50px;
+}
+
+/* CertapayReceiveTransfer */
+
+form[action*="EmailMoney/Receive/?step=StepReceive2"]::before {
+	content: "You have answered the security question correctly. Please indicate if you wish to accept or decline this transfer."
+}
+
+form[action*="EmailMoney/Receive/?step=StepAuthenticate2"]::before {
+	content: "To accept or decline this transfer, you must correctly answer the security question below."
 }
 
 @media only screen and (min-width: 768px) {
