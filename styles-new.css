@@ -65,6 +65,11 @@ ul.show-topic li.link1 {
 
 .d-block li.link1{
 	list-style: none;
+	display: block !important;
+}
+
+.d-block li.link1 a{
+	display: block !important;
 }
 
 .d-block li.link0,
@@ -898,6 +903,15 @@ ul.show-topic li.link1 a: hover,
 
 .control a:first-child {
 	color: white;
+}
+
+table.etransfer-history-table tbody tr td.control div.control a{
+	background-image: url(../Images/action_details.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+	text-indent: -9999;
 }
 
 .pending-transfers-table table tbody tr th:last-child label {
@@ -1797,10 +1811,6 @@ modify-request-form .formActions .formCancel a[title="Clear"] {
 		display: none !important;
 	}
 	
-	table.etransfer-history-table tbody tr td.date	{
-		display: none !important;
-	}
-	
 	table.etransfer-history-table tbody tr td.currency {
 		margin-top: 75px;
 	}
@@ -1835,12 +1845,11 @@ modify-request-form .formActions .formCancel a[title="Clear"] {
 	table.recipients-table tbody tr th.date label,
 	table.recipients-table tbody tr td.contact,
 	table.recipients-table tbody tr td.date,
-	table.recipients-table tbody tr td.information {
+	table.recipients-table tbody tr td.information,
+	table.etransfer-history-table tbody tr td.recipient,
+	table.etransfer-history-table tbody tr td.date,
+	table.etransfer-history-table-details tbody tr td.date{
 		padding-left: 0px;
-	}
-	
-	table.etransfer-history-table-details tbody tr td.date {
-		padding-left: 0;
 	}
 
 	table.recipients-table tbody tr td,
@@ -1992,6 +2001,11 @@ You could also use a data-* attribute and content for this. That way "bloats" th
 	
 	table.etransfer-history-table-details tbody tr td.memo:before {
 		content: "Message";
+		font-weight: bold;
+	}
+	
+	table.etransfer-history-table tbody tr td.date:before	{
+		content: "Transfer Date";
 		font-weight: bold;
 	}
 	
