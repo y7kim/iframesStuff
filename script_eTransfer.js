@@ -488,7 +488,6 @@ window.onload = function(e) {
 			for (var i = 0; i < selects.length; i++)
 			{
 				selects[i].placeholder = "dd/mm/yyyy";
-				selects[i].type = "date";
 			}
 		}
 		
