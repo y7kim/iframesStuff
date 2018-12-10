@@ -39,6 +39,8 @@ body {
 .instructions,
 .hint,
 .cntxthelp,
+.topic,
+.instructions,
 .colOne,
 .receiptHeader,
 ul.show-topic li.link1 {
@@ -56,6 +58,33 @@ ul.show-topic li.link1 {
 .show-ReceiptHeader {
 	display: block !important;
 	padding-top: 25px;
+}
+
+.d-block{
+	display: block !important;
+}
+
+.d-block li.link1{
+	list-style: none;
+	display: block !important;
+}
+
+.d-block li.link1 a{
+	display: block !important;
+}
+
+.d-block li.link0,
+.d-block li.link2{
+	display: none !important;
+}
+
+.conclusion-pad-top{
+	padding-top: 100px;
+	padding-left: 40px;
+}
+
+.conclusion-pad-top-details{
+	padding-top: 100px;
 }
 
 .show-link1 {
@@ -820,7 +849,9 @@ ul.nav.topic li a[title="Send another money request"]:before {
 .back-to-pending-transfers a,
 ul.show-topic li.link1 a,
 .request-button a,
-receipt-page-form ul.nav.topic li a[title="Send another money request"] {
+receipt-page-form ul.nav.topic li a[title="Send another money request"],
+.d-block .link1 a,
+.history-details-button a {
 	border-collapse: collapse;
 	box-sizing: border-box;
 	color: rgb(255, 255, 255);
@@ -850,7 +881,9 @@ receipt-page-form ul.nav.topic li a[title="Send another money request"] {
 .back-to-pending-transfers a:hover,
 ul.show-topic li.link1 a: hover,
 .request-button a:hover,
-receipt-page-form ul.nav.topic li a[title="Send another money request"]:hover {
+receipt-page-form ul.nav.topic li a[title="Send another money request"]:hover,
+.d-block .link1 a:hover,
+.history-details-button a:hover {
 	background-color: #459914;
 	color: rgb(255, 255, 255);
 	box-shadow: 0 0 8px rgba(0, 0, 0, .15);
@@ -881,6 +914,15 @@ receipt-page-form ul.nav.topic li a[title="Send another money request"]:hover {
 
 .control a:first-child {
 	color: white;
+}
+
+table.etransfer-history-table tbody tr td.control div.control a{
+	background-image: url(../Images/action_details.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+	text-indent: -9999;
 }
 
 .pending-transfers-table table tbody tr th:last-child label {
@@ -1108,8 +1150,14 @@ table.recipients-table tbody tr td div.control a:first-child:hover {
 }
 
 table.etransfer-history-table,
-table.etransfer-history-table-withoutResults {
+table.etransfer-history-table-withoutResults,
+table.etransfer-history-table-details{
 	margin-bottom: 25px;
+}
+
+table.etransfer-history-table tbody tr.header,
+table.etransfer-history-table-details tbody tr.header{
+	display: table-row !important;
 }
 
 table caption {
@@ -1456,6 +1504,13 @@ form[action*="EmailMoney/Receive/?step=StepAuthenticate2"]::before {
 }
 
 @media only screen and (max-width: 767px) {
+	
+	table.etransfer-history-table tbody tr,
+	table.etransfer-history-table tbody tr td,
+	table.etransfer-history-table-details tbody tr,
+	table.etransfer-history-table-details tbody tr td{
+		width: 100% !important;
+	}
 
 	body {
 		margin: 15px;
@@ -1532,7 +1587,9 @@ form[action*="EmailMoney/Receive/?step=StepAuthenticate2"]::before {
 	.formActions input,
 	.back-to-pending-transfers a,
 	ul.show-topic li.link1 a,
-	.request-button a {
+	.request-button a,
+	.d-block .link1 a,
+	.history-details-button a	{
 		min-width: 0 !important;
 		width: 100% !important;
 	}
@@ -1752,6 +1809,15 @@ form[action*="EmailMoney/Receive/?step=StepAuthenticate2"]::before {
 	.no-pad-bottom {
 		padding-bottom: 0 !important;
 	}
+	
+	.d-block ul.d-block{
+		padding-left: 0;
+	}
+	
+	.conclusion-pad-top{
+		padding-top: 0;
+		padding-left: 0;
+	}
 
 	/*NEW STUFF*/
 
@@ -1784,9 +1850,19 @@ form[action*="EmailMoney/Receive/?step=StepAuthenticate2"]::before {
 	}
 
 	table.recipients-table tbody tr.header,
-	.pending-transfers-table table tbody tr.header {
+	.pending-transfers-table table tbody tr.header,
+	table.etransfer-history-table tbody tr.header,
+	table.etransfer-history-table-details tbody tr.header	{
 		display: none !important;
-		;
+	}
+	
+	table.etransfer-history-table tbody tr td.currency {
+		margin-top: 75px;
+	}
+	
+	table.etransfer-history-table tbody tr td.recipient div.recipient {
+		word-break: break-word;
+		margin-bottom: 10px;
 	}
 
 	table.recipients-table tbody tr td,
@@ -1814,7 +1890,10 @@ form[action*="EmailMoney/Receive/?step=StepAuthenticate2"]::before {
 	table.recipients-table tbody tr th.date label,
 	table.recipients-table tbody tr td.contact,
 	table.recipients-table tbody tr td.date,
-	table.recipients-table tbody tr td.information {
+	table.recipients-table tbody tr td.information,
+	table.etransfer-history-table tbody tr td.recipient,
+	table.etransfer-history-table tbody tr td.date,
+	table.etransfer-history-table-details tbody tr td.date{
 		padding-left: 0px;
 	}
 
@@ -1958,6 +2037,42 @@ form[action*="EmailMoney/Receive/?step=StepAuthenticate2"]::before {
 Label the data
 You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
 */
+
+	table.etransfer-history-table-details tbody tr td.date:before {
+		content: "Date";
+		font-weight: bold;
+	}
+	
+	table.etransfer-history-table-details tbody tr td.status:before {
+		content: "Status";
+		font-weight: bold;
+	}
+	
+	table.etransfer-history-table-details tbody tr td.memo:before {
+		content: "Message";
+		font-weight: bold;
+	}
+	
+	table.etransfer-history-table tbody tr td.date:before	{
+		content: "Transfer Date";
+		font-weight: bold;
+	}
+	
+	table.etransfer-history-table tbody tr td.recipient:before {
+		content: "Transfer From/To";
+		font-weight: bold;
+	}
+	
+	table.etransfer-history-table tbody tr td.currency:before {
+		content: "Amount";
+		font-weight: bold;
+	}
+	
+	table.etransfer-history-table tbody tr td.status:before {
+		content: "Status";
+		font-weight: bold;
+	}
+     
 	table.recipients-table tbody tr td:nth-of-type(1):before {
 		content: "Recipient";
 		font-weight: bold;
