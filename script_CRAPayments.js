@@ -388,9 +388,12 @@ window.onload = function(e) {
 		 if(pageTitle == "File GST/HST 34")
 		 {
 			var requiredFields = document.querySelectorAll('.required');
-			requiredFields[2].classList.add('contact-phone-input');
-			requiredFields[3].classList.add('date-input');
-			requiredFields[4].classList.add('date-input');
+
+			if (requiredFields.length) {
+				requiredFields[2].classList.add('contact-phone-input');
+				requiredFields[3].classList.add('date-input');
+				requiredFields[4].classList.add('date-input');
+			}
 			 
 			if(document.querySelector(".formEdit") == null && document.querySelector("#FileOnly") == null)
 			{
