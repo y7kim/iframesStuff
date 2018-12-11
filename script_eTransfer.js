@@ -293,7 +293,7 @@ window.onload = function(e) {
 		 }*/
 		 
 		 //Request Money - Confirm screen
-		 if(pageTitle == "Request Money - Confirm")
+		 /*if(pageTitle == "Request Money - Confirm")
 		 {
 			showAlertImageWithShowFormDiv();
 				
@@ -303,10 +303,10 @@ window.onload = function(e) {
 			inputErrorImageReferenceNode.parentNode.insertBefore(inputSuccessImageNode, inputErrorImageReferenceNode);
 				
 			document.querySelector('.success-text').textContent = "Please confirm money request details";
-		 }
+		 }*/
 		 
 		 //Request Money - Receipt screen
-		 if(pageTitle == "Request Money - Receipt")
+		 /*if(pageTitle == "Request Money - Receipt")
 		 {
 			showSucessImageAndTextReceipN();
 				
@@ -315,7 +315,7 @@ window.onload = function(e) {
 			//showPrintButton();
 				
 			var link1 = document.querySelector(".link1").classList.add("show-link1");
-		 }
+		 }*/
 		 
 		 //Resend Money Request Notice - Confirm screen
 		 if(pageTitle == "Resend Money Request Notice - Confirm")
