@@ -293,7 +293,7 @@ window.onload = function(e) {
 		 }*/
 		 
 		 //Request Money - Confirm screen
-		 if(pageTitle == "Request Money - Confirm")
+		 /*if(pageTitle == "Request Money - Confirm")
 		 {
 			showAlertImageWithShowFormDiv();
 				
@@ -303,10 +303,10 @@ window.onload = function(e) {
 			inputErrorImageReferenceNode.parentNode.insertBefore(inputSuccessImageNode, inputErrorImageReferenceNode);
 				
 			document.querySelector('.success-text').textContent = "Please confirm money request details";
-		 }
+		 }*/
 		 
 		 //Request Money - Receipt screen
-		 if(pageTitle == "Request Money - Receipt")
+		 /*if(pageTitle == "Request Money - Receipt")
 		 {
 			showSucessImageAndTextReceipN();
 				
@@ -315,7 +315,7 @@ window.onload = function(e) {
 			//showPrintButton();
 				
 			var link1 = document.querySelector(".link1").classList.add("show-link1");
-		 }
+		 }*/
 		 
 		 //Resend Money Request Notice - Confirm screen
 		 if(pageTitle == "Resend Money Request Notice - Confirm")
@@ -477,18 +477,17 @@ window.onload = function(e) {
 		//Add placeholder to date input
 		if(pageTitle == "Search Interac e-Transfer® History")
 		{
-			/*var topDisclaimerNode = document.createElement('div');
+			var topDisclaimerNode = document.createElement('div');
 			topDisclaimerNode.setAttribute("class", "top-disclaimer--search-transfers");
 			topDisclaimerNode.innerHTML ='Enter a date range to display you transfer history';
 			var bottomDisclaimerReferenceNode = document.querySelector('.instructions');
-			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);*/
+			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
 			
 			var selects = document.querySelectorAll('.hasDatepicker');
 			
 			for (var i = 0; i < selects.length; i++)
 			{
 				selects[i].placeholder = "dd/mm/yyyy";
-				selects[i].type = "date";
 			}
 		}
 		
@@ -516,7 +515,7 @@ window.onload = function(e) {
 			
 			var topDisclaimerNode = document.createElement('div');
 			topDisclaimerNode.setAttribute("class", "top-disclaimer");
-			topDisclaimerNode.innerHTML ='To remind a recipient to accept the funds or request, click on <b>Resend Notice</b> beside the transfer. To edit a request, click on <b>Edit</b>. To cancel a transfer or request, click on <b>Cancel</b>.';
+			topDisclaimerNode.innerHTML ='To remind an Interac e-Transfer&reg; Recipient to accept the funds, click on <b>Resend Notice</b> beside the transfer. To edit a request, click on <b>Edit</b>. To cancel an Interac e-Transfer&reg;, or receive a refund for a declined e-Transfer click on <b>Cancel</b>.';
 			var bottomDisclaimerReferenceNode = document.querySelector('.summarygroup');
 			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
 		}
