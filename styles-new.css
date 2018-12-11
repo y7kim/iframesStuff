@@ -60,30 +60,30 @@ ul.show-topic li.link1 {
 	padding-top: 25px;
 }
 
-.d-block{
+.d-block {
 	display: block !important;
 }
 
-.d-block li.link1{
+.d-block li.link1 {
 	list-style: none;
 	display: block !important;
 }
 
-.d-block li.link1 a{
+.d-block li.link1 a {
 	display: block !important;
 }
 
 .d-block li.link0,
-.d-block li.link2{
+.d-block li.link2 {
 	display: none !important;
 }
 
-.conclusion-pad-top{
+.conclusion-pad-top {
 	padding-top: 100px;
 	padding-left: 40px;
 }
 
-.conclusion-pad-top-details{
+.conclusion-pad-top-details {
 	padding-top: 100px;
 }
 
@@ -916,12 +916,12 @@ receipt-page-form ul.nav.topic li a[title="Send another money request"]:hover,
 	color: white;
 }
 
-table.etransfer-history-table tbody tr td.control div.control a{
+table.etransfer-history-table tbody tr td.control div.control a {
 	background-image: url(../Images/action_details.png);
-    width: 30px;
-    height: 30px;
-    background-repeat: no-repeat;
-    display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	display: inline-block;
 	text-indent: -9999;
 }
 
@@ -1151,12 +1151,12 @@ table.recipients-table tbody tr td div.control a:first-child:hover {
 
 table.etransfer-history-table,
 table.etransfer-history-table-withoutResults,
-table.etransfer-history-table-details{
+table.etransfer-history-table-details {
 	margin-bottom: 25px;
 }
 
 table.etransfer-history-table tbody tr.header,
-table.etransfer-history-table-details tbody tr.header{
+table.etransfer-history-table-details tbody tr.header {
 	display: table-row !important;
 }
 
@@ -1525,11 +1525,11 @@ form[action*="EmailMoney/Receive/?step=StepAuthenticate2"]::before {
 }
 
 @media only screen and (max-width: 767px) {
-	
+
 	table.etransfer-history-table tbody tr,
 	table.etransfer-history-table tbody tr td,
 	table.etransfer-history-table-details tbody tr,
-	table.etransfer-history-table-details tbody tr td{
+	table.etransfer-history-table-details tbody tr td {
 		width: 100% !important;
 	}
 
@@ -1610,7 +1610,7 @@ form[action*="EmailMoney/Receive/?step=StepAuthenticate2"]::before {
 	ul.show-topic li.link1 a,
 	.request-button a,
 	.d-block .link1 a,
-	.history-details-button a	{
+	.history-details-button a {
 		min-width: 0 !important;
 		width: 100% !important;
 	}
@@ -1830,12 +1830,12 @@ form[action*="EmailMoney/Receive/?step=StepAuthenticate2"]::before {
 	.no-pad-bottom {
 		padding-bottom: 0 !important;
 	}
-	
-	.d-block ul.d-block{
+
+	.d-block ul.d-block {
 		padding-left: 0;
 	}
-	
-	.conclusion-pad-top{
+
+	.conclusion-pad-top {
 		padding-top: 0;
 		padding-left: 0;
 	}
@@ -1873,14 +1873,14 @@ form[action*="EmailMoney/Receive/?step=StepAuthenticate2"]::before {
 	table.recipients-table tbody tr.header,
 	.pending-transfers-table table tbody tr.header,
 	table.etransfer-history-table tbody tr.header,
-	table.etransfer-history-table-details tbody tr.header	{
+	table.etransfer-history-table-details tbody tr.header {
 		display: none !important;
 	}
-	
+
 	table.etransfer-history-table tbody tr td.currency {
 		margin-top: 75px;
 	}
-	
+
 	table.etransfer-history-table tbody tr td.recipient div.recipient {
 		word-break: break-word;
 		margin-bottom: 10px;
@@ -1914,7 +1914,7 @@ form[action*="EmailMoney/Receive/?step=StepAuthenticate2"]::before {
 	table.recipients-table tbody tr td.information,
 	table.etransfer-history-table tbody tr td.recipient,
 	table.etransfer-history-table tbody tr td.date,
-	table.etransfer-history-table-details tbody tr td.date{
+	table.etransfer-history-table-details tbody tr td.date {
 		padding-left: 0px;
 	}
 
@@ -2063,37 +2063,37 @@ You could also use a data-* attribute and content for this. That way "bloats" th
 		content: "Date";
 		font-weight: bold;
 	}
-	
+
 	table.etransfer-history-table-details tbody tr td.status:before {
 		content: "Status";
 		font-weight: bold;
 	}
-	
+
 	table.etransfer-history-table-details tbody tr td.memo:before {
 		content: "Message";
 		font-weight: bold;
 	}
-	
-	table.etransfer-history-table tbody tr td.date:before	{
+
+	table.etransfer-history-table tbody tr td.date:before {
 		content: "Transfer Date";
 		font-weight: bold;
 	}
-	
+
 	table.etransfer-history-table tbody tr td.recipient:before {
 		content: "Transfer From/To";
 		font-weight: bold;
 	}
-	
+
 	table.etransfer-history-table tbody tr td.currency:before {
 		content: "Amount";
 		font-weight: bold;
 	}
-	
+
 	table.etransfer-history-table tbody tr td.status:before {
 		content: "Status";
 		font-weight: bold;
 	}
-     
+
 	table.recipients-table tbody tr td:nth-of-type(1):before {
 		content: "Recipient";
 		font-weight: bold;
