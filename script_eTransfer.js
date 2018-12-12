@@ -139,7 +139,7 @@ window.onload = function(e) {
 		 
 		 //Add error image to input
 		if (document.querySelector('.errors p') != null && (document.querySelector('.errors p').textContent == "There appears to be an error! All errors must be corrected before continuing."
-		|| document.querySelector('.errors p').textContent == "There appears to be an error!  All errors must be corrected before continuing."))
+		|| document.querySelector('.errors p').textContent == "There appears to be an error!  All errors must be corrected before continuing." || document.querySelector('.errors p').textContent == "You have exceeded the maximum number of attempts to authenticate." || document.querySelector('.errors p').textContent == "Incorrect Answer. Please try again. If you enter the incorrect answer too many times you will not be able to receive this transfer."))
 		{
 			showErrorImage();
 
