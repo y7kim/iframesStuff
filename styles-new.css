@@ -506,9 +506,13 @@ table.gst-table tbody tr td:nth-child(2) {
     overflow-wrap: break-word;
 }
 
-/*.receipts .receipt dl currencyinput input {
+.receipts .receipt dl currencyinput input {
 	margin-left: 40px;
-}*/
+}
+
+rfmreceiptpage .receipts .receipt dl currencyinput input {
+	margin-left: 0px;
+}
 
 .receipts .receipt .footnote {
 	margin: 2em 0 0 0;
@@ -765,7 +769,8 @@ ul.show-topic li {
 ul.nav.topic li a[title="Print Receipt"],
 ul.nav.topic li a[title="Print receipt"],
 ul.nav.topic li a[title="Add recipient"],
-ul.nav.topic li a[title="Send another money request"] {
+ul.nav.topic li a[title="Send another money request"],
+receipt-page-form ul.nav.topic li a[title="Go back to Pending Transfers"] {
 	border-collapse: collapse;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px 0px;
 	box-sizing: border-box;
@@ -797,7 +802,8 @@ ul.nav.topic li a[title="Send another money request"] {
 ul.nav.topic li a[title="Print Receipt"]:hover,
 ul.nav.topic li a[title="Print receipt"]:hover,
 ul.nav.topic li a[title="Add recipient"]:hover,
-ul.nav.topic li a[title="Send another money request"]:hover {
+ul.nav.topic li a[title="Send another money request"]:hover,
+receipt-page-form ul.nav.topic li a[title="Go back to Pending Transfers"]:hover {
 	background-color: #cde0f1;
 	color: #0067c6;
 	border: 2px solid #0067c6;
@@ -813,7 +819,8 @@ ul.nav.topic li a[title="Send another money request"]:hover {
 ul.nav.topic li a[title="Print Receipt"]:after,
 ul.nav.topic li a[title="Print receipt"]:after,
 ul.nav.topic li a[title="Add recipient"]:after,
-ul.nav.topic li a[title="Send another money request"]:after {
+ul.nav.topic li a[title="Send another money request"]:after,
+receipt-page-form ul.nav.topic li a[title="Go back to Pending Transfers"]:after {
 	border-collapse: collapse;
 	box-sizing: border-box;
 	color: rgb(255, 255, 255);
@@ -834,7 +841,8 @@ ul.nav.topic li a[title="Send another money request"]:after {
 ul.nav.topic li a[title="Print Receipt"]:before,
 ul.nav.topic li a[title="Print receipt"]:before,
 ul.nav.topic li a[title="Add recipient"]:before,
-ul.nav.topic li a[title="Send another money request"]:before {
+ul.nav.topic li a[title="Send another money request"]:before,
+receipt-page-form ul.nav.topic li a[title="Go back to Pending Transfers"]:before {
 	border-collapse: collapse;
 	box-sizing: border-box;
 	color: rgb(255, 255, 255);
@@ -1502,6 +1510,10 @@ receipt-page-form form::before {
 /* ModifyMoneyRequest */
 modify-request-form .formActions .formCancel a[title="Clear"] {
 	display: none;
+}
+
+receipt-page-form ul.nav.topic li a[title="Go back to Pending Transfers"] {
+	display: inline;
 }
 
 /* CancelMoneyRequest */
