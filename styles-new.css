@@ -503,11 +503,12 @@ table.gst-table tbody tr td:nth-child(2) {
 	color: #000000;
 	font: 19.2px Roboto-Regular, Arial, sans-serif;
 	line-height: 34px;
+    overflow-wrap: break-word;
 }
 
-.receipts .receipt dl currencyinput input {
+/*.receipts .receipt dl currencyinput input {
 	margin-left: 40px;
-}
+}*/
 
 .receipts .receipt .footnote {
 	margin: 2em 0 0 0;
@@ -1475,7 +1476,9 @@ receipt-page-form ul.nav.topic li a[title="Send another money request"] {
 }
 
 confirm-page-form form::before,
-receipt-page-form form::before {
+receipt-page-form form::before,
+rfmconfirmpage form::before,
+rfmreceiptpage form::before {
 	display: block;
 	text-align: center;
 	height: 40px;
@@ -1510,13 +1513,31 @@ cancel-request-form .formActions::before {
 }
 
 /* CertapayReceiveTransfer */
-
 form[action*="EmailMoney/Receive/?step=StepReceive2"]::before {
 	content: "You have answered the security question correctly. Please indicate if you wish to accept or decline this transfer."
 }
 
 form[action*="EmailMoney/Receive/?step=StepAuthenticate2"]::before {
 	content: "To accept or decline this transfer, you must correctly answer the security question below."
+}
+
+form[action*="EmailMoney/Receive/?step=StepAddCustomer2"]::before {
+	content: "Please create your profile to begin."
+}
+
+form[action*="EmailMoney/Receive/?step=StepAddCustomer2"] .hint {
+	display:  block;
+}
+
+/* FulfillMoneyRequest */
+rfmconfirmpage form::before {
+	content: "Please confirm fulfill request details";
+	background-image: url(/DynamicContent/Resources/Images/warning_alert.png);
+}
+
+rfmreceiptpage form::before {
+	content: "Fulfill Request Completed";
+	background-image: url(/DynamicContent/Resources/Images/warning_success.png);
 }
 
 @media only screen and (min-width: 768px) {
