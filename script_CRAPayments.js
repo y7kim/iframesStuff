@@ -364,7 +364,7 @@ window.onload = function (e) {
 		if (document.querySelector(".formEdit") == null && document.querySelector("#FileOnly") == null) {
 			var print = document.querySelectorAll("a");
 
-			if (print[0].hasAttribute("onclick") && document.querySelector(".receiptN") != null  && document.querySelector(".receiptFail") === null) {
+			if (print[0].hasAttribute("onclick") && document.querySelector(".receiptN") != null && document.querySelector(".receiptFail") === null) {
 				showSucessImageAndTextReceipN();
 
 				document.querySelector('.success-text').textContent = "Transaction Completed";
@@ -385,7 +385,7 @@ window.onload = function (e) {
 				inputErrorImageReferenceNode.parentNode.insertBefore(inputSuccessImageNode, inputErrorImageReferenceNode);
 
 				document.querySelector('.success-text').textContent = "Transaction Not Completed";
-			}else {
+			} else {
 				var topDisclaimerNode = document.createElement('div');
 				topDisclaimerNode.setAttribute("class", "top-disclaimer");
 				topDisclaimerNode.innerHTML = 'GST/HST 34 is used to file your GST/HST 34 return and optionally make a GST/HST 34 Payment. To Begin, enter your information on this form. The numbers for each field correspond with the numbered fields on the CRAs GST 34-2.<br /><p>Please Note: Payment Amount must be less than or equal to $1,000,000 - if you wish to make a payment for more than this amount you will need to perform two separate bill payments for unequal amounts. Click Help for more information.</p>';
