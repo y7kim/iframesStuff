@@ -526,6 +526,10 @@ rfmreceiptpage .receipts .receipt dl currencyinput input {
 	display: none;
 }
 
+.receipts .receipt>p.note {
+	display: block;
+}
+
 .required,
 .requirederror {
 	margin-top: 30px;
