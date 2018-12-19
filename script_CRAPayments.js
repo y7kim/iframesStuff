@@ -100,7 +100,7 @@ window.onload = function (e) {
 
 			document.querySelector('.success-text').textContent = "Account successfully removed";
 
-			document.querySelector(".receiptN").classList.add("hide-div");
+			/*document.querySelector(".receiptN").classList.add("hide-div");*/
 			document.querySelector(".receiptHeader").classList.add("show-ReceiptHeader");
 
 			showPrintButton();
