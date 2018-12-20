@@ -766,7 +766,7 @@ ul.nav.topic li a[title="Print Receipt"],
 ul.nav.topic li a[title="Print receipt"],
 ul.nav.topic li a[title="Add recipient"],
 ul.nav.topic li a[title="Send another money request"],
-body.ModifyMoneyRequest receipt-page-form a[title="Go back to Pending Transfers"] {
+receipt-page-form a[title="Go back to Pending Transfers"] {
 	border-collapse: collapse;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px 0px;
 	box-sizing: border-box;
@@ -799,7 +799,7 @@ ul.nav.topic li a[title="Print Receipt"]:hover,
 ul.nav.topic li a[title="Print receipt"]:hover,
 ul.nav.topic li a[title="Add recipient"]:hover,
 ul.nav.topic li a[title="Send another money request"]:hover,
-body.ModifyMoneyRequest receipt-page-form a[title="Go back to Pending Transfers"]:hover {
+receipt-page-form a[title="Go back to Pending Transfers"]:hover {
 	background-color: #cde0f1;
 	color: #0067c6;
 	border: 2px solid #0067c6;
@@ -816,7 +816,7 @@ ul.nav.topic li a[title="Print Receipt"]:after,
 ul.nav.topic li a[title="Print receipt"]:after,
 ul.nav.topic li a[title="Add recipient"]:after,
 ul.nav.topic li a[title="Send another money request"]:after,
-body.ModifyMoneyRequest receipt-page-form a[title="Go back to Pending Transfers"]:after {
+receipt-page-form a[title="Go back to Pending Transfers"]:after {
 	border-collapse: collapse;
 	box-sizing: border-box;
 	color: rgb(255, 255, 255);
@@ -838,7 +838,7 @@ ul.nav.topic li a[title="Print Receipt"]:before,
 ul.nav.topic li a[title="Print receipt"]:before,
 ul.nav.topic li a[title="Add recipient"]:before,
 ul.nav.topic li a[title="Send another money request"]:before,
-body.ModifyMoneyRequest receipt-page-form a[title="Go back to Pending Transfers"]:before {
+receipt-page-form a[title="Go back to Pending Transfers"]:before {
 	border-collapse: collapse;
 	box-sizing: border-box;
 	color: rgb(255, 255, 255);
@@ -856,7 +856,7 @@ body.ModifyMoneyRequest receipt-page-form a[title="Go back to Pending Transfers"
 .back-to-pending-transfers a,
 ul.show-topic li.link1 a,
 .request-button a,
-body.ModifyMoneyRequest receipt-page-form a[title="Send another money request"],
+receipt-page-form a[title="Send another money request"],
 .d-block .link1 a,
 .history-details-button a {
 	border-collapse: collapse;
@@ -888,7 +888,7 @@ body.ModifyMoneyRequest receipt-page-form a[title="Send another money request"],
 .back-to-pending-transfers a:hover,
 ul.show-topic li.link1 a: hover,
 .request-button a:hover,
-body.ModifyMoneyRequest receipt-page-form a[title="Send another money request"]:hover,
+receipt-page-form a[title="Send another money request"]:hover,
 .d-block .link1 a:hover,
 .history-details-button a:hover {
 	background-color: #459914;
@@ -1459,30 +1459,30 @@ body.InitiateMoneyRequest .requestMoneyFormStep2 .formActions::before {
 	display: none;
 }
 
-body.InitiateMoneyRequest receipt-page-form footertrademark::before {
+receipt-page-form footertrademark::before {
 	content: "Note: Service charge will be applied to your account when the funds are deposited"
 }
 
-body.InitiateMoneyRequest receipt-page-form ul.nav.topic li.link0 {
+receipt-page-form ul.nav.topic li.link0 {
 	display: inline-block;
 }
 
-body.InitiateMoneyRequest eceipt-page-form ul.nav.topic li.link1 {
+receipt-page-form ul.nav.topic li.link1 {
 	display: inline;
 }
 
-body.InitiateMoneyRequest receipt-page-form a[title="Print receipt"] {
+receipt-page-form a[title="Print receipt"] {
 	float: none;
 }
 
-body.InitiateMoneyRequest receipt-page-form a[title="Send another money request"] {
+receipt-page-form a[title="Send another money request"] {
 	float: left;
 }
 
-body.InitiateMoneyRequest confirm-page-form form::before,
-body.InitiateMoneyRequest receipt-page-form form::before,
-body.FulfillMoneyRequest rfmconfirmpage form::before,
-body.FulfillMoneyRequest rfmreceiptpage form::before {
+confirm-page-form form::before,
+receipt-page-form form::before,
+rfmconfirmpage form::before,
+rfmreceiptpage form::before {
 	display: block;
 	text-align: center;
 	height: 40px;
@@ -1493,27 +1493,27 @@ body.FulfillMoneyRequest rfmreceiptpage form::before {
 	border-bottom: 1px solid #D8D8D8;
 }
 
-body.InitiateMoneyRequest confirm-page-form form::before {
+confirm-page-form form::before {
 	content: "Please confirm money request details";
 	background-image: url(/DynamicContent/Resources/Images/warning_alert.png);
 }
 
-body.InitiateMoneyRequest receipt-page-form form::before {
+receipt-page-form form::before {
 	content: "Request Status Completed";
 	background-image: url(/DynamicContent/Resources/Images/warning_success.png);
 }
 
 /* ModifyMoneyRequest */
-body.ModifyMoneyRequest modify-request-form .formActions .formCancel a[title="Clear"] {
+modify-request-form .formActions .formCancel a[title="Clear"] {
 	display: none;
 }
 
-body.ModifyMoneyRequest receipt-page-form a[title="Go back to Pending Transfers"] {
+receipt-page-form a[title="Go back to Pending Transfers"] {
 	display: inline;
 }
 
 /* CancelMoneyRequest */
-body.CancelMoneyRequest cancel-request-form .formActions::before {
+cancel-request-form .formActions::before {
 	content: "This message will appear in the cancellation notice sent to the recipient.";
 	display: block;
 	text-align: left;
@@ -1546,12 +1546,12 @@ body.CertapayReceiveTransfer .receipts .receipt>p.note {
 }
 
 /* FulfillMoneyRequest */
-body.FulfillMoneyRequest rfmconfirmpage form::before {
+rfmconfirmpage form::before {
 	content: "Please confirm fulfill request details";
 	background-image: url(/DynamicContent/Resources/Images/warning_alert.png);
 }
 
-body.FulfillMoneyRequest rfmreceiptpage form::before {
+rfmreceiptpage form::before {
 	content: "Fulfill Request Completed";
 	background-image: url(/DynamicContent/Resources/Images/warning_success.png);
 }
@@ -2090,7 +2090,7 @@ body.FulfillMoneyRequest rfmreceiptpage form::before {
 		display: none !important;
 	}
 
-	body.ModifyMoneyRequest receipt-page-form ul.nav.topic li.link1 {
+	receipt-page-form ul.nav.topic li.link1 {
 		display: inline-block;
 	}
 
