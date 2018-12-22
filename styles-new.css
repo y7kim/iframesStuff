@@ -154,7 +154,8 @@ a {
 	text-decoration: none !important;
 }
 
-.display-hint {
+.display-hint,
+emtregistrationform span.hint {
 	display: block !important;
 	width: 100%;
 	float: left;
