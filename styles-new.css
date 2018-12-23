@@ -39,8 +39,6 @@ body {
 .instructions,
 .hint,
 .cntxthelp,
-.topic,
-.instructions,
 .colOne,
 .receiptHeader,
 ul.show-topic li.link1 {
@@ -107,9 +105,9 @@ ul.show-topic li.link1 {
 	display: none !important;
 }
 
-.hide-div {
+/*.hide-div {
 	display: none !important;
-}
+}*/
 
 .show-instructions {
 	display: block !important;
@@ -156,7 +154,8 @@ a {
 	text-decoration: none !important;
 }
 
-.display-hint {
+.display-hint,
+emtregistrationform span.hint {
 	display: block !important;
 	width: 100%;
 	float: left;
@@ -358,7 +357,7 @@ p#acknowledgement1,
 	background-image: url(../Images/action_delete_hover.png) !important;
 } */
 
-#autodepositApp table.registeredMembers tr td .deleteIcon {
+body.Autodeposit table.registeredMembers tr td .deleteIcon {
 	background-image: url(../Images/action_delete.png) !important;
 	background-repeat: no-repeat !important;
 	height: 30px !important;
@@ -366,7 +365,7 @@ p#acknowledgement1,
 	cursor: pointer;
 }
 
-#autodepositApp table.registeredMembers tr td .deleteIcon:hover {
+body.Autodeposit table.registeredMembers tr td .deleteIcon:hover {
 	background-image: url(../Images/action_delete_hover.png) !important;
 }
 
@@ -505,10 +504,15 @@ table.gst-table tbody tr td:nth-child(2) {
 	color: #000000;
 	font: 19.2px Roboto-Regular, Arial, sans-serif;
 	line-height: 34px;
+    overflow-wrap: break-word;
 }
 
 .receipts .receipt dl currencyinput input {
 	margin-left: 40px;
+}
+
+rfmreceiptpage .receipts .receipt dl currencyinput input {
+	margin-left: 0px;
 }
 
 .receipts .receipt .footnote {
@@ -762,7 +766,8 @@ ul.show-topic li {
 ul.nav.topic li a[title="Print Receipt"],
 ul.nav.topic li a[title="Print receipt"],
 ul.nav.topic li a[title="Add recipient"],
-ul.nav.topic li a[title="Send another money request"] {
+ul.nav.topic li a[title="Send another money request"],
+receipt-page-form a[title="Go back to Pending Transfers"] {
 	border-collapse: collapse;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px 0px;
 	box-sizing: border-box;
@@ -794,7 +799,8 @@ ul.nav.topic li a[title="Send another money request"] {
 ul.nav.topic li a[title="Print Receipt"]:hover,
 ul.nav.topic li a[title="Print receipt"]:hover,
 ul.nav.topic li a[title="Add recipient"]:hover,
-ul.nav.topic li a[title="Send another money request"]:hover {
+ul.nav.topic li a[title="Send another money request"]:hover,
+receipt-page-form a[title="Go back to Pending Transfers"]:hover {
 	background-color: #cde0f1;
 	color: #0067c6;
 	border: 2px solid #0067c6;
@@ -810,7 +816,8 @@ ul.nav.topic li a[title="Send another money request"]:hover {
 ul.nav.topic li a[title="Print Receipt"]:after,
 ul.nav.topic li a[title="Print receipt"]:after,
 ul.nav.topic li a[title="Add recipient"]:after,
-ul.nav.topic li a[title="Send another money request"]:after {
+ul.nav.topic li a[title="Send another money request"]:after,
+receipt-page-form a[title="Go back to Pending Transfers"]:after {
 	border-collapse: collapse;
 	box-sizing: border-box;
 	color: rgb(255, 255, 255);
@@ -831,7 +838,8 @@ ul.nav.topic li a[title="Send another money request"]:after {
 ul.nav.topic li a[title="Print Receipt"]:before,
 ul.nav.topic li a[title="Print receipt"]:before,
 ul.nav.topic li a[title="Add recipient"]:before,
-ul.nav.topic li a[title="Send another money request"]:before {
+ul.nav.topic li a[title="Send another money request"]:before,
+receipt-page-form a[title="Go back to Pending Transfers"]:before {
 	border-collapse: collapse;
 	box-sizing: border-box;
 	color: rgb(255, 255, 255);
@@ -849,7 +857,7 @@ ul.nav.topic li a[title="Send another money request"]:before {
 .back-to-pending-transfers a,
 ul.show-topic li.link1 a,
 .request-button a,
-receipt-page-form ul.nav.topic li a[title="Send another money request"],
+receipt-page-form a[title="Send another money request"],
 .d-block .link1 a,
 .history-details-button a {
 	border-collapse: collapse;
@@ -881,7 +889,7 @@ receipt-page-form ul.nav.topic li a[title="Send another money request"],
 .back-to-pending-transfers a:hover,
 ul.show-topic li.link1 a: hover,
 .request-button a:hover,
-receipt-page-form ul.nav.topic li a[title="Send another money request"]:hover,
+receipt-page-form a[title="Send another money request"]:hover,
 .d-block .link1 a:hover,
 .history-details-button a:hover {
 	background-color: #459914;
@@ -1420,35 +1428,35 @@ ul.nav.topic li a[title="Print receipt"] {
 }
 
 /* Autodeposit */
-#autodepositApp div.modal-content .formActions {
+body.Autodeposit div.modal-content .formActions {
 	text-align: center;
 }
 
 /* InitiateMoneyRequest */
-.requestMoneyForm .input.floatRight.fixedWidth {
+body.InitiateMoneyRequest .requestMoneyForm .input.floatRight.fixedWidth {
 	width: auto;
 	padding: 1em 0;
 }
 
-.requestMoneyForm #acknowledgeCheckboxText {
+body.InitiateMoneyRequest #acknowledgeCheckboxText {
 	display: block !important;
 	margin: -1.3em 0 0 2em;
 }
 
-.requestMoneyForm::before {
+body.InitiateMoneyRequest .requestMoneyForm::before {
 	content: "Choose a recipient to request money from using Interac e-Transfer or go to Manage Recipients to add a new one";
 	display: block;
 	margin-bottom: 50px;
 }
 
-.requestMoneyForm .formActions::before {
+body.InitiateMoneyRequest .requestMoneyForm .formActions::before {
 	content: "Note: Service charge will be applied to your account when the funds are deposited";
 	display: block;
 	text-align: left;
 	margin-bottom: 50px;
 }
 
-.requestMoneyForm .requestMoneyFormStep2 .formActions::before {
+body.InitiateMoneyRequest .requestMoneyFormStep2 .formActions::before {
 	display: none;
 }
 
@@ -1464,16 +1472,18 @@ receipt-page-form ul.nav.topic li.link1 {
 	display: inline;
 }
 
-receipt-page-form ul.nav.topic li a[title="Print receipt"] {
+receipt-page-form a[title="Print receipt"] {
 	float: none;
 }
 
-receipt-page-form ul.nav.topic li a[title="Send another money request"] {
+receipt-page-form a[title="Send another money request"] {
 	float: left;
 }
 
 confirm-page-form form::before,
-receipt-page-form form::before {
+receipt-page-form form::before,
+rfmconfirmpage form::before,
+rfmreceiptpage form::before {
 	display: block;
 	text-align: center;
 	height: 40px;
@@ -1499,6 +1509,10 @@ modify-request-form .formActions .formCancel a[title="Clear"] {
 	display: none;
 }
 
+receipt-page-form a[title="Go back to Pending Transfers"] {
+	display: inline;
+}
+
 /* CancelMoneyRequest */
 cancel-request-form .formActions::before {
 	content: "This message will appear in the cancellation notice sent to the recipient.";
@@ -1508,13 +1522,39 @@ cancel-request-form .formActions::before {
 }
 
 /* CertapayReceiveTransfer */
-
-form[action*="EmailMoney/Receive/?step=StepReceive2"]::before {
+body.CertapayReceiveTransfer form[action*="EmailMoney/Receive/?step=StepReceive2"]::before {
 	content: "You have answered the security question correctly. Please indicate if you wish to accept or decline this transfer."
 }
 
-form[action*="EmailMoney/Receive/?step=StepAuthenticate2"]::before {
+body.CertapayReceiveTransfer form[action*="EmailMoney/Receive/?step=StepAuthenticate2"]::before {
 	content: "To accept or decline this transfer, you must correctly answer the security question below."
+}
+
+body.CertapayReceiveTransfer form[action*="EmailMoney/Receive/?step=StepAddCustomer2"]::before {
+	content: "Please create your profile to begin."
+}
+
+body.CertapayReceiveTransfer form[action*="EmailMoney/Receive/?step=StepAddCustomer2"] .hint {
+	display:  block;
+}
+
+body.CertapayReceiveTransfer .receipts .receipt>p {
+	display: none;
+}
+
+body.CertapayReceiveTransfer .receipts .receipt>p.note {
+	display: block;
+}
+
+/* FulfillMoneyRequest */
+rfmconfirmpage form::before {
+	content: "Please confirm fulfill request details";
+	background-image: url(/DynamicContent/Resources/Images/warning_alert.png);
+}
+
+rfmreceiptpage form::before {
+	content: "Fulfill Request Completed";
+	background-image: url(/DynamicContent/Resources/Images/warning_success.png);
 }
 
 @media only screen and (min-width: 768px) {
@@ -1657,6 +1697,7 @@ form[action*="EmailMoney/Receive/?step=StepAuthenticate2"]::before {
 
 	.confirmation .oneColRow .column {
 		padding-bottom: 25px;
+		overflow-wrap: break-word;
 	}
 
 	.oneColRow.last-value-break .column .value {
@@ -1936,48 +1977,48 @@ form[action*="EmailMoney/Receive/?step=StepAuthenticate2"]::before {
 	}
 
 	/* Autodeposit */
-	#autodepositApp tr,
-	#autodepositApp td {
+	body.Autodeposit tr,
+	body.Autodeposit td {
 		display: block !important;
 	}
 
-	#autodepositApp div.modal-content {
+	body.Autodeposit div.modal-content {
 		margin-top: 10%;
 		padding-bottom: 200px;
 	}
 
-	#autodepositApp .errors ol {
+	body.Autodeposit .errors ol {
 		-webkit-padding-start: 40px;
 	}
 
-	#autodepositApp table.registeredMembers {
+	body.Autodeposit table.registeredMembers {
 		display: table;
 		table-layout: unset !important;
 		margin-bottom: 70px !important;
 	}
 
 
-	#autodepositApp table.registeredMembers:first-of-type {
+	body.Autodeposit table.registeredMembers:first-of-type {
 		display: none !important;
 	}
 
-	#autodepositApp table.registeredMembers thead tr {
+	body.Autodeposit table.registeredMembers thead tr {
 		width: unset;
 	}
 
-	#autodepositApp table.registeredMembers th {
+	body.Autodeposit table.registeredMembers th {
 		padding: 0;
 	}
 
-	#autodepositApp table.registeredMembers tr {
+	body.Autodeposit table.registeredMembers tr {
 		height: auto !important;
 		display: flex;
 		flex-direction: row;
 		flex-flow: wrap;
 	}
 
-	#autodepositApp table.registeredMembers th,
-	#autodepositApp table.registeredMembers td {
+	body.Autodeposit table.registeredMembers th,
+	body.Autodeposit table.registeredMembers td {
 		height: auto;
 		width: auto;
 		padding: 0.5em;
@@ -1985,8 +2026,8 @@ form[action*="EmailMoney/Receive/?step=StepAuthenticate2"]::before {
 		flex: 1 800px;
 	}
 
-	#autodepositApp table.registeredMembers tr td:nth-child(6),
-	#autodepositApp table.registeredMembers tr td:nth-child(7) {
+	body.Autodeposit table.registeredMembers tr td:nth-child(6),
+	body.Autodeposit table.registeredMembers tr td:nth-child(7) {
 		border: none;
 		position: absolute;
 		padding: 0;
@@ -1994,59 +2035,59 @@ form[action*="EmailMoney/Receive/?step=StepAuthenticate2"]::before {
 		margin: 20px 0 20px 0;
 	}
 
-	#autodepositApp table.registeredMembers tr td:nth-child(7)::before {
+	body.Autodeposit table.registeredMembers tr td:nth-child(7)::before {
 		content: "|";
 		float: left;
 		margin-right: 10px;
 	}
 
-	#autodepositApp table.registeredMembers tr td:nth-child(7) {
+	body.Autodeposit table.registeredMembers tr td:nth-child(7) {
 		left: 55px;
 	}
 
-	#autodepositApp table.registeredMembers tr td .deleteIcon {
+	body.Autodeposit table.registeredMembers tr td .deleteIcon {
 		display: inline-block;
 	}
 
-	#autodepositApp table.registeredMembers td.emailSetting::before {
+	body.Autodeposit table.registeredMembers td.emailSetting::before {
 		display: block;
 		content: "Email";
 		font-weight: bold;
 	}
 
-	#autodepositApp table.registeredMembers td.editAccounts::before {
+	body.Autodeposit table.registeredMembers td.editAccounts::before {
 		display: block;
 		content: "Account";
 		font-weight: bold;
 	}
 
-	#autodepositApp table.registeredMembers td:nth-last-of-type(3)::before {
+	body.Autodeposit table.registeredMembers td:nth-last-of-type(3)::before {
 		content: "Status";
 		font-weight: bold;
 	}
 
-	#autodepositApp table.registeredMembers #addNewEmail {
+	body.Autodeposit table.registeredMembers #addNewEmail {
 		margin: 0;
 	}
 
-	#autodepositApp table.registeredMembers select {
+	body.Autodeposit table.registeredMembers select {
 		max-width: unset;
 		width: 100% !important;
 	}
 
-	#autodepositApp table.registeredMembers form .required,
-	#autodepositApp table.registeredMembers form .requirederror {
+	body.Autodeposit table.registeredMembers form .required,
+	body.Autodeposit table.registeredMembers form .requirederror {
 		padding: 0 !important;
 		margin: 0 !important;
 	}
 
-	#autodepositApp table.registeredMembers span.tableLeftPadding.tableBottomPadding,
-	#autodepositApp table.registeredMembers td.hideCol,
-	#autodepositApp table.registeredMembers th.rowCounter,
-	#autodepositApp table.registeredMembers td.rowCounter,
-	#autodepositApp table.registeredMembers tr.hideField,
-	#autodepositApp table.registeredMembers thead tr th:nth-child(5),
-	#autodepositApp table.registeredMembers thead tr th:nth-child(6) {
+	body.Autodeposit table.registeredMembers span.tableLeftPadding.tableBottomPadding,
+	body.Autodeposit table.registeredMembers td.hideCol,
+	body.Autodeposit table.registeredMembers th.rowCounter,
+	body.Autodeposit table.registeredMembers td.rowCounter,
+	body.Autodeposit table.registeredMembers tr.hideField,
+	body.Autodeposit table.registeredMembers thead tr th:nth-child(5),
+	body.Autodeposit table.registeredMembers thead tr th:nth-child(6) {
 		display: none !important;
 	}
 

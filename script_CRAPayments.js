@@ -100,7 +100,7 @@ window.onload = function (e) {
 
 			document.querySelector('.success-text').textContent = "Account successfully removed";
 
-			document.querySelector(".receiptN").classList.add("hide-div");
+			/*document.querySelector(".receiptN").classList.add("hide-div");*/
 			document.querySelector(".receiptHeader").classList.add("show-ReceiptHeader");
 
 			showPrintButton();
@@ -364,7 +364,7 @@ window.onload = function (e) {
 		if (document.querySelector(".formEdit") == null && document.querySelector("#FileOnly") == null) {
 			var print = document.querySelectorAll("a");
 
-			if (print[0].hasAttribute("onclick") && document.querySelector(".receiptN") != null) {
+			if (print[0].hasAttribute("onclick") && document.querySelector(".receiptN") != null && document.querySelector(".receiptFail") === null) {
 				showSucessImageAndTextReceipN();
 
 				document.querySelector('.success-text').textContent = "Transaction Completed";
@@ -376,6 +376,15 @@ window.onload = function (e) {
 				bottomDisclaimerReferenceNode.parentNode.insertBefore(bottomDisclaimerNode, bottomDisclaimerReferenceNode);
 
 				showPrintButton();
+			} else if (print[0].hasAttribute("onclick") && document.querySelector(".receiptFail") !== null) {
+				showErrorImageOnConclusionScreen();
+
+				var inputSuccessImageNode = document.createElement('div');
+				inputSuccessImageNode.setAttribute("class", "success-text");
+				var inputErrorImageReferenceNode = document.querySelector('.receiptN');
+				inputErrorImageReferenceNode.parentNode.insertBefore(inputSuccessImageNode, inputErrorImageReferenceNode);
+
+				document.querySelector('.success-text').textContent = "Transaction Not Completed";
 			} else {
 				var topDisclaimerNode = document.createElement('div');
 				topDisclaimerNode.setAttribute("class", "top-disclaimer");
