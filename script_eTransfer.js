@@ -344,7 +344,7 @@ window.onload = function (e) {
 		var inputErrorImageReferenceNode = document.querySelector('.showForm');
 		inputErrorImageReferenceNode.parentNode.insertBefore(inputSuccessImageNode, inputErrorImageReferenceNode);
 
-		document.querySelector('.success-text').textContent = "Please confirm money request cancelation details";
+		document.querySelector('.success-text').textContent = "Please confirm money request cancellation details";
 		document.querySelectorAll('.required')[4].classList.add('last-required');
 
 		var topDisclaimerNode = document.createElement('div');
@@ -392,11 +392,11 @@ window.onload = function (e) {
 		var inputErrorImageReferenceNode = document.querySelector('.confirmation');
 		inputErrorImageReferenceNode.parentNode.insertBefore(inputSuccessImageNode, inputErrorImageReferenceNode);
 
-		document.querySelector('.success-text').textContent = "Please confirm money sent cancelation details";
+		document.querySelector('.success-text').textContent = "Please confirm money sent cancellation details";
 
 		var topDisclaimerNode = document.createElement('div');
 		topDisclaimerNode.setAttribute("class", "cancel-transfer-disclaimer");
-		topDisclaimerNode.innerHTML = '<b>NOTE:</b> The service charge will not be refunded.';
+		topDisclaimerNode.innerHTML = '<b>Note:</b> Service charge will not be refunded.';
 		var bottomDisclaimerReferenceNode = document.querySelector('.confirmation');
 		bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
 	}
