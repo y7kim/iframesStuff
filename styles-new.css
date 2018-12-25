@@ -1509,7 +1509,7 @@ modify-request-form .formActions .formCancel a[title="Clear"] {
 	display: none;
 }
 
-receipt-page-form a[title="Go back to Pending Transfers"] {
+receipt-page-form ul.nav.topic li a[title="Go back to Pending Transfers"] {
 	display: inline;
 }
 
