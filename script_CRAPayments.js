@@ -234,7 +234,7 @@ window.onload = function (e) {
 		if (document.querySelector(".formEdit") == null && document.querySelector(".status") == null) {
 			var topDisclaimerNode = document.createElement('div');
 			topDisclaimerNode.setAttribute("class", "top-disclaimer");
-			topDisclaimerNode.innerHTML = 'To begin your Payroll and Source Deduction Remittance (current year), enter your remittance information and payment amount, select an account to pay from and a payment date, and click Continue. For more information on Remittance Type click Help. <br /><p>Please Note: Payment amount must be less than or equal to $1,000,000 - if you wish to make a payment for more than this amount you will need to perform two separate bill payments of unequal amounts. Click on <a href="/">Help</a> for more information.</p>';
+			topDisclaimerNode.innerHTML = 'To begin your Payroll and Source Deduction Remittance (current year), enter your remittance information and payment amount, select an account to pay from and a payment date, and click Continue. For more information on Remittance Type click Help. <br /><p>Please Note: Payment amount must be less than or equal to $1,000,000 - if you wish to make a payment for more than this amount you will need to perform two separate bill payments of unequal amounts.';
 			var bottomDisclaimerReferenceNode = document.querySelector('.details');
 			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
 
