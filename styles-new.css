@@ -1385,7 +1385,6 @@ input[type="radio"]:checked:before {
 	background: #0067C6;
 }
 
-.receipts .column.divHide,
 .receipts .column.divHide {
 	display: none;
 }
@@ -2251,6 +2250,10 @@ You could also use a data-* attribute and content for this. That way "bloats" th
 	}
 
 	.show-topic {
+		display: none !important;
+	}
+
+	.receipts .column.divHide {
 		display: none !important;
 	}
 }
