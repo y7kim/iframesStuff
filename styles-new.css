@@ -1511,7 +1511,16 @@ receipt-page-form ul.nav.topic li a[title="Go back to Pending Transfers"] {
 
 /* CancelMoneyRequest */
 
-cancel-request-form .formActions::before {
+body.CancelMoneyRequest cancel-request-form .showForm::before {
+	content: "Please confirm money request cancellation details:";
+	font-family: Roboto-Regular, Arial, sans-serif;
+	font-size: 19.2px;
+	display: block;
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+body.CancelMoneyRequest cancel-request-form .formActions::before {
 	content: "This message will appear in the cancellation notice sent to the recipient.";
 	display: block;
 	text-align: left;
