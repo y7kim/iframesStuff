@@ -1556,6 +1556,12 @@ rfmreceiptpage form::before {
 	background-image: url(/DynamicContent/Resources/Images/warning_success.png);
 }
 
+/* CCRAAdd */
+
+body.CCRAAdd form .instructions {
+	display: block;
+}
+
 @media only screen and (min-width: 768px) {
 	.deleteModalText {
 		height: 64px;
@@ -2128,7 +2134,7 @@ You could also use a data-* attribute and content for this. That way "bloats" th
 		font-weight: bold;
 	}
 
-	table.recipients-table tbody tr td:nth-of-type(1):before {
+	table.recipients-table tbody tr td.contact:nth-of-type(1):before {
 		content: "Recipient";
 		font-weight: bold;
 	}
