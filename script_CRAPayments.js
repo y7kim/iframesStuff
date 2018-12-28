@@ -133,7 +133,7 @@ window.onload = function (e) {
 
 			var topDisclaimerNode = document.createElement('div');
 			topDisclaimerNode.setAttribute("class", "top-disclaimer--remit-confirmation-screen");
-			topDisclaimerNode.innerHTML = 'To remit your RC 159, please review your Pay Amount, Pay From account, and Payment Date, then click Remit. To make any changes to your information click the "Edit transaction details" link.';
+			topDisclaimerNode.innerHTML = 'To remit your RC 159, please review your Pay Amount, Pay From account, and Payment Date, then click Remit. To make any changes to your information click the "Edit" button.';
 			var bottomDisclaimerReferenceNode = document.querySelector('.confirmation');
 			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
 
@@ -203,7 +203,7 @@ window.onload = function (e) {
 
 			var topDisclaimerNode = document.createElement('div');
 			topDisclaimerNode.setAttribute("class", "top-disclaimer--remit-confirmation-screen");
-			topDisclaimerNode.innerHTML = 'To remit your RC 160, please review your Pay Amount, Pay From account, and Payment Date, then click Remit. To make any changes to your information click the "Edit transaction details" link.';
+			topDisclaimerNode.innerHTML = 'To remit your RC 160, please review your Pay Amount, Pay From account, and Payment Date, then click Remit. To make any changes to your information click the "Edit" button.';
 			var bottomDisclaimerReferenceNode = document.querySelector('.confirmation');
 			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
 
@@ -268,7 +268,7 @@ window.onload = function (e) {
 
 			var topDisclaimerNode = document.createElement('div');
 			topDisclaimerNode.setAttribute("class", "top-disclaimer--remit-confirmation-screen");
-			topDisclaimerNode.innerHTML = 'To submit your Corporation Tax Remittance, please review your Pay Amount, Pay From account, and Payment Date, then click Remit. To make any changes to your information click the "Edit transaction details" link.';
+			topDisclaimerNode.innerHTML = 'To submit your Corporation Tax Remittance, please review your Pay Amount, Pay From account, and Payment Date, then click Remit. To make any changes to your information click the "Edit" button.';
 			var bottomDisclaimerReferenceNode = document.querySelector('.confirmation');
 			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
 
@@ -331,7 +331,7 @@ window.onload = function (e) {
 
 			var topDisclaimerNode = document.createElement('div');
 			topDisclaimerNode.setAttribute("class", "top-disclaimer--remit-confirmation-screen");
-			topDisclaimerNode.innerHTML = 'To submit your Corporation Tax Remittance, please review your Pay Amount, Pay From account, and Payment Date, then click Remit. To make any changes to your information click the "Edit transaction details" link.';
+			topDisclaimerNode.innerHTML = 'To submit your Corporation Tax Remittance, please review your Pay Amount, Pay From account, and Payment Date, then click Remit. To make any changes to your information click the "Edit" button.';
 			var bottomDisclaimerReferenceNode = document.querySelector('.confirmation');
 			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
 
@@ -433,7 +433,7 @@ window.onload = function (e) {
 
 			var topDisclaimerNode = document.createElement('div');
 			topDisclaimerNode.setAttribute("class", "cancel-transfer-disclaimer");
-			topDisclaimerNode.innerHTML = 'Confirm your GST/HST 34 information and click Continue. To make any changes to you info click the "Edit transaction details" link.';
+			topDisclaimerNode.innerHTML = 'Confirm your GST/HST 34 information and click Continue. To make any changes to your information click the "Edit" button.';
 			var bottomDisclaimerReferenceNode = document.querySelector('.confirmation');
 			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
 		}
