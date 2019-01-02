@@ -1580,6 +1580,10 @@ body.CCRAAdd form .instructions {
 
 @media only screen and (max-width: 767px) {
 
+	table tbody tr td {
+		width: auto;
+	}
+
 	table.etransfer-history-table tbody tr,
 	table.etransfer-history-table tbody tr td,
 	table.etransfer-history-table-details tbody tr,
