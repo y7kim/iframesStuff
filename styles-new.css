@@ -504,7 +504,7 @@ table.gst-table tbody tr td:nth-child(2) {
 	color: #000000;
 	font: 19.2px Roboto-Regular, Arial, sans-serif;
 	line-height: 34px;
-    overflow-wrap: break-word;
+	overflow-wrap: break-word;
 }
 
 .receipts .receipt dl currencyinput input {
@@ -609,6 +609,7 @@ select.inline-select {
 }
 
 /* For IE10 */
+
 select::-ms-expand,
 select::-ms-expand {
 	display: none;
@@ -767,7 +768,7 @@ ul.nav.topic li a[title="Print Receipt"],
 ul.nav.topic li a[title="Print receipt"],
 ul.nav.topic li a[title="Add recipient"],
 ul.nav.topic li a[title="Send another money request"],
-receipt-page-form a[title="Go back to Pending Transfers"] {
+ul.nav.topic li a[title="Go back to Pending Transfers"] {
 	border-collapse: collapse;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px 0px;
 	box-sizing: border-box;
@@ -798,9 +799,7 @@ receipt-page-form a[title="Go back to Pending Transfers"] {
 .recipient-topic .link0 a:hover,
 ul.nav.topic li a[title="Print Receipt"]:hover,
 ul.nav.topic li a[title="Print receipt"]:hover,
-ul.nav.topic li a[title="Add recipient"]:hover,
-ul.nav.topic li a[title="Send another money request"]:hover,
-receipt-page-form a[title="Go back to Pending Transfers"]:hover {
+ul.nav.topic li a[title="Add recipient"]:hover {
 	background-color: #cde0f1;
 	color: #0067c6;
 	border: 2px solid #0067c6;
@@ -815,9 +814,7 @@ receipt-page-form a[title="Go back to Pending Transfers"]:hover {
 .recipient-topic .link0 a:after,
 ul.nav.topic li a[title="Print Receipt"]:after,
 ul.nav.topic li a[title="Print receipt"]:after,
-ul.nav.topic li a[title="Add recipient"]:after,
-ul.nav.topic li a[title="Send another money request"]:after,
-receipt-page-form a[title="Go back to Pending Transfers"]:after {
+ul.nav.topic li a[title="Add recipient"]:after {
 	border-collapse: collapse;
 	box-sizing: border-box;
 	color: rgb(255, 255, 255);
@@ -837,9 +834,7 @@ receipt-page-form a[title="Go back to Pending Transfers"]:after {
 .recipient-topic .link0 a:before,
 ul.nav.topic li a[title="Print Receipt"]:before,
 ul.nav.topic li a[title="Print receipt"]:before,
-ul.nav.topic li a[title="Add recipient"]:before,
-ul.nav.topic li a[title="Send another money request"]:before,
-receipt-page-form a[title="Go back to Pending Transfers"]:before {
+ul.nav.topic li a[title="Add recipient"]:before {
 	border-collapse: collapse;
 	box-sizing: border-box;
 	color: rgb(255, 255, 255);
@@ -857,7 +852,8 @@ receipt-page-form a[title="Go back to Pending Transfers"]:before {
 .back-to-pending-transfers a,
 ul.show-topic li.link1 a,
 .request-button a,
-receipt-page-form a[title="Send another money request"],
+ul.nav.topic li a[title="Send another money request"],
+ul.nav.topic li a[title="Go back to Pending Transfers"],
 .d-block .link1 a,
 .history-details-button a {
 	border-collapse: collapse;
@@ -889,7 +885,8 @@ receipt-page-form a[title="Send another money request"],
 .back-to-pending-transfers a:hover,
 ul.show-topic li.link1 a: hover,
 .request-button a:hover,
-receipt-page-form a[title="Send another money request"]:hover,
+ul.nav.topic li a[title="Send another money request"]:hover,
+ul.nav.topic li a[title="Go back to Pending Transfers"]:hover,
 .d-block .link1 a:hover,
 .history-details-button a:hover {
 	background-color: #459914;
@@ -975,7 +972,6 @@ table.etransfer-history-table tbody tr td.control div.control a {
 .pending-transfers-table table tbody tr td.prose {
 	display: table-cell !important;
 }
-
 
 .summarygroup table {
 	border-collapse: collapse;
@@ -1327,7 +1323,6 @@ input[type="checkbox"]:after {
 }
 
 input[type="checkbox"]:checked:before {
-
 	/*border: #0067C6;*/
 	border-color: #0067C6;
 	box-shadow: inset 0px 0px 0px 1px #fff;
@@ -1384,14 +1379,12 @@ input[type="radio"]:checked:after {
 }
 
 input[type="radio"]:checked:before {
-
 	/*border: #0067C6;*/
 	border-color: #0067C6;
 	box-shadow: inset 0px 0px 0px 1px #fff;
 	background: #0067C6;
 }
 
-.receipts .column.divHide,
 .receipts .column.divHide {
 	display: none;
 }
@@ -1428,11 +1421,13 @@ ul.nav.topic li a[title="Print receipt"] {
 }
 
 /* Autodeposit */
+
 body.Autodeposit div.modal-content .formActions {
 	text-align: center;
 }
 
 /* InitiateMoneyRequest */
+
 body.InitiateMoneyRequest .requestMoneyForm .input.floatRight.fixedWidth {
 	width: auto;
 	padding: 1em 0;
@@ -1472,11 +1467,11 @@ receipt-page-form ul.nav.topic li.link1 {
 	display: inline;
 }
 
-receipt-page-form a[title="Print receipt"] {
+receipt-page-form ul.nav.topic li a[title="Print receipt"] {
 	float: none;
 }
 
-receipt-page-form a[title="Send another money request"] {
+receipt-page-form ul.nav.topic li a[title="Send another money request"] {
 	float: left;
 }
 
@@ -1505,16 +1500,27 @@ receipt-page-form form::before {
 }
 
 /* ModifyMoneyRequest */
+
 modify-request-form .formActions .formCancel a[title="Clear"] {
 	display: none;
 }
 
-receipt-page-form a[title="Go back to Pending Transfers"] {
+receipt-page-form ul.nav.topic li a[title="Go back to Pending Transfers"] {
 	display: inline;
 }
 
 /* CancelMoneyRequest */
-cancel-request-form .formActions::before {
+
+body.CancelMoneyRequest cancel-request-form .showForm::before {
+	content: "Please confirm money request cancellation details:";
+	font-family: Roboto-Regular, Arial, sans-serif;
+	font-size: 19.2px;
+	display: block;
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+body.CancelMoneyRequest cancel-request-form .formActions::before {
 	content: "This message will appear in the cancellation notice sent to the recipient.";
 	display: block;
 	text-align: left;
@@ -1522,6 +1528,7 @@ cancel-request-form .formActions::before {
 }
 
 /* CertapayReceiveTransfer */
+
 body.CertapayReceiveTransfer form[action*="EmailMoney/Receive/?step=StepReceive2"]::before {
 	content: "You have answered the security question correctly. Please indicate if you wish to accept or decline this transfer."
 }
@@ -1535,7 +1542,7 @@ body.CertapayReceiveTransfer form[action*="EmailMoney/Receive/?step=StepAddCusto
 }
 
 body.CertapayReceiveTransfer form[action*="EmailMoney/Receive/?step=StepAddCustomer2"] .hint {
-	display:  block;
+	display: block;
 }
 
 body.CertapayReceiveTransfer .receipts .receipt>p {
@@ -1547,6 +1554,7 @@ body.CertapayReceiveTransfer .receipts .receipt>p.note {
 }
 
 /* FulfillMoneyRequest */
+
 rfmconfirmpage form::before {
 	content: "Please confirm fulfill request details";
 	background-image: url(/DynamicContent/Resources/Images/warning_alert.png);
@@ -1557,6 +1565,12 @@ rfmreceiptpage form::before {
 	background-image: url(/DynamicContent/Resources/Images/warning_success.png);
 }
 
+/* CCRAAdd */
+
+body.CCRAAdd form .instructions {
+	display: block;
+}
+
 @media only screen and (min-width: 768px) {
 	.deleteModalText {
 		height: 64px;
@@ -1565,6 +1579,10 @@ rfmreceiptpage form::before {
 }
 
 @media only screen and (max-width: 767px) {
+
+	table tbody tr td {
+		width: auto;
+	}
 
 	table.etransfer-history-table tbody tr,
 	table.etransfer-history-table tbody tr td,
@@ -1792,12 +1810,10 @@ rfmreceiptpage form::before {
 		width: 100% !important;
 		white-space: nowrap !important;
 	} */
-
 	/* table.autodeposit-settings-table {
 		word-break: unset !important;
 		width: 100% !important;
 	} */
-
 	.errors ol {
 		-webkit-padding-start: 0;
 	}
@@ -1882,14 +1898,12 @@ rfmreceiptpage form::before {
 	}
 
 	/*NEW STUFF*/
-
 	/* table.auto-deposit-settings--first-table,
 	table.autodeposit-settings-table tbody tr td.rowCounter,
 	table.autodeposit-settings-table tbody tr td.hideCol,
 	table.autodeposit-settings-table tbody tr.hideField {
 		display: none !important;
 	} */
-
 	/* Force table to not be like tables anymore */
 	.summarygroup table.recipients-table,
 	.summarygroup thead,
@@ -1997,7 +2011,6 @@ rfmreceiptpage form::before {
 		margin-bottom: 70px !important;
 	}
 
-
 	body.Autodeposit table.registeredMembers:first-of-type {
 		display: none !important;
 	}
@@ -2099,7 +2112,6 @@ rfmreceiptpage form::before {
 Label the data
 You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
 */
-
 	table.etransfer-history-table-details tbody tr td.date:before {
 		content: "Date";
 		font-weight: bold;
@@ -2135,7 +2147,7 @@ You could also use a data-* attribute and content for this. That way "bloats" th
 		font-weight: bold;
 	}
 
-	table.recipients-table tbody tr td:nth-of-type(1):before {
+	table.recipients-table tbody tr td.contact:nth-of-type(1):before {
 		content: "Recipient";
 		font-weight: bold;
 	}
@@ -2182,10 +2194,7 @@ You could also use a data-* attribute and content for this. That way "bloats" th
 		content: "Status";
 		font-weight: bold;
 	} */
-
-
 	/*NEW STUFF FIM */
-
 	table.cra-table tbody tr.header {
 		display: block !important;
 		height: auto !important;
@@ -2262,9 +2271,14 @@ You could also use a data-* attribute and content for this. That way "bloats" th
 	.show-topic {
 		display: none !important;
 	}
+
+	.receipts .column.divHide {
+		display: none !important;
+	}
 }
 
 /* Main Style Sheet for jQuery UI date picker */
+
 #datepicker_div,
 #ui-datepicker-div,
 .datepicker_inline {
@@ -2515,6 +2529,7 @@ img.datepicker_trigger {
 
 /* ________ Datepicker Links _______
 ** Reset link properties and then override them with !important */
+
 #datepicker_div a,
 .datepicker_inline a {
 	cursor: pointer;
@@ -2585,6 +2600,7 @@ img.datepicker_trigger {
 }
 
 /* Date picker branding */
+
 #datepicker_div,
 #ui-datepicker-div {
 	font-family: Arial, sans-serif;

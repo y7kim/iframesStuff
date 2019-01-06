@@ -133,7 +133,7 @@ window.onload = function (e) {
 
 			var topDisclaimerNode = document.createElement('div');
 			topDisclaimerNode.setAttribute("class", "top-disclaimer--remit-confirmation-screen");
-			topDisclaimerNode.innerHTML = 'To remit your RC 159, please review your Pay Amount, Pay From account, and Payment Date, then click Remit. To make any changes to your information click the "Edit transaction details" link.';
+			topDisclaimerNode.innerHTML = 'To remit your RC 159, please review your Pay Amount, Pay From account, and Payment Date, then click Remit. To make any changes to your information click the "Edit" button.';
 			var bottomDisclaimerReferenceNode = document.querySelector('.confirmation');
 			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
 
@@ -150,11 +150,17 @@ window.onload = function (e) {
 		else if (document.querySelector(".formEdit") == null && document.querySelector(".status") != null) {
 			//Status Completed
 			if (document.querySelector(".status").textContent == "Completed") {
+				showPrintButton();
+
+				var bottomDisclaimerNode = document.createElement('div');
+				bottomDisclaimerNode.setAttribute("class", "bottom-disclaimer");
+				bottomDisclaimerNode.innerHTML = '<b>Please Note:</b><ul><li>All future bill payments will debit the account requested on the date provided for the transaction. If you have set up a <b>scheduled transfer</b> to cover the future dated bill payment, the <b>Transfer must be completed one day prior to the bill payment date</b> to ensure the funds are available.</li><li>Please ensure that your Account has sufficient funds to cover the Payment on the Payment Date. <b>If funds are not available on the date the payment is due, your payment will not be processed.</b></li><li>If you have scheduled multiple payments to the same vendor for the same amount on the same day, duplicate transactions may be rejected even if the payments are from different accounts</li></ul>';
+				var bottomDisclaimerReferenceNode = document.querySelector('.topic');
+				bottomDisclaimerReferenceNode.parentNode.insertBefore(bottomDisclaimerNode, bottomDisclaimerReferenceNode);
+
 				showSucessImageAndTextReceipN();
 
 				document.querySelector('.success-text').textContent = "Transaction Completed";
-
-				showPrintButton();
 			}
 
 			//Status Not Completed
@@ -197,7 +203,7 @@ window.onload = function (e) {
 
 			var topDisclaimerNode = document.createElement('div');
 			topDisclaimerNode.setAttribute("class", "top-disclaimer--remit-confirmation-screen");
-			topDisclaimerNode.innerHTML = 'To remit your RC 160, please review your Pay Amount, Pay From account, and Payment Date, then click Remit. To make any changes to your information click the "Edit transaction details" link.';
+			topDisclaimerNode.innerHTML = 'To remit your RC 160, please review your Pay Amount, Pay From account, and Payment Date, then click Remit. To make any changes to your information click the "Edit" button.';
 			var bottomDisclaimerReferenceNode = document.querySelector('.confirmation');
 			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
 
@@ -208,11 +214,17 @@ window.onload = function (e) {
 		else if (document.querySelector(".formEdit") == null && document.querySelector(".status") != null) {
 			//Status Completed
 			if (document.querySelector(".status").textContent == "Completed") {
+				showPrintButton();
+
+				var bottomDisclaimerNode = document.createElement('div');
+				bottomDisclaimerNode.setAttribute("class", "bottom-disclaimer");
+				bottomDisclaimerNode.innerHTML = '<b>Please Note:</b><ul><li>All future bill payments will debit the account requested on the date provided for the transaction. If you have set up a <b>scheduled transfer</b> to cover the future dated bill payment, the <b>Transfer must be completed one day prior to the bill payment date</b> to ensure the funds are available.</li><li>Please ensure that your Account has sufficient funds to cover the Payment on the Payment Date. <b>If funds are not available on the date the payment is due, your payment will not be processed.</b></li><li>If you have scheduled multiple payments to the same vendor for the same amount on the same day, duplicate transactions may be rejected even if the payments are from different accounts</li></ul>';
+				var bottomDisclaimerReferenceNode = document.querySelector('.topic');
+				bottomDisclaimerReferenceNode.parentNode.insertBefore(bottomDisclaimerNode, bottomDisclaimerReferenceNode);
+
 				showSucessImageAndTextReceipN();
 
 				document.querySelector('.success-text').textContent = "Transaction Completed";
-
-				showPrintButton();
 			}
 
 			//Status Not Completed
@@ -234,7 +246,7 @@ window.onload = function (e) {
 		if (document.querySelector(".formEdit") == null && document.querySelector(".status") == null) {
 			var topDisclaimerNode = document.createElement('div');
 			topDisclaimerNode.setAttribute("class", "top-disclaimer");
-			topDisclaimerNode.innerHTML = 'To begin your Payroll and Source Deduction Remittance (current year), enter your remittance information and payment amount, select an account to pay from and a payment date, and click Continue. For more information on Remittance Type click Help. <br /><p>Please Note: Payment amount must be less than or equal to $1,000,000 - if you wish to make a payment for more than this amount you will need to perform two separate bill payments of unequal amounts. Click on <a href="/">Help</a> for more information.</p>';
+			topDisclaimerNode.innerHTML = 'To begin your Payroll and Source Deduction Remittance (current year), enter your remittance information and payment amount, select an account to pay from and a payment date, and click Continue. For more information on Remittance Type click Help. <br /><p>Please Note: Payment amount must be less than or equal to $1,000,000 - if you wish to make a payment for more than this amount you will need to perform two separate bill payments of unequal amounts.';
 			var bottomDisclaimerReferenceNode = document.querySelector('.details');
 			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
 
@@ -256,7 +268,7 @@ window.onload = function (e) {
 
 			var topDisclaimerNode = document.createElement('div');
 			topDisclaimerNode.setAttribute("class", "top-disclaimer--remit-confirmation-screen");
-			topDisclaimerNode.innerHTML = 'To submit your Corporation Tax Remittance, please review your Pay Amount, Pay From account, and Payment Date, then click Remit. To make any changes to your information click the "Edit transaction details" link.';
+			topDisclaimerNode.innerHTML = 'To submit your Corporation Tax Remittance, please review your Pay Amount, Pay From account, and Payment Date, then click Remit. To make any changes to your information click the "Edit" button.';
 			var bottomDisclaimerReferenceNode = document.querySelector('.confirmation');
 			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
 
@@ -319,7 +331,7 @@ window.onload = function (e) {
 
 			var topDisclaimerNode = document.createElement('div');
 			topDisclaimerNode.setAttribute("class", "top-disclaimer--remit-confirmation-screen");
-			topDisclaimerNode.innerHTML = 'To submit your Corporation Tax Remittance, please review your Pay Amount, Pay From account, and Payment Date, then click Remit. To make any changes to your information click the "Edit transaction details" link.';
+			topDisclaimerNode.innerHTML = 'To submit your Corporation Tax Remittance, please review your Pay Amount, Pay From account, and Payment Date, then click Remit. To make any changes to your information click the "Edit" button.';
 			var bottomDisclaimerReferenceNode = document.querySelector('.confirmation');
 			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
 
@@ -421,7 +433,7 @@ window.onload = function (e) {
 
 			var topDisclaimerNode = document.createElement('div');
 			topDisclaimerNode.setAttribute("class", "cancel-transfer-disclaimer");
-			topDisclaimerNode.innerHTML = 'Confirm your GST/HST 34 information and click Continue. To make any changes to you info click the "Edit transaction details" link.';
+			topDisclaimerNode.innerHTML = 'Confirm your GST/HST 34 information and click Continue. To make any changes to your information click the "Edit" button.';
 			var bottomDisclaimerReferenceNode = document.querySelector('.confirmation');
 			bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
 		}
