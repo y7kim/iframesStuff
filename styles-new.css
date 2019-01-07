@@ -1276,6 +1276,9 @@ input[type="checkbox"] {
 	height: 1.8em;
 	vertical-align: middle;
 	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 input[type="checkbox"]:hover:before {
@@ -1339,6 +1342,9 @@ input[type="radio"] {
 	vertical-align: bottom;
 	cursor: pointer;
 	margin-right: 10px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 input[type="radio"]:hover:before {
@@ -1418,6 +1424,10 @@ ul.nav.topic li a {
 ul.nav.topic li a[title="Print Receipt"],
 ul.nav.topic li a[title="Print receipt"] {
 	float: none;
+}
+
+div.required div.input {
+	word-break: break-word;
 }
 
 /* Autodeposit */
@@ -1991,6 +2001,7 @@ body.CCRAAdd form .instructions {
 	}
 
 	/* Autodeposit */
+
 	body.Autodeposit tr,
 	body.Autodeposit td {
 		display: block !important;
@@ -2102,6 +2113,12 @@ body.CCRAAdd form .instructions {
 	body.Autodeposit table.registeredMembers thead tr th:nth-child(5),
 	body.Autodeposit table.registeredMembers thead tr th:nth-child(6) {
 		display: none !important;
+	}
+
+	/* CancelMoneyRequest */
+
+	body.CancelMoneyRequest .receipts .receipt dl:nth-child(2) {
+		padding-bottom: unset;
 	}
 
 	receipt-page-form ul.nav.topic li.link1 {
