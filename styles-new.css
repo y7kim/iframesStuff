@@ -729,6 +729,8 @@ input[type=email]:before {
 
 currencyinput .readOnlyField {
 	font-size: 16px;
+	padding-left: 0;
+	margin-left: 0;
 }
 
 label:after,
@@ -1589,7 +1591,6 @@ body.CCRAAdd form .instructions {
 }
 
 @media only screen and (max-width: 767px) {
-
 	table tbody tr td {
 		width: auto;
 	}
@@ -2001,7 +2002,6 @@ body.CCRAAdd form .instructions {
 	}
 
 	/* Autodeposit */
-
 	body.Autodeposit tr,
 	body.Autodeposit td {
 		display: block !important;
@@ -2123,13 +2123,6 @@ body.CCRAAdd form .instructions {
 
 	receipt-page-form ul.nav.topic li.link1 {
 		display: inline-block;
-	}
-
-	/* FulfillMoneyRequest */
-
-	body.FulfillMoneyRequest currencyinput .readOnlyField {
-		padding-left: 0;
-		margin-left: 0;
 	}
 
 	/*
