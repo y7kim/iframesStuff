@@ -2126,9 +2126,9 @@ body.CCRAAdd form .instructions {
 	}
 
 	/*
-Label the data
-You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
-*/
+	Label the data
+	You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+	*/
 	table.etransfer-history-table-details tbody tr td.date:before {
 		content: "Date";
 		font-weight: bold;
