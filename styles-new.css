@@ -2125,6 +2125,13 @@ body.CCRAAdd form .instructions {
 		display: inline-block;
 	}
 
+	/* FulfillMoneyRequest */
+
+	body.FulfillMoneyRequest currencyinput .readOnlyField {
+		padding-left: 0;
+		margin-left: 0;
+	}
+
 	/*
 	Label the data
 	You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
