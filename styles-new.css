@@ -1350,6 +1350,8 @@ input[type="radio"] {
 	vertical-align: bottom;
 	cursor: pointer;
 	margin-right: 10px;
+	border: none;
+	background: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
