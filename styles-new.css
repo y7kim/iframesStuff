@@ -11,6 +11,12 @@ body {
 	margin: 0;
 }
 
+ul {
+	-moz-padding-start: 0px;
+	-webkit-padding-start: 0px;
+	padding-start: 0px;
+}
+
 #PageTitle {
 	font-family: "coastuserfriendly4regular", "Arial", sans-serif;
 	font-size: 48px;
