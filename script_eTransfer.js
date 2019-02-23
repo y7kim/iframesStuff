@@ -627,7 +627,7 @@ window.onload = function (e) {
 	}
 
 	//Add success image to Success Transfer
-	if (pageTitle == "Send Interac e-Transfer® - Receipt") {
+	if (pageTitle == "Send Interac e-Transfer® - Receipt" || pageTitle == "Approve Send Interac e-Transfer® - Receipt") {
 		if (document.querySelector('.status').textContent == "Completed") {
 			showSucessImageAndTextReceipN();
 
@@ -644,7 +644,7 @@ window.onload = function (e) {
 	}
 
 	//Add confirm image to confirm transfers screen
-	if (pageTitle == "Send Interac e-Transfer® - Confirm") {
+	if (pageTitle == "Send Interac e-Transfer® - Confirm" || pageTitle == "Approve Send Interac e-Transfer® - Confirm") {
 		if (document.querySelector('.formEdit') != null) {
 			showAlertImageWithConfirmationDiv();
 

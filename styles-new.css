@@ -1591,6 +1591,11 @@ body.CCRAAdd form .instructions {
 	display: block;
 }
 
+/* CCRAHistory */
+body.CCRAHistory .header {
+	display: table-row !important;
+}
+
 @media only screen and (min-width: 768px) {
 	.deleteModalText {
 		height: 64px;
@@ -1767,7 +1772,10 @@ body.CCRAAdd form .instructions {
 		padding-bottom: 40px;
 	}
 
-	.edit-send-profile-receipt .receipt dl:nth-child(2) {
+	receipt-page-form .receipt dl:nth-child(2),
+	.edit-send-profile-receipt .receipt dl:nth-child(2),
+	body.CertapayCancelTransfer .receipts .receipt dl:nth-child(2),
+	body.CancelMoneyRequest .receipts .receipt dl:nth-child(2) {
 		padding-bottom: 0 !important;
 	}
 
@@ -2121,12 +2129,6 @@ body.CCRAAdd form .instructions {
 	body.Autodeposit table.registeredMembers thead tr th:nth-child(5),
 	body.Autodeposit table.registeredMembers thead tr th:nth-child(6) {
 		display: none !important;
-	}
-
-	/* CancelMoneyRequest */
-	body.CertapayCancelTransfer .receipts .receipt dl:nth-child(2),
-	body.CancelMoneyRequest .receipts .receipt dl:nth-child(2) {
-		padding-bottom: unset;
 	}
 
 	receipt-page-form ul.nav.topic li.link1 {
