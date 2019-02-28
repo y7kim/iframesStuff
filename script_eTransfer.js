@@ -627,7 +627,7 @@ window.onload = function (e) {
 	}
 
 	//Add success image to Success Transfer
-	if (pageTitle == "Send Interac e-Transfer® - Receipt") {
+	if (pageTitle == "Send Interac e-Transfer® - Receipt" || pageTitle == "Approve Send Interac e-Transfer® - Receipt") {
 		if (document.querySelector('.status').textContent == "Completed") {
 			showSucessImageAndTextReceipN();
 
@@ -659,6 +659,35 @@ window.onload = function (e) {
 
 			lastValue[8].classList.add("last-value-break");
 		}
+
+		if (document.querySelector('.errors p') != null) {
+			showErrorImage();
+		}
+
+		if (document.querySelector('.formActions') != null) {
+			var bottomDisclaimerNode = document.createElement('div');
+			bottomDisclaimerNode.setAttribute("class", "bottom-disclaimer--confirm-screen");
+			var textInsideDiv = document.createTextNode("Note: The amount and a $1.50 Service Charge will be withdrawn from your account. You may cancel the transfer before the recipient accepts it; however, the service charge will not be refunded. The fee will apply even if you're over the daily eTransfer limit.");
+			bottomDisclaimerNode.appendChild(textInsideDiv);
+			var bottomDisclaimerReferenceNode = document.querySelector('.conclusion');
+			bottomDisclaimerReferenceNode.parentNode.insertBefore(bottomDisclaimerNode, bottomDisclaimerReferenceNode);
+		}
+	}
+
+	//Add confirm image to confirm approve transfers screen
+	if (pageTitle == "Approve Send Interac e-Transfer® - Confirm") {
+		showAlertImageWithConfirmationDiv();
+
+		var inputSuccessImageNode = document.createElement('div');
+		inputSuccessImageNode.setAttribute("class", "success-text");
+		var inputErrorImageReferenceNode = document.querySelector('.confirmation');
+		inputErrorImageReferenceNode.parentNode.insertBefore(inputSuccessImageNode, inputErrorImageReferenceNode);
+
+		document.querySelector('.success-text').textContent = "Please confirm sending money request details";
+
+		var lastValue = document.querySelectorAll(".oneColRow");
+
+		lastValue[8].classList.add("last-value-break");
 
 		if (document.querySelector('.errors p') != null) {
 			showErrorImage();

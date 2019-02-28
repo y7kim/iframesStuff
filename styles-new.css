@@ -11,6 +11,12 @@ body {
 	margin: 0;
 }
 
+ul {
+	-moz-padding-start: 0px;
+	-webkit-padding-start: 0px;
+	padding-start: 0px;
+}
+
 #PageTitle {
 	font-family: "coastuserfriendly4regular", "Arial", sans-serif;
 	font-size: 48px;
@@ -729,6 +735,8 @@ input[type=email]:before {
 
 currencyinput .readOnlyField {
 	font-size: 16px;
+	padding-left: 0;
+	margin-left: 0;
 }
 
 label:after,
@@ -1276,6 +1284,9 @@ input[type="checkbox"] {
 	height: 1.8em;
 	vertical-align: middle;
 	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 input[type="checkbox"]:hover:before {
@@ -1339,6 +1350,11 @@ input[type="radio"] {
 	vertical-align: bottom;
 	cursor: pointer;
 	margin-right: 10px;
+	border: none;
+	background: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 input[type="radio"]:hover:before {
@@ -1418,6 +1434,10 @@ ul.nav.topic li a {
 ul.nav.topic li a[title="Print Receipt"],
 ul.nav.topic li a[title="Print receipt"] {
 	float: none;
+}
+
+div.required div.input {
+	word-break: break-word;
 }
 
 /* Autodeposit */
@@ -1571,6 +1591,11 @@ body.CCRAAdd form .instructions {
 	display: block;
 }
 
+/* CCRAHistory */
+body.CCRAHistory .header {
+	display: table-row !important;
+}
+
 @media only screen and (min-width: 768px) {
 	.deleteModalText {
 		height: 64px;
@@ -1579,7 +1604,6 @@ body.CCRAAdd form .instructions {
 }
 
 @media only screen and (max-width: 767px) {
-
 	table tbody tr td {
 		width: auto;
 	}
@@ -1748,7 +1772,10 @@ body.CCRAAdd form .instructions {
 		padding-bottom: 40px;
 	}
 
-	.edit-send-profile-receipt .receipt dl:nth-child(2) {
+	receipt-page-form .receipt dl:nth-child(2),
+	.edit-send-profile-receipt .receipt dl:nth-child(2),
+	body.CertapayCancelTransfer .receipts .receipt dl:nth-child(2),
+	body.CancelMoneyRequest .receipts .receipt dl:nth-child(2) {
 		padding-bottom: 0 !important;
 	}
 
@@ -2109,9 +2136,9 @@ body.CCRAAdd form .instructions {
 	}
 
 	/*
-Label the data
-You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
-*/
+	Label the data
+	You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+	*/
 	table.etransfer-history-table-details tbody tr td.date:before {
 		content: "Date";
 		font-weight: bold;

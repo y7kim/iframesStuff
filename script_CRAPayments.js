@@ -306,6 +306,52 @@ window.onload = function (e) {
 		}
 	}
 
+	if (pageTitle == "Approve Remit Payroll and Source Deduction - Confirm") {
+		showAlertImageWithConfirmationDiv();
+
+		var inputSuccessImageNode = document.createElement('div');
+		inputSuccessImageNode.setAttribute("class", "success-text");
+		var inputErrorImageReferenceNode = document.querySelector('.confirmation');
+		inputErrorImageReferenceNode.parentNode.insertBefore(inputSuccessImageNode, inputErrorImageReferenceNode);
+
+		var topDisclaimerNode = document.createElement('div');
+		topDisclaimerNode.setAttribute("class", "top-disclaimer--remit-confirmation-screen");
+		//topDisclaimerNode.innerHTML = 'To submit your Corporation Tax Remittance, please review your Pay Amount, Pay From account, and Payment Date, then click Remit. To make any changes to your information click the "Edit" button.';
+		var bottomDisclaimerReferenceNode = document.querySelector('.confirmation');
+		bottomDisclaimerReferenceNode.parentNode.insertBefore(topDisclaimerNode, bottomDisclaimerReferenceNode);
+
+		document.querySelector('.success-text').textContent = "Please review the information below";
+	}
+
+	if (pageTitle == "Approve Remit Payroll and Source Deduction - Receipt") {
+		//Status Completed
+		if (document.querySelector(".status").textContent == "Completed") {
+			showPrintButton();
+
+			var bottomDisclaimerNode = document.createElement('div');
+			bottomDisclaimerNode.setAttribute("class", "bottom-disclaimer");
+			//bottomDisclaimerNode.innerHTML = '<b>Please Note:</b><ul><li>All future bill payments will debit the account requested on the date provided for the transaction. If you have set up a <b>scheduled transfer</b> to cover the future dated bill payment, the <b>Transfer must be completed one day prior to the bill payment date</b> to ensure the funds are available.</li><li>Please ensure that your Account has sufficient funds to cover the Payment on the Payment Date. <b>If funds are not available on the date the payment is due, your payment will not be processed.</b></li><li>If you have scheduled multiple payments to the same vendor for the same amount on the same day, duplicate transactions may be rejected even if the payments are from different accounts</li></ul>';
+			var bottomDisclaimerReferenceNode = document.querySelector('.topic');
+			bottomDisclaimerReferenceNode.parentNode.insertBefore(bottomDisclaimerNode, bottomDisclaimerReferenceNode);
+
+			showSucessImageAndTextReceipN();
+
+			document.querySelector('.success-text').textContent = "Transaction Completed";
+		}
+
+		//Status Not Completed
+		if (document.querySelector(".status").textContent == "Not Completed" || document.querySelector(".status").textContent == "Not Created") {
+			showErrorImageOnConclusionScreen()
+
+			var inputSuccessImageNode = document.createElement('div');
+			inputSuccessImageNode.setAttribute("class", "success-text");
+			var inputErrorImageReferenceNode = document.querySelector('.receiptN');
+			inputErrorImageReferenceNode.parentNode.insertBefore(inputSuccessImageNode, inputErrorImageReferenceNode);
+
+			document.querySelector('.success-text').textContent = "Transaction Not Completed";
+		}
+	}
+
 	//add top disclaimer on Remit Corporation Taxs screen
 	if (pageTitle == "Remit Corporation Tax") {
 		if (document.querySelector(".formEdit") == null && document.querySelector(".status") == null) {
