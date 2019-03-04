@@ -1,0 +1,726 @@
+/* Normalize.css
+----------------------------------------------- */
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}html,button,input,select,textarea{font-family:sans-serif;}body{margin:0;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;margin:0.67em 0;}h2{font-size:1.5em;margin:0.83em 0;}h3{font-size:1.17em;margin:1em 0;}h4{font-size:1em;margin:1.33em 0;}h5{font-size:0.83em;margin:1.67em 0;}h6{font-size:0.75em;margin:2.33em 0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}blockquote{margin:1em 40px;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}p,pre{margin:1em 0;}code,kbd,pre,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em;}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word;}q{quotes:none;}q:before,q:after{content:'';content:none;}small{font-size:75%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}dl,menu,ol,ul{margin:1em 0;}dd{margin:0 0 0 40px;}menu,ol,ul{padding:0 0 0 40px;}nav ul,nav ol{list-style:none;list-style-image:none;}img{border:0;-ms-interpolation-mode:bicubic;}svg:not(:root){overflow:hidden;}figure{margin:0;}form{margin:0;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;white-space:normal;*margin-left:-7px;}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle;}button,input{line-height:normal;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;*overflow:visible;}button[disabled],input[disabled]{cursor:default;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
+
+/* Collapsable */
+
+.collapsable {
+    display: block;
+    clear: both;
+}
+
+/*.collapsable
+	.control
+	.collapsableContent*/
+.collapsable .control,
+.collapsableLevel2 .controlLevel2 {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.collapsable .control:hover,
+.collapsableLevel2 .controlLevel2:hover {
+    text-decoration: none;
+}
+
+/*if js enabled collapsed class is added*/
+.collapsed .collapsableContent,
+.collapsedLevel2 .collapsableContentLevel2 {
+    display: none;
+}
+
+.collapsable .controlIcon,
+.collapsableLevel2 .controlIcon {
+    padding-left: 15px;
+}
+
+.hiddenInlineControl,
+.hiddenBlockControl {
+    display: none;
+}
+
+.javascript .hiddenBlockControl {
+    display: block;
+}
+
+.javascript .hiddenInlineControl {
+    display: inline;
+    font-weight: normal;
+    font-size: 11px;
+}
+
+.javascript .collapsable .showText,
+.javascript .collapsableLevel2 .showText {
+    display: none;
+}
+
+.javascript .collapsable .hideText,
+.javascript .collapsableLevel2 .hideText {
+    display: inline;
+}
+
+.javascript .collapsed .showText,
+.javascript .collapsedLevel2 .showText {
+    display: inline;
+}
+
+.javascript .collapsed .hideText,
+.javascript .collapsedLevel2 .hideText {
+    display: none;
+}
+
+/* If JavaScript enabled, hide these and let 'formShowHideControls.js' do the processing (MDSB: ON CT form) */
+.javascript div.formElementHide {
+    display: none;
+}
+
+/* Main Style Sheet for jQuery UI date picker */
+
+#datepicker_div,
+#ui-datepicker-div,
+.datepicker_inline {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    width: 185px;
+    cursor: default;
+}
+
+#datepicker_div,
+#ui-datepicker-div {
+    display: none;
+    border-width: 1px;
+    border-style: solid;
+    z-index: 9999;
+    /*must have*/
+}
+
+.datepicker_inline {
+    float: left;
+    display: block;
+    border: 0;
+}
+
+.datepicker_rtl {
+    direction: rtl;
+}
+
+.datepicker_dialog {
+    padding: 5px !important;
+    border-width: 4px !important;
+    border-style: ridge !important;
+}
+
+.ui-datepicker-prev {
+    float: left;
+}
+
+.ui-datepicker-next {
+    float: right;
+}
+
+.ui-datepicker-title {
+    clear: both;
+}
+
+.ui-datepicker-prev span,
+.ui-datepicker-next span {
+    padding: 2px 5px;
+}
+
+button.ui-datepicker-close {
+    float: right;
+    border: none;
+}
+
+button.ui-datepicker-current {
+    display: none;
+}
+
+button.datepicker_trigger,
+button.ui-datepicker-trigger {
+    background-color: transparent;
+    border-style: none;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    margin: 36px 0 0 -62px;
+}
+
+button.datepicker_trigger img,
+button.ui-datepicker-trigger img {
+    width: 30px;
+    visibility: hidden;
+}
+
+.md .datepicker_wrap {
+    display: block;
+    padding-right: 20px;
+}
+
+.datepicker_centerButton .datepicker_wrap {
+    display: block;
+    position: relative;
+    ;
+}
+
+.datepicker_centerButton button.datepicker_trigger {
+    bottom: 4px;
+}
+
+.optiongroup button.datepicker_trigger {
+    /*currently rtp specific*/
+    position: static;
+}
+
+.optiongroup .optionInline .range button.datepicker_trigger {
+    position: absolute;
+    right: 0;
+    top: 2px;
+}
+
+img.datepicker_trigger {
+    margin: 2px;
+    vertical-align: middle;
+}
+
+.datepicker_prompt {
+    float: left;
+    padding: 2px;
+}
+
+* html .datepicker_prompt {
+    width: 185px;
+}
+
+.datepicker_control,
+.datepicker_links,
+.datepicker_header,
+.datepicker,
+.ui-datepicker-title,
+.ui-datepicker-calendar,
+.ui-datepicker-buttonpane,
+.ui-datepicker-header {
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+.ui-datepicker-calendar {
+    border-spacing: 0;
+}
+
+.ui-datepicker-calendar thead th {
+    font-weight: normal;
+}
+
+.datepicker_control,
+.ui-datepicker-buttonpane {
+    padding: 2px 0px;
+}
+
+.datepicker_links {
+    padding: 2px 0px;
+}
+
+.datepicker_control,
+.datepicker_links,
+.ui-datepicker-buttonpane {
+    font-weight: bold;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.datepicker_links label {
+    /* disabled links */
+    padding: 2px 5px;
+}
+
+.datepicker_clear {
+    display: none;
+}
+
+.datepicker_clear,
+.datepicker_prev {
+    float: left;
+    width: 34%;
+}
+
+.datepicker_rtl .datepicker_clear,
+.datepicker_rtl .datepicker_prev {
+    float: right;
+    text-align: right;
+}
+
+.datepicker_current {
+    display: none;
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+
+.datepicker_close,
+.datepicker_next {
+    float: right;
+    width: 34%;
+    text-align: right;
+}
+
+.datepicker_rtl .datepicker_close,
+.datepicker_rtl .datepicker_next {
+    float: left;
+    text-align: left;
+}
+
+.datepicker_header,
+.ui-datepicker-title {
+    padding: 1px 0 3px;
+    text-align: center;
+    font-weight: bold;
+    height: 1.3em;
+}
+
+.datepicker_header select,
+.ui-datepicker-title select {
+    border: 0px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.datepicker,
+.ui-datepicker-calendar {
+    text-align: center;
+    font-size: 100%;
+}
+
+.datepicker a,
+.ui-datepicker-calendar a {
+    display: block;
+    width: 100%;
+}
+
+.datepicker_daysCell,
+.ui-datepicker-calendar tbody td {
+    border-width: 1px;
+    border-style: solid;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.datepicker_daysCell a,
+.ui-datepicker-calendar tbody td a {
+    display: block;
+}
+
+.datepicker_daysCellOver {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.datepicker_status {
+    width: 100%;
+    font-size: 80%;
+    text-align: center;
+}
+
+/* ________ Datepicker Links _______
+** Reset link properties and then override them with !important */
+
+#datepicker_div a,
+.datepicker_inline a {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+#ui-datepicker-div a {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+#ui-datepicker-div a {
+    text-decoration: none;
+}
+
+.datepicker_inline .datepicker_links a {
+    padding: 0 5px !important;
+}
+
+.datepicker_control a,
+.datepicker_links a,
+.ui-datepicker-buttonpane button {
+    padding: 2px 5px !important;
+}
+
+/* ___________ MULTIPLE MONTHS _________*/
+
+.datepicker_multi .datepicker {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.datepicker_oneMonth {
+    float: left;
+    width: 185px;
+}
+
+.datepicker_newRow {
+    clear: left;
+}
+
+/* ___________ IE6 IFRAME FIX ________ */
+
+.datepicker_cover {
+    display: none;
+    /*sorry for IE5*/
+    display
+    /**/
+    : block;
+    /*sorry for IE5*/
+    position: absolute;
+    /*must have*/
+    z-index: -1;
+    /*must have*/
+    filter: mask();
+    /*must have*/
+    top: -4px;
+    /*must have*/
+    left: -4px;
+    /*must have*/
+    width: 200px;
+    /*must have*/
+    height: 200px;
+    /*must have*/
+}
+
+/* Date picker branding */
+
+#datepicker_div,
+#ui-datepicker-div {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    border-color: #A5ACB2;
+}
+
+.datepicker tbody td,
+.ui-datepicker-calendar tbody td {
+    background-color: #EDEEED;
+    border-color: #F1F1F1;
+    color: #222222;
+    line-height: 26px;
+}
+
+.ui-datepicker-calendar td a {
+    color: #000;
+}
+
+/* CoastMDSB */
+@font-face {
+    font-family: 'coastuserfriendly4regular';
+    src: url('../Fonts/coastuserfriendly4-webfont.eot');
+    src: url('../Fonts/coastuserfriendly4-webfont.eot?#iefix') format('embedded-opentype'), url('../Fonts/coastuserfriendly4-webfont.woff2') format('woff2'), url('../Fonts/coastuserfriendly4-webfont.woff') format('woff'), url('../Fonts/coastuserfriendly4-webfont.ttf') format('truetype'), url('../Fonts/coastuserfriendly4-webfont.svg#coastuserfriendly4regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    font-family: Roboto, helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: normal;
+    text-rendering: optimizeLegibility;
+    vertical-align: baseline;
+}
+
+body.widget {
+    margin: 1em;
+}
+
+.widget h1,
+.widget h2,
+.widget h3,
+.widget h4,
+.widget h5,
+.widget h6 {
+    color: #626262;
+    font-family: Roboto, helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.widget h1,
+.widget h3 {
+    color: #0067c6;
+    font-family: 'coastuserfriendly4regular', helvetica, sans-serif;
+}
+
+.widget h1 {
+    font-size: 32px;
+    font-weight: 400;
+    margin: 1em 0;
+}
+
+.widget h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 1em;
+}
+
+.widget ol,
+.widget ul {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 0;
+    padding: 0 0 0 40px;
+    -moz-padding-start: 0px;
+    -webkit-padding-start: 0px;
+    padding-start: 0px;
+}
+
+.widget sup {
+    bottom: 0.6em;
+    line-height: 18px;
+}
+
+.widget dl {
+    margin: 1em;
+}
+
+.widget dl,
+.widget dt {
+    font-size: 16px;
+}
+
+.widget dl dt {
+    display: block;
+    margin: 30px 0;
+    font-weight: 700;
+    width: 150px;
+}
+
+.widget dl dd {
+    margin: -48px 0 0 180px;
+}
+
+.widget a {
+    color: #0067c6;
+}
+
+.widget a[href*="HelpTopic"] {
+    display: none;
+}
+
+.widget .input>select,
+.widget input {
+    margin: 1em 1em 1em 0;
+    font-size: 19.2px;
+    font-weight: 400;
+    line-height: 34px;
+    font-family: Roboto-Regular, Arial, sans-serif;
+}
+
+.widget input.checkbox {
+    margin-right: 0;
+}
+
+.widget .input>select {
+    width: 458px;
+    height: 64px;
+    border-radius: 3px;
+    border: 1px solid #767676;
+    line-height: 32px;
+    padding: 16px 40px 16px 24px;
+    background: url(../Images/input_dropdown.svg) no-repeat right 15px center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.widget input[type="submit"],
+.widget input[type="button"] {
+    box-sizing: border-box;
+    display: block;
+    height: 62px;
+    min-width: 361px;
+    width: 458px;
+    padding: 14px 24px;
+    color: rgb(255, 255, 255);
+    background-color: #459914;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    touch-action: manipulation;
+    user-select: none;
+    border: 2px solid #218913;
+    border-collapse: collapse;
+    border-radius: 3px 3px 3px 3px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.widget input.hasDatepicker {
+    background: url(../Images/input_calendar.png) no-repeat right 15px top 17px;
+}
+
+.widget input[type=date],
+.widget input.hasDatepicker {
+    height: 64px;
+    width: 10em;
+    padding-left: 24px;
+    vertical-align: middle;
+    border: 1px solid #767676;
+    border-radius: 3px;
+    font: normal normal 400 normal 19.2px / 32px Roboto-Regular, Arial, sans-serif;
+    box-sizing: border-box;
+    background: url(../Images/input_calendar.png) no-repeat right 15px center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.widget input[type="date"]::-webkit-calendar-picker-indicator,
+.widget input.hasDatepicker::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    margin-right: 15px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover,
+.widget input.hasDatepicker::-webkit-calendar-picker-indicator:hover {
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 1;
+}
+
+.widget .required label {
+    font-weight: 700;
+}
+
+.widget .formActions ul,
+.widget .topic ul {
+    list-style-type: none;
+}
+
+.widget .historyTable caption {
+    display: none;
+}
+
+.widget .historyTable {
+    border-bottom: 1px solid #F2F3F6;
+}
+
+.widget .historyTable table {
+    width: 100%;
+}
+
+.widget .historyTable table th {
+    padding: 1em;
+    background-color: #F2F3F6;
+    text-align: left;
+}
+
+.widget .historyTable table td {
+    padding: 1em;
+    font-weight: 700;
+}
+
+.widget .transactionManager h2 {
+    font-size: 16px;
+    padding: 1em;
+    color: #000;
+    background-color: #F2F3F6;
+    text-decoration: none;
+}
+
+.widget .transactionManager h2 a {
+    position: absolute;
+    right: 2em;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.widget .inlineFilter {
+    margin: 2em 0;
+}
+
+.widget .collapsable {
+    margin: 1em 0 2em 0;
+}
+
+.widget .hiddenInlineControl {
+    font-family: Roboto, helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 1em;
+    text-decoration: underline;
+}
+
+.widget .topic {
+    display: none;
+}
+
+.widget .transactionApprovals input[type="button"] {
+    display: inline-block;
+}
+
+.widget .transactionApprovals input[value="Reject"] {
+    background-color: #fff;
+    color: #0067c6;
+    border-color: #0067c6;
+}
+
+.widget.ArchivedTransactionsSearch form .formGroup h2,
+.widget.ArchivedTransactionsSearch .input.range .hint,
+.widget.ArchivedTransactionsSearch label.dateRangeStartLabel {
+    display: none;
+}
+
+.widget.ArchivedTransactionsSearch select#RecentNumberValue {
+    width: 6em;
+}
+
+.widget.ArchivedTransactionsSearch .input.range div {
+    display: inline-block;
+}
+
+.widget.ArchivedTransactionsSearch .input.range .dateRangeEndLabel {
+    margin-right: 2em;
+}
+
+@media (max-width:1281px) {
+    .widget .transactionApprovals .submit {
+        display: flex;
+    }
+    .widget .transactionApprovals input[type="button"] {
+        width: 50%;
+    }
+}
+
+@media (min-width:1281px) {
+
+    #PageTitle {
+        font-size: 48px;
+    }
+
+    .widget input.hasDatepicker {
+        width: 458px;
+    }
+
+    .widget .transactionApprovals .submit {
+        text-align: right;
+    }
+
+    .widget .transactionApprovals input[type="button"] {
+        display: inline-block;
+    }
+
+    .widget.PendingTransactionSummary .inlineFilter .required,
+    .widget.PendingTransactionSummary .inlineFilter input[type="submit"] {
+        display: inline-block
+    }
+
+    .widget.PendingTransactionSummary .inlineFilter input[type="submit"] {
+        margin-left: 2em;
+    }
+}

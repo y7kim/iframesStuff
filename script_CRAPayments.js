@@ -61,6 +61,17 @@ window.onload = function (e) {
 		alertImageReferenceNode.parentNode.insertBefore(alertImageNode, alertImageReferenceNode);
 	}
 
+	//Show Created Image on Conclusion screen
+	function showCreatedImageOnConclusionScreen() {
+		var errorsImageNode = document.createElement('div');
+		errorsImageNode.setAttribute("class", "created-image");
+		var imageNode = document.createElement('img');
+		errorsImageNode.appendChild(imageNode);
+		imageNode.setAttribute("src", "/DynamicContent/Resources/Images/warning_created.png");
+		var errorsImageReferenceNode = document.querySelector('.receiptN');
+		errorsImageReferenceNode.parentNode.insertBefore(errorsImageNode, errorsImageReferenceNode);
+	}
+
 	//Show Error Image on Conclusion screen
 	function showErrorImageOnConclusionScreen() {
 		var errorsImageNode = document.createElement('div');
@@ -148,6 +159,18 @@ window.onload = function (e) {
 
 		//Conclusion screen
 		else if (document.querySelector(".formEdit") == null && document.querySelector(".status") != null) {
+			//Status Created
+			if (document.querySelector(".status").textContent == "Created") {
+				showCreatedImageOnConclusionScreen()
+
+				var inputSuccessImageNode = document.createElement('div');
+				inputSuccessImageNode.setAttribute("class", "success-text");
+				var inputErrorImageReferenceNode = document.querySelector('.receiptN');
+				inputErrorImageReferenceNode.parentNode.insertBefore(inputSuccessImageNode, inputErrorImageReferenceNode);
+
+				document.querySelector('.success-text').textContent = "Transaction succesfully submitted. Awaiting approvals.";
+			}
+
 			//Status Completed
 			if (document.querySelector(".status").textContent == "Completed") {
 				showPrintButton();
@@ -212,6 +235,18 @@ window.onload = function (e) {
 
 		//Conclusion screen
 		else if (document.querySelector(".formEdit") == null && document.querySelector(".status") != null) {
+			//Status Created
+			if (document.querySelector(".status").textContent == "Created") {
+				showCreatedImageOnConclusionScreen()
+
+				var inputSuccessImageNode = document.createElement('div');
+				inputSuccessImageNode.setAttribute("class", "success-text");
+				var inputErrorImageReferenceNode = document.querySelector('.receiptN');
+				inputErrorImageReferenceNode.parentNode.insertBefore(inputSuccessImageNode, inputErrorImageReferenceNode);
+
+				document.querySelector('.success-text').textContent = "Transaction succesfully submitted. Awaiting approvals.";
+			}
+
 			//Status Completed
 			if (document.querySelector(".status").textContent == "Completed") {
 				showPrintButton();
@@ -277,6 +312,18 @@ window.onload = function (e) {
 
 		//Conclusion screen
 		else if (document.querySelector(".formEdit") == null && document.querySelector(".status") != null) {
+			//Status Created
+			if (document.querySelector(".status").textContent == "Created") {
+				showCreatedImageOnConclusionScreen()
+
+				var inputSuccessImageNode = document.createElement('div');
+				inputSuccessImageNode.setAttribute("class", "success-text");
+				var inputErrorImageReferenceNode = document.querySelector('.receiptN');
+				inputErrorImageReferenceNode.parentNode.insertBefore(inputSuccessImageNode, inputErrorImageReferenceNode);
+
+				document.querySelector('.success-text').textContent = "Transaction succesfully submitted. Awaiting approvals.";
+			}
+
 			//Status Completed
 			if (document.querySelector(".status").textContent == "Completed") {
 				showPrintButton();
@@ -306,7 +353,10 @@ window.onload = function (e) {
 		}
 	}
 
-	if (pageTitle == "Approve Remit Payroll and Source Deduction - Confirm") {
+	if (pageTitle == "Approve Remit Payroll and Source Deduction - Confirm" ||
+			pageTitle == "Approve Remit RC 159 Amount Owing - Confirm" ||
+			pageTitle == "Approve Remit RC 160 Interim Payments - Confirm" ||
+			pageTitle == "Approve Remit Corporation Tax - Confirm") {
 		showAlertImageWithConfirmationDiv();
 
 		var inputSuccessImageNode = document.createElement('div');
@@ -323,7 +373,10 @@ window.onload = function (e) {
 		document.querySelector('.success-text').textContent = "Please review the information below";
 	}
 
-	if (pageTitle == "Approve Remit Payroll and Source Deduction - Receipt") {
+	if (pageTitle == "Approve Remit Payroll and Source Deduction - Receipt" ||
+			pageTitle == "Approve Remit RC 159 Amount Owing - Receipt" ||
+			pageTitle == "Approve Remit RC 160 Interim Payments - Receipt" ||
+			pageTitle == "Approve Remit Corporation Tax - Receipt") {
 		//Status Completed
 		if (document.querySelector(".status").textContent == "Completed") {
 			showPrintButton();
@@ -386,6 +439,18 @@ window.onload = function (e) {
 
 		//Conclusion screen
 		else if (document.querySelector(".formEdit") == null && document.querySelector(".status") != null) {
+			//Status Created
+			if (document.querySelector(".status").textContent == "Created") {
+				showCreatedImageOnConclusionScreen()
+
+				var inputSuccessImageNode = document.createElement('div');
+				inputSuccessImageNode.setAttribute("class", "success-text");
+				var inputErrorImageReferenceNode = document.querySelector('.receiptN');
+				inputErrorImageReferenceNode.parentNode.insertBefore(inputSuccessImageNode, inputErrorImageReferenceNode);
+
+				document.querySelector('.success-text').textContent = "Transaction succesfully submitted. Awaiting approvals.";
+			}
+
 			//Status Completed
 			if (document.querySelector(".status").textContent == "Completed") {
 				showSucessImageAndTextReceipN();
