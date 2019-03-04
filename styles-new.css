@@ -391,7 +391,8 @@ body.Autodeposit table.registeredMembers tr td .deleteIcon:hover {
 }
 
 .success-image,
-.alert-image {
+.alert-image,
+.created-image {
 	text-align: center;
 }
 
@@ -1788,7 +1789,8 @@ body.CCRAHistory .header {
 	.errors-image,
 	.success-image,
 	.alert-image,
-	.success-text {
+	.success-text,
+	.created-image {
 		width: 100% !important;
 	}
 
@@ -2287,7 +2289,8 @@ body.CCRAHistory .header {
 	}
 
 	.success-image,
-	.alert-image {
+	.alert-image,
+	.created-image {
 		display: none !important;
 	}
 
