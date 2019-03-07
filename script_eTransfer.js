@@ -1,33 +1,12 @@
 window.onload = function (e) {
-	checkCookie();
+	function receiveMessage(e){
+		if(e.origin !== "http://ib.ccs.local")
+			return;
+		
+	window.log(e.data);
+	window.addEventListener("message", receiveMessage);
+		
 	var pageTitle = document.querySelector("#PageTitle").textContent;
-	
-	function getCookie(cname) {
-		debugger;
-		var name = cname + "=";
-		var decodedCookie = decodeURIComponent(document.cookie);
-		var ca = decodedCookie.split(';');
-		for(var i = 0; i <ca.length; i++) {
-		var c = ca[i];
-		while (c.charAt(0) == ' ') {
-			  c = c.substring(1);
-			}
-			if (c.indexOf(name) == 0) {
-			  return c.substring(name.length, c.length);
-			}
-		  }
-		return "";
-	}
-	
-	function checkCookie() {
-		debugger;
-		var cookieValue = getCookie("cookieTest");
-		if (cookieValue == "cookieValue") {
-			console.log("cookies match!");
-		} else {
-		  console.log("cookies does not match!");
-		}
-	}
 
 	//Show Print Button on conclusion screen
 	function showPrintButton() {
