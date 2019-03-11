@@ -535,6 +535,13 @@ body.widget {
     background: url(../Images/input_dropdown.svg) no-repeat right 15px center;
     -webkit-appearance: none;
     -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+
+}
+
+.widget .input>select::-ms-expand {
+    display: none;
 }
 
 .widget input[type="submit"],
@@ -670,6 +677,10 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover,
     border-color: #0067c6;
 }
 
+.widget .transactionApprovals hr {
+    display: none;
+}
+
 .widget.ArchivedTransactionsSearch form .formGroup h2,
 .widget.ArchivedTransactionsSearch .input.range .hint,
 .widget.ArchivedTransactionsSearch label.dateRangeStartLabel {
@@ -692,6 +703,7 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover,
     .widget .transactionApprovals .submit {
         display: flex;
     }
+
     .widget .transactionApprovals input[type="button"] {
         width: 50%;
     }
@@ -705,10 +717,6 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover,
 
     .widget input.hasDatepicker {
         width: 458px;
-    }
-
-    .widget .transactionApprovals .submit {
-        text-align: right;
     }
 
     .widget .transactionApprovals input[type="button"] {
