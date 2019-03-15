@@ -1,11 +1,4 @@
-window.onload = function (e) {
-	function receiveMessage(e){
-		if(e.origin !== "http://ib.ccs.local")
-			return;
-		
-	window.log(e.data);
-	window.addEventListener("message", receiveMessage);
-		
+window.onload = function (e) {	
 	var pageTitle = document.querySelector("#PageTitle").textContent;
 
 	//Show Print Button on conclusion screen
