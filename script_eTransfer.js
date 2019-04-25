@@ -1,5 +1,4 @@
-window.onload = function (e) {
-
+window.onload = function (e) {	
 	var pageTitle = document.querySelector("#PageTitle").textContent;
 
 	//Show Print Button on conclusion screen
