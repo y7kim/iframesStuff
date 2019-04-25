@@ -1576,6 +1576,22 @@ body.CertapayReceiveTransfer .receipts .receipt>p.note {
 
 /* FulfillMoneyRequest */
 
+.FulfillMoneyRequest header {
+	display: inline-block;
+}
+
+.FulfillMoneyRequest interaclogo {
+	display: inline-block;
+}
+
+.FulfillMoneyRequest .interacLogoEMT {
+    background-image: url(/host/.coast.com/subbrand/QAProj1/DynamicContent/Resources/Images/EMT/interacLogo.svg);
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 128px;
+    margin: 0 0 0 10px !important;
+}
+
 rfmconfirmpage form::before {
 	content: "Please confirm fulfill request details";
 	background-image: url(/DynamicContent/Resources/Images/warning_alert.png);
@@ -2223,6 +2239,11 @@ body.CCRAHistory .header {
 		content: "Status";
 		font-weight: bold;
 	} */
+
+	.FulfillMoneyRequest .interacLogoEMT {
+	    height: 24px;
+	}
+
 	/*NEW STUFF FIM */
 	table.cra-table tbody tr.header {
 		display: block !important;
