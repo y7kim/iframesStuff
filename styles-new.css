@@ -1285,6 +1285,7 @@ input[type="checkbox"] {
 	height: 1.8em;
 	vertical-align: middle;
 	cursor: pointer;
+	border: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
